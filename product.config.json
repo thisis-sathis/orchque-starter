@@ -1,0 +1,253 @@
+{
+  "brand": {
+    "name": "Your Product",
+    "tagline": "The tagline goes here",
+    "description": "A short product description for meta tags and og:description.",
+    "domain": "yourproduct.com",
+    "supportEmail": "support@yourproduct.com",
+    "notifyEmail": "notify@yourproduct.com",
+    "assets": {
+      "logo":    "/logo.svg",
+      "ogImage": "/og.png",
+      "favicon": "/favicon.ico",
+      "hero":    "/hero.png"
+    }
+  },
+
+  "theme": {
+    "landing_theme": "tech",
+    "product_theme": "basic",
+    "dark_mode": true,
+
+    "tokens": {
+      "colors": {
+        "primary":    "#6366f1",
+        "secondary":  "#8b5cf6",
+        "accent":     "#06b6d4",
+        "surface":    "#ffffff",
+        "background": "#f8fafc",
+        "text":       "#0f172a",
+        "muted":      "#64748b",
+        "border":     "#e2e8f0",
+        "highlight":  "#fbbf24",
+        "error":      "#ef4444",
+        "success":    "#22c55e"
+      },
+      "font": {
+        "heading": "Geist",
+        "body":    "Geist"
+      },
+      "radius": "md",
+      "spacing": {
+        "base": 4,
+        "density": "default"
+      }
+    }
+  },
+
+  "features": {
+    "auth":       true,
+    "payments":   true,
+    "waitlist":   false,
+    "analytics":  false,
+    "aiPlanner":  false,
+    "referral":   false,
+    "support":    true,
+    "onboarding": false
+  },
+
+  "tier": "product",
+
+  "icons": {
+    "logo":      "Zap",
+    "dashboard": "LayoutDashboard",
+    "settings":  "Settings2",
+    "billing":   "CreditCard",
+    "support":   "MessageSquare",
+    "product":   "Zap",
+    "users":     "Users",
+    "analytics": "BarChart2"
+  },
+
+  "landing": {
+    "nav": {
+      "links": [
+        { "label": "Features", "href": "/#features" },
+        { "label": "Pricing",  "href": "/pricing" }
+      ],
+      "cta": { "label": "Get started", "href": "/auth/signup" }
+    },
+
+    "hero": {
+      "badge": "Free — no credit card required",
+      "headline": "Your Headline Here",
+      "subhead": "A compelling one-liner that explains what your product does and why it matters.",
+      "cta": "Get Started Free",
+      "ctaHref": "/auth/signup",
+      "secondaryCta": "See how it works",
+      "secondaryCtaHref": "/#features"
+    },
+
+    "features": {
+      "heading": "Everything you need",
+      "subheading": "Built with the tools and workflows you already know.",
+      "items": [
+        { "icon": "Zap",      "title": "Feature One",   "description": "Short description of the first key feature." },
+        { "icon": "Shield",   "title": "Feature Two",   "description": "Short description of the second key feature." },
+        { "icon": "BarChart", "title": "Feature Three", "description": "Short description of the third key feature." }
+      ]
+    },
+
+    "pricing": {
+      "heading": "Simple, transparent pricing",
+      "subheading": "Start free. Upgrade when you need more.",
+      "currency": "USD",
+      "plans": {
+        "free": {
+          "name": "Free",
+          "price": 0,
+          "actions": 3,
+          "actionLabel": "actions",
+          "ctaText": "Get started free",
+          "ctaHref": "/auth/signup",
+          "features": [
+            "3 actions per month",
+            "Core features",
+            "Community support"
+          ]
+        },
+        "pro": {
+          "name": "Pro",
+          "price": 9,
+          "variantId": "",
+          "actions": 999,
+          "actionLabel": "actions",
+          "ctaText": "Upgrade to Pro",
+          "ctaHref": "/auth/signup",
+          "highlighted": true,
+          "features": [
+            "Unlimited actions",
+            "Priority support",
+            "Advanced features",
+            "Export results"
+          ]
+        }
+      }
+    },
+
+    "testimonials": {
+      "heading": "Loved by builders",
+      "items": []
+    },
+
+    "faq": {
+      "heading": "Frequently asked questions",
+      "items": [
+        {
+          "question": "How do I get started?",
+          "answer": "Sign up for a free account and you'll have access to all core features immediately."
+        },
+        {
+          "question": "Can I upgrade or downgrade my plan?",
+          "answer": "Yes, you can change your plan at any time from your account settings."
+        }
+      ]
+    },
+
+    "cta": {
+      "heading": "Ready to ship?",
+      "subheading": "Join builders who are launching faster.",
+      "ctaText": "Get started free",
+      "ctaHref": "/auth/signup"
+    },
+
+    "footer": {
+      "tagline": "Built to help you ship faster.",
+      "links": [
+        { "label": "Privacy", "href": "/legal/privacy" },
+        { "label": "Terms",   "href": "/legal/terms" }
+      ]
+    }
+  },
+
+  "product": {
+    "nav": {
+      "sections": [
+        {
+          "items": [
+            { "label": "Dashboard", "href": "/dashboard",          "icon": "LayoutDashboard" },
+            { "label": "Product",   "href": "/dashboard/product",  "icon": "Zap" },
+            { "label": "Support",   "href": "/dashboard/support",  "icon": "MessageSquare" },
+            { "label": "Settings",  "href": "/dashboard/settings", "icon": "Settings" }
+          ]
+        }
+      ]
+    },
+
+    "dashboard": {
+      "heading": "Dashboard",
+      "subheading": "Welcome back",
+      "stats": [
+        { "label": "Plan",               "valueKey": "plan" },
+        { "label": "Actions this month", "valueKey": "actionsUsed" },
+        { "label": "Account",            "valueKey": "email" }
+      ],
+      "emptyState": {
+        "icon": "Zap",
+        "heading": "Ready to get started",
+        "description": "Head to the Product tab to begin. You have free actions this month.",
+        "action": { "label": "Go to Product", "href": "/dashboard/product" }
+      }
+    },
+
+    "settings": {
+      "heading": "Settings",
+      "sections": [
+        { "label": "Profile",   "href": "/dashboard/settings",          "icon": "User" },
+        { "label": "Billing",   "href": "/dashboard/settings/billing",  "icon": "CreditCard" },
+        { "label": "Security",  "href": "/dashboard/settings/security", "icon": "Shield" }
+      ]
+    },
+
+    "billing": {
+      "heading": "Billing",
+      "subheading": "Manage your subscription and usage.",
+      "plans": {
+        "free": {
+          "name": "Free",
+          "price": 0,
+          "actions": 3,
+          "actionLabel": "actions"
+        },
+        "pro": {
+          "name": "Pro",
+          "price": 9,
+          "variantId": "",
+          "actions": 999,
+          "actionLabel": "actions"
+        }
+      }
+    },
+
+    "support": {
+      "heading": "Support",
+      "subheading": "Get help with any issue.",
+      "emptyState": {
+        "icon": "MessageSquare",
+        "heading": "No tickets yet",
+        "description": "Open a ticket and we'll get back to you within 24 hours.",
+        "action": { "label": "Open a ticket", "href": "/dashboard/support/new" }
+      }
+    },
+
+    "onboarding": {
+      "heading": "Welcome! Let's get you set up.",
+      "steps": [
+        { "id": "profile",  "title": "Set up your profile",  "description": "Add your name and avatar." },
+        { "id": "product",  "title": "Try the product",      "description": "Run your first action." },
+        { "id": "billing",  "title": "Choose a plan",        "description": "Upgrade when you're ready." }
+      ]
+    }
+  }
+}
+

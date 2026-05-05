@@ -3,6 +3,7 @@ import { HeroBlock } from "@/ui/blocks/organisms/landing/HeroBlock/HeroBlock";
 import { FeaturesBlock } from "@/ui/blocks/organisms/landing/FeaturesBlock/FeaturesBlock";
 import { PricingBlock } from "@/ui/blocks/organisms/landing/PricingBlock/PricingBlock";
 import { FooterBlock } from "@/ui/blocks/organisms/landing/FooterBlock/FooterBlock";
+import type { IconName } from "@/ui/components/icon";
 import { PRODUCT } from "@/lib/config";
 
 export default function HomePage() {
@@ -27,7 +28,7 @@ export default function HomePage() {
         <FeaturesBlock
           heading="Everything you need"
           subheading="Built with the tools and workflows you already know, so you can focus on what matters."
-          features={PRODUCT.features.map((f) => ({ ...f }))}
+          features={PRODUCT.features.map((f) => ({ ...f, icon: f.icon as IconName | undefined }))}
         />
         <PricingBlock
           heading="Simple, transparent pricing"

@@ -1,9 +1,12 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
 import { createServerClient } from "@/lib/supabase-server";
 import { getServerUser, isSupabaseConfigured } from "@/lib/server-user";
 import TicketDetail from "@/ui/blocks/molecules/TicketDetail/TicketDetail";
+import { PageHeader } from "@/ui/blocks/organisms/product/PageHeader/PageHeader";
+import { Badge } from "@/ui/components/badge/Badge";
+import { Button } from "@/ui/components/button/Button";
+import { Icon } from "@/ui/components/icon";
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -37,24 +40,19 @@ export default async function TicketPage({ params }: Props) {
 
   return (
     <div className="max-w-2xl space-y-6">
-      <div className="flex items-center gap-3">
-        <Link
-          href="/dashboard/support"
-          className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors"
-        >
-          <ArrowLeft className="h-4 w-4" />
+      <Button variant="ghost" size="sm" asChild>
+        <Link href="/dashboard/support">
+          <Icon name="ArrowLeft" size="sm" aria-hidden="true" />
           Back to support
         </Link>
-      </div>
+      </Button>
 
-      <div>
-        <div className="flex items-center gap-2 mb-0.5">
-          <h1 className="text-xl font-bold">{ticket.subject}</h1>
-          <span className="rounded-full border px-2 py-0.5 text-xs font-medium capitalize">
-            {ticket.status}
-          </span>
-        </div>
-        <p className="text-sm text-muted-foreground">Ticket #{id.slice(0, 8)}</p>
+      <div className="flex items-start gap-3">
+        <PageHeader
+          title={ticket.subject}
+          description={`Ticket #${id.slice(0, 8)}`}
+        />
+        <Badge variant="outline" label={ticket.status} className="mt-1 capitalize" />
       </div>
 
       <TicketDetail

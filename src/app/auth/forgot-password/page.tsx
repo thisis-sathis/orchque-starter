@@ -1,6 +1,11 @@
 import { ForgotPasswordForm } from "@/ui/blocks/organisms/auth/ForgotPasswordForm/ForgotPasswordForm";
-import { PRODUCT } from "@/lib/config";
+import { AuthTemplate } from "@/ui/templates/AuthTemplate/AuthTemplate";
+import { brand } from "@/lib/config";
 
 export default function ForgotPasswordPage() {
-  return <ForgotPasswordForm productName={PRODUCT.name} />;
+  return (
+    <AuthTemplate logoText={brand.name}>
+      <ForgotPasswordForm productName={brand.name} />
+    </AuthTemplate>
+  );
 }

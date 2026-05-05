@@ -1,6 +1,11 @@
 import { SignUpForm } from "@/ui/blocks/organisms/auth/SignUpForm/SignUpForm";
-import { PRODUCT } from "@/lib/config";
+import { AuthTemplate } from "@/ui/templates/AuthTemplate/AuthTemplate";
+import { brand } from "@/lib/config";
 
 export default function SignUpPage() {
-  return <SignUpForm productName={PRODUCT.name} />;
+  return (
+    <AuthTemplate logoText={brand.name}>
+      <SignUpForm productName={brand.name} />
+    </AuthTemplate>
+  );
 }

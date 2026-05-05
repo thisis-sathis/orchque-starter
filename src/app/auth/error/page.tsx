@@ -1,29 +1,25 @@
 import Link from "next/link";
+import { AuthTemplate } from "@/ui/templates/AuthTemplate/AuthTemplate";
+import { EmptyState } from "@/ui/blocks/organisms/product/EmptyState/EmptyState";
+import { Button } from "@/ui/components/button/Button";
+import { brand } from "@/lib/config";
 
 export default function AuthErrorPage() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background px-4">
-      <div className="text-center max-w-sm">
-        <div className="text-5xl mb-4">⚠️</div>
-        <h1 className="text-xl font-semibold mb-2">Authentication error</h1>
-        <p className="text-muted-foreground text-sm mb-6">
-          The verification link may have expired or already been used. Please try again.
-        </p>
-        <div className="flex gap-3 justify-center">
-          <Link
-            href="/auth/signin"
-            className="h-9 px-4 rounded-md bg-primary text-primary-foreground text-sm font-medium flex items-center hover:bg-primary/90 transition-colors"
-          >
-            Sign in
-          </Link>
-          <Link
-            href="/auth/forgot-password"
-            className="h-9 px-4 rounded-md border text-sm font-medium flex items-center hover:bg-accent transition-colors"
-          >
-            Reset password
-          </Link>
-        </div>
+    <AuthTemplate logoText={brand.name}>
+      <EmptyState
+        icon="AlertTriangle"
+        heading="Authentication error"
+        description="The verification link may have expired or already been used. Please try again."
+      />
+      <div className="flex gap-3 justify-center mt-4">
+        <Button asChild>
+          <Link href="/auth/signin">Sign in</Link>
+        </Button>
+        <Button variant="outline" asChild>
+          <Link href="/auth/forgot-password">Reset password</Link>
+        </Button>
       </div>
-    </div>
+    </AuthTemplate>
   );
 }

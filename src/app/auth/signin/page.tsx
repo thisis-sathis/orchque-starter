@@ -1,6 +1,11 @@
 import { SignInForm } from "@/ui/blocks/organisms/auth/SignInForm/SignInForm";
-import { PRODUCT } from "@/lib/config";
+import { AuthTemplate } from "@/ui/templates/AuthTemplate/AuthTemplate";
+import { brand } from "@/lib/config";
 
 export default function SignInPage() {
-  return <SignInForm productName={PRODUCT.name} />;
+  return (
+    <AuthTemplate logoText={brand.name}>
+      <SignInForm productName={brand.name} />
+    </AuthTemplate>
+  );
 }

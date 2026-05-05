@@ -1,39 +1,37 @@
-import { PRODUCT } from "@/lib/config";
+import { LegalPage } from "@/ui/pages/LegalPage/LegalPage";
+import { brand, landing } from "@/lib/config";
 
 export const metadata = { title: "Privacy Policy" };
 
 export default function PrivacyPage() {
   return (
-    <div className="container max-w-3xl mx-auto py-16 px-4">
-      <h1 className="text-3xl font-bold mb-2">Privacy Policy</h1>
-      <p className="text-muted-foreground text-sm mb-8">Last updated: {new Date().toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}</p>
-
-      <div className="prose prose-sm max-w-none space-y-6 text-foreground">
-        <section>
-          <h2 className="text-xl font-semibold mb-2">1. Information we collect</h2>
-          <p className="text-muted-foreground">We collect information you provide directly: your email address when you create an account, and content you submit while using {PRODUCT.name}. We also collect standard server logs (IP addresses, browser type, pages visited) for security and performance monitoring.</p>
-        </section>
-
-        <section>
-          <h2 className="text-xl font-semibold mb-2">2. How we use your information</h2>
-          <p className="text-muted-foreground">We use your information to provide and improve {PRODUCT.name}, send transactional emails (verification, password reset, support replies), and monitor for abuse. We do not sell your personal data.</p>
-        </section>
-
-        <section>
-          <h2 className="text-xl font-semibold mb-2">3. Data storage</h2>
-          <p className="text-muted-foreground">Your data is stored securely via Supabase (PostgreSQL). All connections are encrypted in transit (TLS). We retain your data for as long as your account is active.</p>
-        </section>
-
-        <section>
-          <h2 className="text-xl font-semibold mb-2">4. Your rights</h2>
-          <p className="text-muted-foreground">You may request deletion of your account and data at any time by contacting us at <a href={`mailto:${PRODUCT.supportEmail}`} className="underline">{PRODUCT.supportEmail}</a>. We will respond within 30 days.</p>
-        </section>
-
-        <section>
-          <h2 className="text-xl font-semibold mb-2">5. Contact</h2>
-          <p className="text-muted-foreground">Questions about this policy? Email us at <a href={`mailto:${PRODUCT.supportEmail}`} className="underline">{PRODUCT.supportEmail}</a>.</p>
-        </section>
-      </div>
-    </div>
+    <LegalPage
+      navbar={{ logoText: brand.name, links: landing.nav.links }}
+      footer={{ logoText: brand.name, tagline: landing.footer.tagline, legalLinks: landing.footer.links }}
+      title="Privacy Policy"
+      lastUpdated={new Date().toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
+      sections={[
+        {
+          heading: "1. Information we collect",
+          content: `We collect information you provide directly: your email address when you create an account, and content you submit while using ${brand.name}. We also collect standard server logs (IP addresses, browser type, pages visited) for security and performance monitoring.`,
+        },
+        {
+          heading: "2. How we use your information",
+          content: `We use your information to provide and improve ${brand.name}, send transactional emails (verification, password reset, support replies), and monitor for abuse. We do not sell your personal data.`,
+        },
+        {
+          heading: "3. Data storage",
+          content: `Your data is stored securely via Supabase (PostgreSQL). All connections are encrypted in transit (TLS). We retain your data for as long as your account is active.`,
+        },
+        {
+          heading: "4. Your rights",
+          content: `You may request deletion of your account and data at any time by contacting us at ${brand.supportEmail}. We will respond within 30 days.`,
+        },
+        {
+          heading: "5. Contact",
+          content: `Questions about this policy? Email us at ${brand.supportEmail}.`,
+        },
+      ]}
+    />
   );
 }

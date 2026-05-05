@@ -11,7 +11,6 @@ export type {
   ComponentConfig,
   CellRendererType,
   CellRendererConfig,
-  LegalSection,
   OnboardingStepConfig,
   ComponentSlot,
   TriggerSlot,

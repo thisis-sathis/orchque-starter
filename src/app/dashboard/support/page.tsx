@@ -2,6 +2,9 @@ import { getServerUser, isSupabaseConfigured } from "@/lib/server-user";
 import { createServerClient } from "@/lib/supabase-server";
 import TicketForm from "@/ui/blocks/molecules/TicketForm/TicketForm";
 import TicketList from "@/ui/blocks/molecules/TicketList/TicketList";
+import { PageHeader } from "@/ui/blocks/organisms/product/PageHeader/PageHeader";
+import { Card } from "@/ui/components/card/Card";
+import { product } from "@/lib/config";
 
 export const metadata = { title: "Support" };
 
@@ -26,21 +29,19 @@ export default async function SupportPage() {
 
   return (
     <div className="max-w-2xl space-y-8">
-      <div>
-        <h1 className="text-2xl font-bold">Support</h1>
-        <p className="text-sm text-muted-foreground mt-0.5">Submit a ticket and we'll get back to you.</p>
-      </div>
+      <PageHeader
+        title={product.support.heading}
+        description={product.support.subheading}
+      />
 
-      <div className="rounded-xl border bg-card p-6">
-        <h2 className="text-base font-semibold mb-4">New ticket</h2>
+      <Card title="New ticket">
         <TicketForm />
-      </div>
+      </Card>
 
       {(tickets?.length ?? 0) > 0 && (
-        <div>
-          <h2 className="text-base font-semibold mb-3">Your tickets</h2>
+        <Card title="Your tickets">
           <TicketList tickets={tickets ?? []} />
-        </div>
+        </Card>
       )}
     </div>
   );

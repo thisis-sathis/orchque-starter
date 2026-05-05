@@ -5,7 +5,9 @@ import ProductInput from "@/ui/blocks/molecules/ProductInput/ProductInput";
 import ProductResult from "@/ui/blocks/molecules/ProductResult/ProductResult";
 import UpgradeGate from "@/ui/blocks/molecules/UpgradeGate/UpgradeGate";
 import CreditChip from "@/ui/blocks/molecules/CreditChip/CreditChip";
-import { PRODUCT } from "@/lib/config";
+import { PageHeader } from "@/ui/blocks/organisms/product/PageHeader/PageHeader";
+import { Card } from "@/ui/components/card/Card";
+import { product } from "@/lib/config";
 
 export default function ProductPage() {
   const [result, setResult] = useState<string | null>(null);
@@ -27,26 +29,20 @@ export default function ProductPage() {
   return (
     <div className="max-w-2xl space-y-6">
       <div className="flex items-center justify-between">
-        <div>
-          {/* TODO: Replace title + description with your product-specific copy */}
-          <h1 className="text-2xl font-bold">{PRODUCT.name}</h1>
-          <p className="text-sm text-muted-foreground mt-0.5">
-            {PRODUCT.hero.subhead}
-          </p>
-        </div>
+        <PageHeader title={product.dashboard.heading} description={product.dashboard.subheading} />
         <CreditChip key={refreshKey} />
       </div>
 
       {outOfCredits ? (
         <UpgradeGate />
       ) : (
-        <div className="rounded-xl border bg-card p-6 space-y-5">
+        <Card className="p-6 space-y-5">
           <ProductInput
             onResult={handleResult}
             onCreditsChanged={handleCreditsChanged}
           />
           {result && <ProductResult result={result} />}
-        </div>
+        </Card>
       )}
     </div>
   );

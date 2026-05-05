@@ -1,6 +1,11 @@
 import { ResetPasswordForm } from "@/ui/blocks/organisms/auth/ResetPasswordForm/ResetPasswordForm";
-import { PRODUCT } from "@/lib/config";
+import { AuthTemplate } from "@/ui/templates/AuthTemplate/AuthTemplate";
+import { brand } from "@/lib/config";
 
 export default function ResetPasswordPage() {
-  return <ResetPasswordForm productName={PRODUCT.name} />;
+  return (
+    <AuthTemplate logoText={brand.name}>
+      <ResetPasswordForm productName={brand.name} />
+    </AuthTemplate>
+  );
 }
