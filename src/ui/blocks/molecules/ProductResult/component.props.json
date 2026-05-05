@@ -1,0 +1,7 @@
+{
+  "component": "ProductResult",
+  "description": "Displays the result of a product action in a styled pre block.",
+  "props": {
+    "result": { "type": "string", "required": true, "example": "Here is your generated output..." }
+  }
+}

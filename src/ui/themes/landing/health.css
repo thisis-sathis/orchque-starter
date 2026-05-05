@@ -1,0 +1,16 @@
+/* landing/health.css — Health & wellness landing theme. Calming blues + greens. */
+[data-theme="health"] {
+  --color-primary: #0ea5e9;
+  --color-secondary: #06b6d4;
+  --color-accent: #22c55e;
+  --color-surface: #ffffff;
+  --color-surface-raised: #f0f9ff;
+  --color-text: #0c4a6e;
+  --color-text-muted: #0369a1;
+  --color-border: #bae6fd;
+  --font-heading: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --radius-lg: 16px;
+  --landing-hero-bg: linear-gradient(135deg, #f0f9ff 0%, #ecfdf5 100%);
+  --landing-section-alt-bg: #f0f9ff;
+}

@@ -1,0 +1,10 @@
+{
+  "component": "FeatureItem",
+  "description": "Icon + title + description molecule. Used in FeaturesBlock grid.",
+  "props": {
+    "title": { "type": "string", "required": true },
+    "description": { "type": "string", "required": true },
+    "icon": { "type": "IconName", "required": false, "description": "lucide-react icon name. Shown in colored circle." },
+    "className": { "type": "string", "required": false }
+  }
+}

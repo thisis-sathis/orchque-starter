@@ -1,0 +1,22 @@
+{
+  "component": "LegalPage",
+  "description": "Generic legal page. Use for Terms of Service, Privacy Policy, Refund Policy, Licenses, Cookie Policy etc.",
+  "note": "One component covers all legal pages � just change title + sections content.",
+  "props": {
+    "theme": { "type": "LandingTheme", "required": false },
+    "navbar": { "type": "NavbarBlockProps", "required": true },
+    "footer": { "type": "FooterBlockProps", "required": true },
+    "title": { "type": "string", "required": true, "example": "Terms of Service" },
+    "lastUpdated": { "type": "string", "required": false, "example": "Last updated: January 1, 2026" },
+    "description": { "type": "string", "required": false },
+    "sections": {
+      "type": "LegalSection[]",
+      "required": true,
+      "shape": {
+        "heading": "string",
+        "content": "string — plain text or HTML string (no ReactNode). Use dangerouslySetInnerHTML in component if HTML."
+      }
+    },
+    "className": { "type": "string", "required": false }
+  }
+}

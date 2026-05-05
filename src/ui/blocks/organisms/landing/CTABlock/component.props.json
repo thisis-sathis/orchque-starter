@@ -1,0 +1,13 @@
+{
+  "component": "CTABlock",
+  "description": "Bottom call-to-action section. bg uses --color-primary, text uses --color-text-on-primary.",
+  "props": {
+    "heading": { "type": "string", "required": true },
+    "subheading": { "type": "string", "required": false },
+    "ctaText": { "type": "string", "required": true },
+    "ctaHref": { "type": "string", "required": true },
+    "secondaryCtaText": { "type": "string", "required": false },
+    "secondaryCtaHref": { "type": "string", "required": false },
+    "className": { "type": "string", "required": false }
+  }
+}

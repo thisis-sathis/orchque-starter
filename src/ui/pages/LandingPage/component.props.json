@@ -1,0 +1,21 @@
+{
+  "component": "LandingPage",
+  "description": "Full marketing landing page. Config-driven — pass one config object, get a complete page.",
+  "props": {
+    "config": {
+      "type": "LandingPageConfig",
+      "required": true,
+      "shape": {
+        "theme": "LandingTheme?",
+        "navbar": "NavbarBlockProps",
+        "hero": "HeroBlockProps",
+        "features": "FeaturesBlockProps?",
+        "pricing": "PricingBlockProps?",
+        "testimonials": "TestimonialsBlockProps?",
+        "faq": "FAQBlockProps?",
+        "cta": "CTABlockProps?",
+        "footer": "FooterBlockProps"
+      }
+    }
+  }
+}

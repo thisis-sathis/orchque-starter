@@ -1,0 +1,10 @@
+{
+  "component": "Skeleton",
+  "description": "Animated loading placeholder atom. Prefer over spinner for page-level loading.",
+  "props": {
+    "width": { "type": "string", "required": false, "default": "100%", "example": "200px" },
+    "height": { "type": "string", "required": false, "default": "1em", "example": "48px" },
+    "circle": { "type": "boolean", "required": false, "description": "Round shape for avatar placeholders" },
+    "className": { "type": "string", "required": false }
+  }
+}

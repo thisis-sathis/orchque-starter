@@ -1,0 +1,17 @@
+{
+  "component": "FooterBlock",
+  "description": "Landing footer. Logo + tagline + multi-column links + legal row + copyright.",
+  "props": {
+    "logoText": { "type": "string", "required": true },
+    "logoSrc": { "type": "string", "required": false },
+    "tagline": { "type": "string", "required": false },
+    "columns": {
+      "type": "FooterColumn[]",
+      "required": false,
+      "shape": { "heading": "string", "links": "{ label: string, href: string }[]" }
+    },
+    "legalLinks": { "type": "FooterLink[]", "required": false },
+    "copyrightText": { "type": "string", "required": false, "example": "© 2026 Orchque Inc." },
+    "className": { "type": "string", "required": false }
+  }
+}

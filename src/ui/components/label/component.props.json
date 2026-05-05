@@ -1,0 +1,11 @@
+{
+  "component": "Label",
+  "description": "Form label atom. Radix Label primitive with required indicator.",
+  "props": {
+    "htmlFor": { "type": "string", "required": false, "description": "Links label to input by id" },
+    "required": { "type": "boolean", "required": false, "description": "Shows red * suffix" },
+    "label": { "type": "string", "required": false, "description": "Data-driven label text. Replaces children: ReactNode." },
+    "className": { "type": "string", "required": false }
+  },
+  "note": "For backward-compat, children: string is also accepted."
+}

@@ -1,0 +1,21 @@
+/* MobileSidebar.scss — styles for mobile navigation drawer organism */
+
+.oq-mobile-sidebar-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: rgb(0 0 0 / 0.4);
+}
+
+.oq-mobile-sidebar-drawer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: var(--sidebar-mobile-width, 256px);
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-lg);
+}

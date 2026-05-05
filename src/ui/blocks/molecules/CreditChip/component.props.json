@@ -1,0 +1,7 @@
+{
+  "component": "CreditChip",
+  "description": "Displays the user's remaining credit balance as a colored pill badge. Fetches balance from /api/credits/balance on mount.",
+  "props": {
+    "_note": "No props — fetches data internally from /api/credits/balance"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "component": "WallOfLovePage",
+  "description": "Dedicated social proof / testimonials wall page. Grid of TestimonialCards under a hero heading.",
+  "props": {
+    "theme": { "type": "LandingTheme", "required": false },
+    "navbar": { "type": "NavbarBlockProps", "required": true },
+    "footer": { "type": "FooterBlockProps", "required": true },
+    "heading": { "type": "string", "required": false, "default": "What our customers say" },
+    "subheading": { "type": "string", "required": false },
+    "testimonials": { "type": "TestimonialCardProps[]", "required": true },
+    "className": { "type": "string", "required": false }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "component": "TicketForm",
+  "description": "Support ticket creation form with subject and message fields. POSTs to /api/support.",
+  "props": {
+    "_note": "No props — handles state and submission internally"
+  }
+}

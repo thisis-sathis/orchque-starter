@@ -1,0 +1,7 @@
+{
+  "component": "TicketList",
+  "description": "Renders a list of support tickets as clickable rows with status badges.",
+  "props": {
+    "tickets": { "type": "Ticket[]", "required": true, "example": "[{ id, subject, status, created_at }]" }
+  }
+}

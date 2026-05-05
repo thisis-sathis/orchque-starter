@@ -1,0 +1,14 @@
+{
+  "component": "ResetPasswordPage",
+  "description": "Password reset form page. New password + confirm password fields. Validates match client-side.",
+  "props": {
+    "logoText": { "type": "string", "required": false },
+    "logoSrc": { "type": "string", "required": false },
+    "onSubmit": { "type": "function", "required": false, "description": "(password: string) => void — called with new password" },
+    "isLoading": { "type": "boolean", "required": false },
+    "errorMessage": { "type": "string", "required": false },
+    "successMessage": { "type": "string", "required": false },
+    "loginHref": { "type": "string", "required": false, "default": "/login" },
+    "className": { "type": "string", "required": false }
+  }
+}

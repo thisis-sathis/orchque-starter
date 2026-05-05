@@ -1,0 +1,11 @@
+{
+  "component": "StatCard",
+  "description": "Metric card molecule. Number + label + optional trend percentage.",
+  "props": {
+    "value": { "type": "string", "required": true, "example": "1,234 or $4.2k" },
+    "label": { "type": "string", "required": true, "example": "Monthly Revenue" },
+    "trend": { "type": "number", "required": false, "description": "Positive = green up. Negative = red down. e.g. 12.5 or -3.2" },
+    "description": { "type": "string", "required": false },
+    "className": { "type": "string", "required": false }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "component": "Checkbox",
+  "description": "Checkbox atom. Radix Checkbox. Checked state uses --color-primary.",
+  "props": {
+    "checked": { "type": "boolean | 'indeterminate'", "required": false },
+    "onCheckedChange": { "type": "function", "required": false, "description": "(checked: boolean) => void" },
+    "disabled": { "type": "boolean", "required": false },
+    "id": { "type": "string", "required": false },
+    "className": { "type": "string", "required": false }
+  }
+}

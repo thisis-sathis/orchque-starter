@@ -1,0 +1,36 @@
+/* simple/layout.scss — Top-nav layout for "simple" product theme.
+   Structure: fixed top bar + full-width scrollable content below. */
+
+.oq-layout-simple {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--color-surface);
+  color: var(--color-text);
+
+  /* Top navigation bar */
+  .oq-topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--layout-topnav-height);
+    z-index: 50;
+    background-color: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    padding: 0 var(--layout-content-padding);
+  }
+
+  /* Main content area — offset by top nav height */
+  .oq-main {
+    margin-top: var(--layout-topnav-height);
+    flex: 1;
+    width: 100%;
+    max-width: var(--layout-content-max-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding: var(--layout-content-padding);
+  }
+}

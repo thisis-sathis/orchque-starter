@@ -1,0 +1,19 @@
+/* spacing.css — base-4 spacing scale. Change --space-base to scale the entire system.
+   Rule: all margins, paddings, and gaps use these variables — never hardcoded px. */
+:root {
+  --space-base: 4px;
+
+  --space-halfx: calc(var(--space-base) * 0.5);  /* 2px  */
+  --space-1x:   var(--space-base);                /* 4px  */
+  --space-2x:   calc(var(--space-base) * 2);      /* 8px  */
+  --space-3x:   calc(var(--space-base) * 3);      /* 12px */
+  --space-4x:   calc(var(--space-base) * 4);      /* 16px */
+  --space-5x:   calc(var(--space-base) * 5);      /* 20px */
+  --space-6x:   calc(var(--space-base) * 6);      /* 24px */
+  --space-7x:   calc(var(--space-base) * 7);      /* 28px */
+  --space-8x:   calc(var(--space-base) * 8);      /* 32px */
+  --space-9x:   calc(var(--space-base) * 9);      /* 36px */
+  --space-10x:  calc(var(--space-base) * 10);     /* 40px */
+  --space-11x:  calc(var(--space-base) * 11);     /* 44px */
+  --space-12x:  calc(var(--space-base) * 12);     /* 48px */
+}

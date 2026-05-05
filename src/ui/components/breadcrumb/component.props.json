@@ -1,0 +1,9 @@
+{
+  "component": "Breadcrumb",
+  "description": "Navigation trail showing current location in the app. Last item is current page (non-link).",
+  "props": {
+    "items": { "type": "BreadcrumbItem[]", "required": true, "example": "[{ label: 'Dashboard', href: '/dashboard' }, { label: 'Settings' }]" },
+    "separator": { "type": "string", "required": false, "default": "\"/\"", "example": "\">\"" },
+    "className": { "type": "string", "required": false, "example": "\"mb-4\"" }
+  }
+}

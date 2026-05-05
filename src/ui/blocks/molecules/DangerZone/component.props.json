@@ -1,0 +1,7 @@
+{
+  "component": "DangerZone",
+  "description": "Account deletion card with two-step confirmation. Calls DELETE /api/account/delete and redirects to /.",
+  "props": {
+    "_note": "No props — handles its own state and API call internally"
+  }
+}

@@ -1,0 +1,62 @@
+// AlertDialog.scss — modal overlay and content panel
+.oq-alert-dialog {
+  &__overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+    animation: oq-fade-in 150ms ease;
+  }
+
+  &__content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 51;
+    width: 90vw;
+    max-width: 28rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6x);
+    box-shadow: var(--shadow-xl);
+    animation: oq-dialog-in 150ms ease;
+  }
+
+  &__cancel {
+    padding: var(--space-2x) var(--space-4x);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+    background: var(--color-surface);
+    color: var(--color-text);
+    font-size: var(--text-sm);
+    cursor: pointer;
+    transition: background 150ms;
+
+    &:hover { background: var(--color-surface-raised); }
+    &:focus-visible { outline: 2px solid var(--color-primary); }
+  }
+
+  &__confirm {
+    padding: var(--space-2x) var(--space-4x);
+    border-radius: var(--radius-md);
+    border: none;
+    background: var(--color-primary);
+    color: var(--color-text-on-primary);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 150ms;
+
+    &:hover { opacity: 0.9; }
+    &:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 2px; }
+
+    &--destructive {
+      background: var(--color-failure);
+    }
+  }
+}
+
+@keyframes oq-fade-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes oq-dialog-in { from { opacity: 0; transform: translate(-50%, -48%) scale(0.96); } to { opacity: 1; transform: translate(-50%, -50%) scale(1); } }

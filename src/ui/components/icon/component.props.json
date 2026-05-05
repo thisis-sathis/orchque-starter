@@ -1,0 +1,11 @@
+{
+  "component": "Icon",
+  "description": "Lucide-react icon wrapper atom. Enforces size scale and accessibility.",
+  "props": {
+    "name": { "type": "IconName", "required": true, "description": "Any lucide-react icon name, e.g. 'Settings', 'Home', 'ChevronRight'" },
+    "size": { "type": "enum", "values": ["xs","sm","md","lg","xl"], "required": false, "default": "md", "note": "xs=12 sm=16 md=20 lg=24 xl=32" },
+    "aria-label": { "type": "string", "required": false, "description": "Required when icon is standalone (no surrounding text)" },
+    "aria-hidden": { "type": "boolean", "required": false, "description": "Set true when icon is decorative" },
+    "className": { "type": "string", "required": false }
+  }
+}

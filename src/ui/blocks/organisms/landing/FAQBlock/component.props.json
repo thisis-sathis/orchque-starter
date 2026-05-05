@@ -1,0 +1,14 @@
+{
+  "component": "FAQBlock",
+  "description": "Accordion FAQ section organism. Radix Accordion, chevron animated.",
+  "props": {
+    "heading": { "type": "string", "required": false },
+    "subheading": { "type": "string", "required": false },
+    "items": {
+      "type": "FAQItem[]",
+      "required": true,
+      "shape": { "question": "string", "answer": "string" }
+    },
+    "className": { "type": "string", "required": false }
+  }
+}

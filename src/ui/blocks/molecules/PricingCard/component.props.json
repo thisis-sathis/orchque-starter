@@ -1,0 +1,18 @@
+{
+  "component": "PricingCard",
+  "description": "Single pricing plan card molecule. Config-driven from pricing.plans[].",
+  "props": {
+    "name": { "type": "string", "required": true, "example": "Pro" },
+    "price": { "type": "number", "required": true, "example": 29 },
+    "interval": { "type": "enum", "values": ["month","year","one-time"], "required": false, "default": "month" },
+    "currency": { "type": "string", "required": false, "default": "USD" },
+    "description": { "type": "string", "required": false },
+    "features": { "type": "string[]", "required": true, "description": "List of included features" },
+    "ctaText": { "type": "string", "required": false, "default": "Get started" },
+    "ctaHref": { "type": "string", "required": false },
+    "onCtaClick": { "type": "function", "required": false },
+    "featured": { "type": "boolean", "required": false, "description": "Highlighted recommended plan" },
+    "badge": { "type": "string", "required": false, "example": "Most Popular" },
+    "className": { "type": "string", "required": false }
+  }
+}

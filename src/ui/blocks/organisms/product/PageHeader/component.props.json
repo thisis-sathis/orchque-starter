@@ -1,0 +1,14 @@
+{
+  "component": "PageHeader",
+  "description": "Product page header. Title + description + optional action button.",
+  "props": {
+    "title": { "type": "string", "required": true },
+    "description": { "type": "string", "required": false },
+    "action": {
+      "type": "object",
+      "required": false,
+      "shape": { "label": "string", "href": "string?", "onClick": "function?", "icon": "IconName?" }
+    },
+    "className": { "type": "string", "required": false }
+  }
+}

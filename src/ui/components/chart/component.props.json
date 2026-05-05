@@ -1,0 +1,14 @@
+{
+  "component": "Chart",
+  "description": "Data visualization wrapper supporting line, bar, area, and pie chart types. Powered by recharts. All colors auto-use design tokens.",
+  "props": {
+    "type": { "type": "\"line\" | \"bar\" | \"area\" | \"pie\"", "required": true, "example": "\"line\"" },
+    "data": { "type": "ChartDataPoint[]", "required": true, "example": "[{ label: 'Jan', revenue: 1200, users: 45 }]" },
+    "series": { "type": "ChartSeries[]", "required": true, "example": "[{ key: 'revenue', name: 'Revenue' }, { key: 'users', name: 'Users' }]" },
+    "height": { "type": "number", "required": false, "default": "300", "example": "400" },
+    "showGrid": { "type": "boolean", "required": false, "default": "true", "example": "false" },
+    "showLegend": { "type": "boolean", "required": false, "default": "true", "example": "false" },
+    "showTooltip": { "type": "boolean", "required": false, "default": "true", "example": "true" },
+    "className": { "type": "string", "required": false, "example": "\"mt-4\"" }
+  }
+}

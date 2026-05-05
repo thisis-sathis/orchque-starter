@@ -1,0 +1,13 @@
+{
+  "component": "Calendar",
+  "description": "Month grid for date selection. Supports single, range, and multiple selection modes. Powered by react-day-picker.",
+  "props": {
+    "mode": { "type": "\"single\" | \"range\" | \"multiple\"", "required": false, "default": "\"single\"", "example": "\"single\"" },
+    "selected": { "type": "Date | Date[] | { from?: Date; to?: Date }", "required": false, "example": "new Date()" },
+    "onSelect": { "type": "(date: ...) => void", "required": false, "example": "(d) => setDate(d)" },
+    "disabled": { "type": "Date[] | ((date: Date) => boolean)", "required": false, "example": "(d) => d < new Date()" },
+    "fromDate": { "type": "Date", "required": false, "example": "new Date()" },
+    "toDate": { "type": "Date", "required": false, "example": "new Date('2026-12-31')" },
+    "className": { "type": "string", "required": false, "example": "\"border rounded-md\"" }
+  }
+}

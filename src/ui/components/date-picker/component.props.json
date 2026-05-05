@@ -1,0 +1,14 @@
+{
+  "component": "DatePicker",
+  "description": "Date input that opens a calendar popover. Single date selection with formatted display.",
+  "props": {
+    "value": { "type": "Date", "required": false, "example": "new Date()" },
+    "onChange": { "type": "(date: Date | undefined) => void", "required": false, "example": "(d) => setDate(d)" },
+    "placeholder": { "type": "string", "required": false, "default": "\"Pick a date\"", "example": "\"Select start date\"" },
+    "disabled": { "type": "boolean", "required": false, "example": "false" },
+    "fromDate": { "type": "Date", "required": false, "example": "new Date()" },
+    "toDate": { "type": "Date", "required": false, "example": "new Date('2027-01-01')" },
+    "dateFormat": { "type": "string", "required": false, "default": "\"PPP\"", "example": "\"MM/dd/yyyy\"" },
+    "className": { "type": "string", "required": false, "example": "\"w-full\"" }
+  }
+}

@@ -1,7 +1,15 @@
 import type { NextConfig } from "next";
+import dns from "dns";
+
+// Fix Windows IPv6 10-second timeout connecting to Supabase.
+// Must run before Next.js initialises any server-side fetch.
+dns.setDefaultResultOrder("ipv4first");
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const { Agent, setGlobalDispatcher } = require("undici");
+setGlobalDispatcher(new Agent({ connect: { family: 4 } }));
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  serverExternalPackages: ["undici"],
 };
 
 export default nextConfig;

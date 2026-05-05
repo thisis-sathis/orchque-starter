@@ -1,0 +1,24 @@
+﻿{
+  "component": "LandingTemplate",
+  "description": "Full-page landing layout. Sets data-theme, renders NavbarBlock + slot + FooterBlock.",
+  "props": {
+    "theme": { "type": "\"tech\" | \"health\" | \"green\" | \"glassmorphism\" | \"fun\" | \"minimal\" | \"bold\" | \"dark\"", "required": false },
+    "navbar": { "type": "NavbarBlockProps", "required": true },
+    "footer": { "type": "FooterBlockProps", "required": true },
+    "content": {
+      "type": "ComponentSlot | ComponentSlot[]",
+      "required": false,
+      "description": "Page sections slot. Pass ComponentConfig JSON (or array) for data-driven rendering OR a custom ReactNode.",
+      "example_json": [
+        { "component": "HeroBlock", "props": {} },
+        { "component": "FeaturesBlock", "props": {} }
+      ],
+      "example_jsx": "<><HeroBlock /><FeaturesBlock /></>"
+    },
+    "className": { "type": "string", "required": false }
+  },
+  "slot_types": {
+    "ComponentSlot": "ComponentConfig JSON (data-driven, registry lookup) OR ReactNode (custom JSX, rendered directly). JSON takes priority."
+  },
+  "note": "children prop also accepted as backward-compat alias for content."
+}

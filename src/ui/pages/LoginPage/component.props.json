@@ -1,0 +1,14 @@
+{
+  "component": "LoginPage",
+  "description": "Login page. AuthTemplate + email/password FormFields + submit Button.",
+  "props": {
+    "logoText": { "type": "string", "required": false },
+    "logoSrc": { "type": "string", "required": false },
+    "onSubmit": { "type": "function", "required": true, "description": "(email: string, password: string) => void" },
+    "isLoading": { "type": "boolean", "required": false },
+    "errorMessage": { "type": "string", "required": false },
+    "signupHref": { "type": "string", "required": false },
+    "forgotPasswordHref": { "type": "string", "required": false },
+    "className": { "type": "string", "required": false }
+  }
+}

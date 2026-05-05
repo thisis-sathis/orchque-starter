@@ -1,0 +1,11 @@
+{
+  "component": "FeaturesBlock",
+  "description": "Responsive grid of FeatureItem molecules. Heading + subheading + features array.",
+  "props": {
+    "heading": { "type": "string", "required": false },
+    "subheading": { "type": "string", "required": false },
+    "features": { "type": "FeatureItemProps[]", "required": true, "description": "Array of { icon, title, description }" },
+    "columns": { "type": "enum", "values": [2, 3, 4], "required": false, "default": 3 },
+    "className": { "type": "string", "required": false }
+  }
+}

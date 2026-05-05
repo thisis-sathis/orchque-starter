@@ -1,0 +1,50 @@
+// Slider.scss — range track, fill, and draggable thumb
+.oq-slider-wrapper {
+  width: 100%;
+}
+
+.oq-slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  touch-action: none;
+  width: 100%;
+  height: var(--space-5x);
+
+  &__track {
+    background: var(--color-surface-overlay);
+    position: relative;
+    flex-grow: 1;
+    border-radius: var(--radius-full);
+    height: 4px;
+  }
+
+  &__range {
+    position: absolute;
+    background: var(--color-primary);
+    border-radius: var(--radius-full);
+    height: 100%;
+  }
+
+  &__thumb {
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+    background: var(--color-surface);
+    border: 2px solid var(--color-primary);
+    border-radius: var(--radius-full);
+    box-shadow: var(--shadow-sm);
+    cursor: grab;
+    transition: transform 150ms;
+
+    &:hover { transform: scale(1.1); }
+    &:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 2px; }
+    &:active { cursor: grabbing; }
+
+    [disabled] & {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+  }
+}

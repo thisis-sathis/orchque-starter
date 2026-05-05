@@ -1,0 +1,9 @@
+{
+  "component": "Separator",
+  "description": "Horizontal or vertical divider atom. Radix Separator. Color from --color-border.",
+  "props": {
+    "orientation": { "type": "enum", "values": ["horizontal","vertical"], "required": false, "default": "horizontal" },
+    "decorative": { "type": "boolean", "required": false, "default": true },
+    "className": { "type": "string", "required": false }
+  }
+}

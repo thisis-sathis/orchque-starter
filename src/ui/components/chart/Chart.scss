@@ -1,0 +1,9 @@
+// Chart.scss — chart container spacing
+.oq-chart {
+  width: 100%;
+
+  // Recharts SVG text inherits token colors via inline styles
+  svg {
+    overflow: visible;
+  }
+}

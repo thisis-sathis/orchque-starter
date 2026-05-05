@@ -1,0 +1,16 @@
+/* landing/fun.css — Fun/playful landing theme. Bright colors + rounded shapes. */
+[data-theme="fun"] {
+  --color-primary: #f97316;
+  --color-secondary: #ec4899;
+  --color-accent: #8b5cf6;
+  --color-surface: #ffffff;
+  --color-surface-raised: #fff7ed;
+  --color-text: #1c1917;
+  --color-text-muted: #78716c;
+  --color-border: #fed7aa;
+  --font-heading: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --radius-lg: 20px;
+  --landing-hero-bg: linear-gradient(135deg, #fff7ed 0%, #fdf4ff 100%);
+  --landing-section-alt-bg: #fff7ed;
+}

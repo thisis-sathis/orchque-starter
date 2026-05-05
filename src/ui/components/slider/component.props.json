@@ -1,0 +1,16 @@
+{
+  "component": "Slider",
+  "description": "Range input for numeric settings like volume, budget thresholds, or percentage values.",
+  "props": {
+    "value": { "type": "number[]", "required": false, "example": "[40]" },
+    "defaultValue": { "type": "number[]", "required": false, "example": "[50]" },
+    "onValueChange": { "type": "(value: number[]) => void", "required": false, "example": "([v]) => setVolume(v)" },
+    "min": { "type": "number", "required": false, "default": "0", "example": "0" },
+    "max": { "type": "number", "required": false, "default": "100", "example": "100" },
+    "step": { "type": "number", "required": false, "default": "1", "example": "5" },
+    "disabled": { "type": "boolean", "required": false, "example": "false" },
+    "label": { "type": "string", "required": false, "example": "\"Volume\"" },
+    "showValue": { "type": "boolean", "required": false, "default": "false", "example": "true" },
+    "className": { "type": "string", "required": false, "example": "\"w-48\"" }
+  }
+}

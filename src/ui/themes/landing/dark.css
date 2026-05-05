@@ -1,0 +1,18 @@
+/* landing/dark.css — Dark SaaS landing theme. Charcoal + indigo accents. */
+[data-theme="dark"] {
+  --color-primary: #818cf8;
+  --color-secondary: #a78bfa;
+  --color-accent: #38bdf8;
+  --color-surface: #0f172a;
+  --color-surface-raised: #1e293b;
+  --color-surface-overlay: #334155;
+  --color-text: #f1f5f9;
+  --color-text-muted: #94a3b8;
+  --color-text-subtle: #64748b;
+  --color-border: #1e293b;
+  --font-heading: "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --radius-lg: 8px;
+  --landing-hero-bg: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+  --landing-section-alt-bg: #1e293b;
+}

@@ -1,0 +1,31 @@
+/* basic/theme.css — "Basic" product theme. Structured, professional, collapsible sidebar.
+   Best for: SaaS dashboards, admin panels, B2B products. Default font: Geist. */
+:root {
+  --radius-sm:  4px;
+  --radius-md:  6px;
+  --radius-lg:  8px;
+  --radius-xl:  12px;
+
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.07), 0 1px 2px -1px rgb(0 0 0 / 0.07);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.08);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.08);
+
+  --font-heading: "Geist", "Inter", system-ui, sans-serif;
+  --font-body:    "Geist", "Inter", system-ui, sans-serif;
+
+  /* Layout dimensions */
+  --layout-topnav-height: 0px;           /* no top bar — nav is in sidebar */
+  --layout-sidebar-width-expanded: 256px;
+  --layout-sidebar-width-collapsed: 64px;
+  --layout-content-padding: var(--space-6x);
+
+  /* Sidebar uses a slightly different surface */
+  --color-sidebar: var(--color-surface-raised);
+}
+
+.dark {
+  --color-sidebar: #1a1a2e;
+  --color-surface: #0f172a;
+  --color-surface-raised: #1e293b;
+  --color-border: #1e293b;
+}

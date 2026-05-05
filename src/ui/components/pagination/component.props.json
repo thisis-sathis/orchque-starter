@@ -1,0 +1,10 @@
+{
+  "component": "Pagination",
+  "description": "Page navigation control. Renders numbered pages with prev/next buttons and ellipsis for large page counts.",
+  "props": {
+    "page": { "type": "number", "required": true, "example": "3" },
+    "totalPages": { "type": "number", "required": true, "example": "10" },
+    "onPageChange": { "type": "(page: number) => void", "required": true, "example": "(p) => setPage(p)" },
+    "className": { "type": "string", "required": false, "example": "\"mt-4 justify-center\"" }
+  }
+}

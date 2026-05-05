@@ -1,0 +1,22 @@
+{
+  "component": "HelpPage",
+  "description": "Help center / documentation index. Category grid + popular articles list. Use for /help, /docs, /support.",
+  "props": {
+    "theme": { "type": "LandingTheme", "required": false },
+    "navbar": { "type": "NavbarBlockProps", "required": true },
+    "footer": { "type": "FooterBlockProps", "required": true },
+    "heading": { "type": "string", "required": false, "default": "How can we help?" },
+    "subheading": { "type": "string", "required": false },
+    "categories": {
+      "type": "HelpCategory[]",
+      "required": false,
+      "shape": { "icon": "IconName?", "title": "string", "description": "string?", "articleCount": "number?", "href": "string" }
+    },
+    "popularArticles": {
+      "type": "HelpArticle[]",
+      "required": false,
+      "shape": { "title": "string", "excerpt": "string?", "href": "string", "category": "string?" }
+    },
+    "className": { "type": "string", "required": false }
+  }
+}

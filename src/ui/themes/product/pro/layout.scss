@@ -1,0 +1,59 @@
+/* pro/layout.scss — Full layout for "pro" product theme.
+   Sidebar (collapsible to icon) + fixed top header bar + breadcrumb area + content. */
+
+.oq-layout-pro {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--color-surface);
+  color: var(--color-text);
+
+  .oq-sidebar {
+    flex-shrink: 0;
+    width: var(--layout-sidebar-width-expanded);
+    height: 100%;
+    background-color: var(--color-sidebar);
+    border-right: 1px solid var(--color-sidebar-border);
+    display: flex;
+    flex-direction: column;
+    transition: width 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    backdrop-filter: blur(8px);
+
+    &[data-collapsed="true"] {
+      width: var(--layout-sidebar-width-collapsed);
+
+      /* Hide text labels, show icons only */
+      .oq-nav-label { display: none; }
+      .oq-sidebar-logo-text { display: none; }
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .oq-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    /* Top header bar */
+    .oq-topnav {
+      flex-shrink: 0;
+      height: var(--layout-topnav-height);
+      border-bottom: 1px solid var(--color-border);
+      display: flex;
+      align-items: center;
+      padding: 0 var(--layout-content-padding);
+      background-color: var(--color-surface);
+    }
+
+    .oq-main {
+      flex: 1;
+      overflow-y: auto;
+      padding: var(--layout-content-padding);
+    }
+  }
+}

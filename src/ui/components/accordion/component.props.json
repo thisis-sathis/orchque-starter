@@ -1,0 +1,10 @@
+{
+  "component": "Accordion",
+  "description": "Expandable sections for FAQ, settings groups, and nested content. Supports single or multiple open items.",
+  "props": {
+    "items": { "type": "AccordionItem[]", "required": true, "example": "[{ value: 'q1', trigger: 'What is this?', content: <p>Answer here</p> }]" },
+    "type": { "type": "\"single\" | \"multiple\"", "required": false, "default": "\"single\"", "example": "\"multiple\"" },
+    "defaultValue": { "type": "string", "required": false, "example": "\"q1\"" },
+    "className": { "type": "string", "required": false, "example": "\"border rounded-md\"" }
+  }
+}

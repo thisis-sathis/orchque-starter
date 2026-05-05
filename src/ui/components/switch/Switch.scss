@@ -1,0 +1,48 @@
+// Switch.scss — binary toggle control with animated thumb
+.oq-switch-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4x);
+}
+
+.oq-switch {
+  position: relative;
+  width: 2.75rem;
+  height: 1.5rem;
+  border-radius: var(--radius-full);
+  border: none;
+  background: var(--color-border-strong);
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 150ms ease;
+
+  &:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+
+  &[data-state="checked"] {
+    background: var(--color-primary);
+  }
+
+  &[disabled] {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+
+  &__thumb {
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: var(--radius-full);
+    background: var(--color-surface);
+    box-shadow: var(--shadow-sm);
+    transition: transform 150ms ease;
+    transform: translateX(var(--space-1x));
+
+    [data-state="checked"] & {
+      transform: translateX(calc(2.75rem - 1.25rem - var(--space-1x)));
+    }
+  }
+}

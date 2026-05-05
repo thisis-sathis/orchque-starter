@@ -1,0 +1,13 @@
+{
+  "component": "NavItem",
+  "description": "Single navigation link molecule. Active state via data-active. Icon + label.",
+  "props": {
+    "label": { "type": "string", "required": true },
+    "href": { "type": "string", "required": true },
+    "icon": { "type": "IconName", "required": false, "description": "lucide-react icon name" },
+    "isActive": { "type": "boolean", "required": false },
+    "collapsed": { "type": "boolean", "required": false, "description": "Icon-only mode when sidebar is collapsed" },
+    "onClick": { "type": "function", "required": false },
+    "className": { "type": "string", "required": false }
+  }
+}

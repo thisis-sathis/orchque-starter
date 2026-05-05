@@ -1,0 +1,9 @@
+{
+  "component": "ProductInput",
+  "description": "Core product action form — textarea + submit button. POSTs to /api/action. Returns result via onResult callback.",
+  "props": {
+    "onResult": { "type": "function", "required": true, "example": "(result) => setResult(result)" },
+    "onCreditsChanged": { "type": "function", "required": true, "example": "() => refetchCredits()" },
+    "disabled": { "type": "boolean", "required": false, "example": true }
+  }
+}

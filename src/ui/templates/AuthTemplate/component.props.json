@@ -1,0 +1,21 @@
+﻿{
+  "component": "AuthTemplate",
+  "description": "Centered auth card layout. Logo above card. Used for login, signup, forgot password.",
+  "props": {
+    "logoText": { "type": "string", "required": false },
+    "logoSrc": { "type": "string", "required": false },
+    "logoHref": { "type": "string", "required": false, "default": "/" },
+    "content": {
+      "type": "ComponentSlot",
+      "required": false,
+      "description": "Card body slot. Pass ComponentConfig JSON for data-driven rendering OR a custom ReactNode for full control.",
+      "example_json": { "component": "SignInForm", "props": {} },
+      "example_jsx": "<SignInForm onSubmit={handleSubmit} />"
+    },
+    "className": { "type": "string", "required": false }
+  },
+  "slot_types": {
+    "ComponentSlot": "ComponentConfig JSON (data-driven, registry lookup) OR ReactNode (custom JSX, rendered directly). JSON takes priority."
+  },
+  "note": "children prop also accepted as backward-compat alias for content."
+}

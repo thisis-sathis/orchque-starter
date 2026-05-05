@@ -1,0 +1,22 @@
+{
+  "component": "UserMenu",
+  "description": "Avatar + name + dropdown menu molecule. Used in sidebar footer and top nav.",
+  "props": {
+    "name": { "type": "string", "required": true },
+    "email": { "type": "string", "required": false },
+    "avatarSrc": { "type": "string", "required": false },
+    "actions": {
+      "type": "UserMenuAction[]",
+      "required": true,
+      "description": "Array of menu actions",
+      "shape": {
+        "label": { "type": "string", "required": true },
+        "href": { "type": "string", "required": false },
+        "onClick": { "type": "function", "required": false },
+        "danger": { "type": "boolean", "required": false, "description": "Red styling for destructive actions" }
+      }
+    },
+    "collapsed": { "type": "boolean", "required": false, "description": "Shows only avatar in icon-only sidebar mode" },
+    "className": { "type": "string", "required": false }
+  }
+}

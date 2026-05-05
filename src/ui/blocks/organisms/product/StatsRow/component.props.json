@@ -1,0 +1,9 @@
+{
+  "component": "StatsRow",
+  "description": "Responsive grid row of StatCard molecules.",
+  "props": {
+    "stats": { "type": "StatCardProps[]", "required": true },
+    "columns": { "type": "enum", "values": [2, 3, 4], "required": false, "default": 4 },
+    "className": { "type": "string", "required": false }
+  }
+}

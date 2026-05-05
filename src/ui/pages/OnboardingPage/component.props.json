@@ -1,0 +1,28 @@
+﻿{
+  "component": "OnboardingPage",
+  "description": "Multi-step onboarding wizard. EmptyTemplate + step progress + step card.",
+  "props": {
+    "logoText": { "type": "string", "required": false },
+    "logoSrc": { "type": "string", "required": false },
+    "steps": {
+      "type": "OnboardingStepConfig[]",
+      "required": true,
+      "shape": {
+        "id": "string",
+        "title": "string",
+        "description": "string?",
+        "content": "ComponentSlot — ComponentConfig JSON (data-driven) OR custom ReactNode for this step body. JSON takes priority."
+      }
+    },
+    "currentStep": { "type": "number", "required": true, "description": "0-based index" },
+    "onNext": { "type": "function", "required": false },
+    "onBack": { "type": "function", "required": false },
+    "onSkip": { "type": "function", "required": false },
+    "nextLabel": { "type": "string", "required": false, "default": "\"Continue\"" },
+    "isLoading": { "type": "boolean", "required": false },
+    "className": { "type": "string", "required": false }
+  },
+  "slot_types": {
+    "ComponentSlot": "ComponentConfig JSON (data-driven, registry lookup) OR ReactNode (custom JSX, rendered directly). JSON takes priority."
+  }
+}

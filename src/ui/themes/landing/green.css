@@ -1,0 +1,16 @@
+/* landing/green.css — Eco/sustainability landing theme. Nature greens + earthy tones. */
+[data-theme="green"] {
+  --color-primary: #16a34a;
+  --color-secondary: #15803d;
+  --color-accent: #84cc16;
+  --color-surface: #ffffff;
+  --color-surface-raised: #f0fdf4;
+  --color-text: #14532d;
+  --color-text-muted: #166534;
+  --color-border: #bbf7d0;
+  --font-heading: "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --radius-lg: 12px;
+  --landing-hero-bg: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+  --landing-section-alt-bg: #f0fdf4;
+}

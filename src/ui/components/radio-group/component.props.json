@@ -1,0 +1,13 @@
+{
+  "component": "RadioGroup",
+  "description": "Single-choice option set for forms and settings. Renders labeled radio buttons with optional descriptions.",
+  "props": {
+    "options": { "type": "RadioOption[]", "required": true, "example": "[{ value: 'monthly', label: 'Monthly', description: 'Billed every month' }]" },
+    "value": { "type": "string", "required": false, "example": "\"monthly\"" },
+    "defaultValue": { "type": "string", "required": false, "example": "\"monthly\"" },
+    "onValueChange": { "type": "(value: string) => void", "required": false, "example": "(v) => setBilling(v)" },
+    "name": { "type": "string", "required": false, "example": "\"billing-cycle\"" },
+    "orientation": { "type": "\"vertical\" | \"horizontal\"", "required": false, "default": "\"vertical\"", "example": "\"horizontal\"" },
+    "className": { "type": "string", "required": false, "example": "\"mt-2\"" }
+  }
+}

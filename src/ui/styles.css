@@ -1,0 +1,6 @@
+/* @orchque/ui — styles entry point */
+/* Import this in your app's root layout: */
+/* import "@orchque/ui/styles"; */
+
+@import "./tokens/index.css";
+@import "./blocks/organisms/auth/auth-shared.css";

@@ -1,0 +1,7 @@
+{
+  "component": "PlanCard",
+  "description": "Displays the user's current subscription plan, credit balance, and upgrade button.",
+  "props": {
+    "plan": { "type": "enum", "values": ["free", "pro"], "required": true, "example": "free" }
+  }
+}

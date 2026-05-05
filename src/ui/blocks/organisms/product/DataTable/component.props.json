@@ -1,0 +1,22 @@
+{
+  "component": "DataTable",
+  "description": "Generic typed data table. Column definitions + row data. Data-driven cell renderers.",
+  "props": {
+    "columns": {
+      "type": "DataTableColumn<T>[]",
+      "required": true,
+      "shape": {
+        "key": "string",
+        "header": "string",
+        "renderer": "CellRendererConfig? — data-driven cell renderer (type: text|badge|date|link|avatar|truncate|actions)",
+        "render": "(row: T) => ReactNode — escape hatch for custom cells (prefer renderer)",
+        "className": "string?"
+      }
+    },
+    "rows": { "type": "T[]", "required": true },
+    "rowKey": { "type": "function", "required": false, "description": "(row, index) => string|number" },
+    "emptyMessage": { "type": "string", "required": false, "default": "No data" },
+    "className": { "type": "string", "required": false }
+  },
+  "note": "CellRendererConfig: { type, variantMap?, dateFormat?, hrefKey?, actions? }"
+}

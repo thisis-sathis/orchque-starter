@@ -1,0 +1,9 @@
+{
+  "component": "Badge",
+  "description": "Inline status/label badge atom. CVA variant system.",
+  "props": {
+    "label": { "type": "string", "required": true, "example": "New", "description": "Badge text. Replaces children: ReactNode." },
+    "variant": { "type": "enum", "values": ["default","primary","success","warning","danger","outline"], "required": false, "default": "default" },
+    "className": { "type": "string", "required": false }
+  }
+}

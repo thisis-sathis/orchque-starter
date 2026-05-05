@@ -1,0 +1,16 @@
+{
+  "component": "OqVideo",
+  "description": "HTML5 video player atom. Consistent styling + aspect ratio + accessibility via title/aria-label.",
+  "props": {
+    "src": { "type": "string", "required": true, "description": "Video source URL" },
+    "title": { "type": "string", "required": true, "description": "Accessible label describing the video. Shown on hover." },
+    "poster": { "type": "string", "required": false, "description": "Poster image URL shown before playback" },
+    "autoPlay": { "type": "boolean", "required": false, "default": false },
+    "muted": { "type": "boolean", "required": false, "default": true },
+    "loop": { "type": "boolean", "required": false, "default": false },
+    "controls": { "type": "boolean", "required": false, "default": true },
+    "aspectRatio": { "type": "enum", "values": ["16/9","4/3","1/1","9/16"], "required": false, "default": "16/9" },
+    "fill": { "type": "boolean", "required": false, "description": "Fills parent container width and height" },
+    "className": { "type": "string", "required": false }
+  }
+}

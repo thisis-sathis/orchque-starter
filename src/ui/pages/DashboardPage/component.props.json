@@ -1,0 +1,20 @@
+﻿{
+  "component": "DashboardPage",
+  "description": "Generic product dashboard page. Layout + optional header + optional stats row + content.",
+  "props": {
+    "layout": { "type": "Omit<DashboardTemplateProps, \"content\" | \"children\">", "required": true },
+    "header": { "type": "PageHeaderProps", "required": false },
+    "stats": { "type": "StatsRowProps", "required": false },
+    "content": {
+      "type": "ComponentSlot | ComponentSlot[]",
+      "required": false,
+      "description": "Main content slot. Pass ComponentConfig JSON (or array) for data-driven rendering OR a custom ReactNode.",
+      "example_json": [{ "component": "DataTable", "props": {} }],
+      "example_jsx": "<DataTable columns={cols} rows={rows} />"
+    }
+  },
+  "slot_types": {
+    "ComponentSlot": "ComponentConfig JSON (data-driven, registry lookup) OR ReactNode (custom JSX, rendered directly). JSON takes priority."
+  },
+  "note": "children prop also accepted as backward-compat alias for content."
+}

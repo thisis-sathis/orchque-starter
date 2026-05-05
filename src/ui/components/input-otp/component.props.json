@@ -1,0 +1,12 @@
+{
+  "component": "InputOTP",
+  "description": "One-time password input for 2FA, email verification, and secure auth flows. Splits input into individual slot boxes.",
+  "props": {
+    "length": { "type": "number", "required": false, "default": "6", "example": "6" },
+    "value": { "type": "string", "required": false, "example": "\"123456\"" },
+    "onChange": { "type": "(value: string) => void", "required": false, "example": "(v) => setCode(v)" },
+    "onComplete": { "type": "(value: string) => void", "required": false, "example": "(v) => verify(v)" },
+    "disabled": { "type": "boolean", "required": false, "example": "false" },
+    "className": { "type": "string", "required": false, "example": "\"justify-center\"" }
+  }
+}

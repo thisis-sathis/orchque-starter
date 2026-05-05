@@ -1,0 +1,54 @@
+// ScrollArea.scss — custom scrollbar overlay
+.oq-scroll-area {
+  position: relative;
+  overflow: hidden;
+
+  &__scrollbar {
+    display: flex;
+    user-select: none;
+    touch-action: none;
+    padding: 2px;
+    background: transparent;
+    transition: background 160ms ease;
+
+    &:hover { background: var(--color-surface-overlay); }
+
+    &--vertical {
+      width: 8px;
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    &--horizontal {
+      height: 8px;
+      flex-direction: row;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  &__thumb {
+    flex: 1;
+    background: var(--color-border-strong);
+    border-radius: var(--radius-full);
+    position: relative;
+    transition: background 150ms;
+
+    &:hover { background: var(--color-text-subtle); }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: 44px;
+      min-height: 44px;
+    }
+  }
+}

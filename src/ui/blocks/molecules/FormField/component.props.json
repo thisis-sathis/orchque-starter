@@ -1,0 +1,14 @@
+{
+  "component": "FormField",
+  "description": "Label + Input/Textarea + error/hint molecule. Core building block for all forms.",
+  "props": {
+    "label": { "type": "string", "required": true },
+    "id": { "type": "string", "required": true },
+    "type": { "type": "enum", "values": ["input","textarea"], "required": false, "default": "input" },
+    "required": { "type": "boolean", "required": false },
+    "error": { "type": "string", "required": false, "description": "Error message shown below field" },
+    "hint": { "type": "string", "required": false, "description": "Helper text when no error" },
+    "inputProps": { "type": "InputProps | TextareaProps", "required": false, "description": "Passed to underlying Input or Textarea" },
+    "className": { "type": "string", "required": false }
+  }
+}

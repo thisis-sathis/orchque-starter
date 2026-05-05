@@ -1,0 +1,43 @@
+// Table.scss — data table with bordered rows and hover states
+.oq-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.oq-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-sm);
+  color: var(--color-text);
+
+  thead tr {
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  th {
+    height: var(--space-10x);
+    padding: 0 var(--space-3x);
+    text-align: left;
+    font-weight: 500;
+    color: var(--color-text-muted);
+    white-space: nowrap;
+  }
+
+  tbody tr {
+    border-bottom: 1px solid var(--color-border);
+    transition: background 150ms ease;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &:hover {
+      background: var(--color-surface-raised);
+    }
+  }
+
+  td {
+    padding: var(--space-3x);
+    vertical-align: middle;
+  }
+}

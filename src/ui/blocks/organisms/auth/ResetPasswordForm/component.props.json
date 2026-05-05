@@ -1,0 +1,9 @@
+{
+  "component": "ResetPasswordForm",
+  "description": "Full-page new password entry form organism. Validates passwords match, POSTs to /api/auth/update-password.",
+  "props": {
+    "productName": { "type": "string", "required": true, "example": "My SaaS" },
+    "redirectTo": { "type": "string", "required": false, "example": "/dashboard" },
+    "className": { "type": "string", "required": false }
+  }
+}

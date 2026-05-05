@@ -1,0 +1,17 @@
+{
+  "component": "TopNav",
+  "description": "Product top navigation bar. Title + logo + right-side icon actions + user avatar.",
+  "props": {
+    "title": { "type": "string", "required": false },
+    "logoText": { "type": "string", "required": false },
+    "logoSrc": { "type": "string", "required": false },
+    "actions": {
+      "type": "TopNavAction[]",
+      "required": false,
+      "shape": { "icon": "IconName", "label": "string", "onClick": "function?", "badge": "number?" }
+    },
+    "user": { "type": "{ name, avatarSrc?, onClick? }", "required": false },
+    "onMobileMenuToggle": { "type": "function", "required": false },
+    "className": { "type": "string", "required": false }
+  }
+}

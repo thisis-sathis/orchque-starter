@@ -1,0 +1,67 @@
+/* colors.css — all color tokens as CSS variables. Override any of these in your theme or globals.css */
+:root {
+  /* Brand colors — set these via product.config.json → theme.tokens */
+  --color-primary: #6366f1;
+  --color-secondary: #8b5cf6;
+  --color-accent: #06b6d4;
+
+  /* Surface & structure */
+  --color-surface: #ffffff;
+  --color-surface-raised: #f8fafc;
+  --color-surface-overlay: #f1f5f9;
+
+  /* Text */
+  --color-text: #0f172a;
+  --color-text-muted: #64748b;
+  --color-text-subtle: #94a3b8;
+  --color-text-on-primary: #ffffff;
+
+  /* Border */
+  --color-border: #e2e8f0;
+  --color-border-strong: #cbd5e1;
+
+  /* States */
+  --color-success: #22c55e;
+  --color-success-surface: #f0fdf4;
+  --color-failure: #ef4444;
+  --color-failure-surface: #fef2f2;
+  --color-warning: #f59e0b;
+  --color-warning-surface: #fffbeb;
+
+  /* Sidebar-specific (used by product themes) */
+  --color-sidebar: var(--color-surface-raised);
+  --color-sidebar-text: var(--color-text);
+  --color-sidebar-active: var(--color-primary);
+  --color-sidebar-border: var(--color-border);
+}
+
+/* Dark mode — toggled by .dark class on <html> */
+.dark {
+  --color-primary: #818cf8;
+  --color-secondary: #a78bfa;
+  --color-accent: #22d3ee;
+
+  --color-surface: #0f172a;
+  --color-surface-raised: #1e293b;
+  --color-surface-overlay: #334155;
+
+  --color-text: #f1f5f9;
+  --color-text-muted: #94a3b8;
+  --color-text-subtle: #64748b;
+  --color-text-on-primary: #ffffff;
+
+  --color-border: #1e293b;
+  --color-border-strong: #334155;
+
+  --color-success: #4ade80;
+  --color-success-surface: #052e16;
+  --color-failure: #f87171;
+  --color-failure-surface: #450a0a;
+  --color-warning: #fbbf24;
+  --color-warning-surface: #451a03;
+
+  --color-sidebar: #1e293b;
+  --color-sidebar-text: #f1f5f9;
+  --color-sidebar-active: var(--color-primary);
+  --color-sidebar-border: #334155;
+}

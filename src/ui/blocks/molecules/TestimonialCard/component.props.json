@@ -1,0 +1,12 @@
+{
+  "component": "TestimonialCard",
+  "description": "Customer quote + attribution molecule. Semantic blockquote/figcaption.",
+  "props": {
+    "quote": { "type": "string", "required": true, "description": "The testimonial text" },
+    "name": { "type": "string", "required": true },
+    "role": { "type": "string", "required": false, "example": "Head of Design" },
+    "company": { "type": "string", "required": false, "example": "Acme Corp" },
+    "avatarSrc": { "type": "string", "required": false },
+    "className": { "type": "string", "required": false }
+  }
+}

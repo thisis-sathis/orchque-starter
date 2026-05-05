@@ -1,0 +1,12 @@
+{
+  "component": "SignUpForm",
+  "description": "Full-page sign-up form organism. Handles email+password registration, shows email verification state.",
+  "props": {
+    "productName": { "type": "string", "required": true, "example": "My SaaS" },
+    "redirectTo": { "type": "string", "required": false, "example": "/dashboard" },
+    "signInHref": { "type": "string", "required": false, "example": "/auth/signin" },
+    "termsHref": { "type": "string", "required": false, "example": "/legal/terms" },
+    "privacyHref": { "type": "string", "required": false, "example": "/legal/privacy" },
+    "className": { "type": "string", "required": false }
+  }
+}

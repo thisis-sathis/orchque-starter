@@ -1,0 +1,11 @@
+{
+  "component": "Tabs",
+  "description": "Horizontally tabbed content sections. Each tab has a label and associated content panel.",
+  "props": {
+    "tabs": { "type": "TabItem[]", "required": true, "example": "[{ value: 'overview', label: 'Overview', content: <p>Overview content</p> }]" },
+    "defaultValue": { "type": "string", "required": false, "example": "\"overview\"" },
+    "value": { "type": "string", "required": false, "example": "activeTab" },
+    "onValueChange": { "type": "(value: string) => void", "required": false, "example": "(v) => setActiveTab(v)" },
+    "className": { "type": "string", "required": false, "example": "\"mt-4\"" }
+  }
+}

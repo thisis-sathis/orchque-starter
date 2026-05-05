@@ -1,0 +1,35 @@
+/* pro/theme.css — "Pro" product theme. Rich, polished, sidebar + top header + breadcrumbs.
+   Best for: premium products, AI tools, creator platforms. Default font: Plus Jakarta Sans. */
+:root {
+  --radius-sm:  6px;
+  --radius-md:  10px;
+  --radius-lg:  14px;
+  --radius-xl:  20px;
+
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.08), 0 1px 2px -1px rgb(0 0 0 / 0.06);
+  --shadow-md: 0 4px 8px -2px rgb(0 0 0 / 0.12), 0 2px 4px -2px rgb(0 0 0 / 0.08);
+  --shadow-lg: 0 12px 20px -4px rgb(0 0 0 / 0.14), 0 4px 8px -4px rgb(0 0 0 / 0.1);
+
+  --font-heading: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+  --font-body:    "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+
+  /* Layout dimensions */
+  --layout-topnav-height: 52px;
+  --layout-sidebar-width-expanded: 256px;
+  --layout-sidebar-width-collapsed: 52px;    /* icon-only mode */
+  --layout-content-padding: var(--space-6x);
+
+  /* Pro theme glassy sidebar */
+  --color-sidebar: color-mix(in srgb, var(--color-primary) 5%, var(--color-surface-raised));
+  --color-sidebar-border: color-mix(in srgb, var(--color-primary) 15%, var(--color-border));
+
+  /* Gradient on primary for pro feel */
+  --gradient-primary: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+}
+
+.dark {
+  --color-sidebar: color-mix(in srgb, var(--color-primary) 8%, #0f172a);
+  --color-surface: #080812;
+  --color-surface-raised: #13131f;
+  --color-border: #1e1e30;
+}

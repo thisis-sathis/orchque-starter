@@ -1,0 +1,11 @@
+{
+  "component": "Tooltip",
+  "description": "Hover tooltip atom. Radix Tooltip. Export TooltipProvider and wrap app root.",
+  "props": {
+    "content": { "type": "string", "required": true, "description": "Tooltip popup text. Plain string only — no JSX.", "example": "Copy to clipboard" },
+    "children": { "type": "ReactNode", "required": true, "description": "Trigger element (any focusable/hoverable element). Use TriggerConfig via renderTrigger() for data-driven usage." },
+    "side": { "type": "enum", "values": ["top","right","bottom","left"], "required": false, "default": "top" },
+    "delayDuration": { "type": "number", "required": false, "default": 300 }
+  },
+  "note": "Wrap your app root with <TooltipProvider> once."
+}

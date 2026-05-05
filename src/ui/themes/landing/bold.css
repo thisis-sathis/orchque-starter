@@ -1,0 +1,16 @@
+/* landing/bold.css — Bold/agency landing theme. Strong typography + high-contrast. */
+[data-theme="bold"] {
+  --color-primary: #dc2626;
+  --color-secondary: #b91c1c;
+  --color-accent: #fbbf24;
+  --color-surface: #ffffff;
+  --color-surface-raised: #fef2f2;
+  --color-text: #0c0a09;
+  --color-text-muted: #57534e;
+  --color-border: #e7e5e4;
+  --font-heading: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --radius-lg: 4px;
+  --landing-hero-bg: #0c0a09;
+  --landing-section-alt-bg: #fef2f2;
+}

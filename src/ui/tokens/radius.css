@@ -1,0 +1,10 @@
+/* radius.css — border radius scale. Each product_theme overrides --radius-base. */
+:root {
+  --radius-none:  0px;
+  --radius-sm:    4px;
+  --radius-md:    6px;
+  --radius-lg:    8px;
+  --radius-xl:    12px;
+  --radius-2xl:   16px;
+  --radius-full:  9999px;
+}

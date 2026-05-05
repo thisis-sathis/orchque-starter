@@ -1,0 +1,11 @@
+{
+  "component": "SignInForm",
+  "description": "Full-page sign-in form organism. Handles email+password auth, error toasts, redirect after success.",
+  "props": {
+    "productName": { "type": "string", "required": true, "example": "My SaaS" },
+    "redirectTo": { "type": "string", "required": false, "example": "/dashboard" },
+    "forgotPasswordHref": { "type": "string", "required": false, "example": "/auth/forgot-password" },
+    "signUpHref": { "type": "string", "required": false, "example": "/auth/signup" },
+    "className": { "type": "string", "required": false }
+  }
+}

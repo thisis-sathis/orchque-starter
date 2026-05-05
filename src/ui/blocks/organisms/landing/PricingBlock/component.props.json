@@ -1,0 +1,10 @@
+{
+  "component": "PricingBlock",
+  "description": "Grid of PricingCard molecules. Config-driven from product.config pricing section.",
+  "props": {
+    "heading": { "type": "string", "required": false },
+    "subheading": { "type": "string", "required": false },
+    "plans": { "type": "PricingCardProps[]", "required": true },
+    "className": { "type": "string", "required": false }
+  }
+}

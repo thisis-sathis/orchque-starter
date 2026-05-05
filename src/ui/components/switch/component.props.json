@@ -1,0 +1,13 @@
+{
+  "component": "Switch",
+  "description": "Binary on/off toggle for boolean settings like notifications, dark mode, and feature flags.",
+  "props": {
+    "checked": { "type": "boolean", "required": false, "example": "true" },
+    "onCheckedChange": { "type": "(checked: boolean) => void", "required": false, "example": "(v) => setEnabled(v)" },
+    "label": { "type": "string", "required": false, "example": "\"Email notifications\"" },
+    "description": { "type": "string", "required": false, "example": "\"Receive weekly digest emails\"" },
+    "disabled": { "type": "boolean", "required": false, "example": "false" },
+    "id": { "type": "string", "required": false, "example": "\"notifications-switch\"" },
+    "className": { "type": "string", "required": false, "example": "\"border-b py-3\"" }
+  }
+}

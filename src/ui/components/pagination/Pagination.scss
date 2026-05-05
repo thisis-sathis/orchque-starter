@@ -1,0 +1,57 @@
+// Pagination.scss — page navigation buttons
+.oq-pagination {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1x);
+
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: var(--space-8x);
+    height: var(--space-8x);
+    padding: 0 var(--space-2x);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+    background: var(--color-surface);
+    color: var(--color-text);
+    font-size: var(--text-sm);
+    cursor: pointer;
+    transition: background 150ms ease, border-color 150ms ease;
+
+    &:hover:not(:disabled) {
+      background: var(--color-surface-raised);
+      border-color: var(--color-border-strong);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+    }
+
+    &:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    &--active {
+      background: var(--color-primary);
+      border-color: var(--color-primary);
+      color: var(--color-text-on-primary);
+      font-weight: 600;
+
+      &:hover {
+        background: var(--color-primary);
+      }
+    }
+  }
+
+  &__ellipsis {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--space-8x);
+    color: var(--color-text-muted);
+    font-size: var(--text-sm);
+  }
+}

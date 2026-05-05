@@ -1,0 +1,19 @@
+﻿{
+  "component": "SettingsPage",
+  "description": "Product settings page. DashboardTemplate > SettingsTemplate > content slot.",
+  "props": {
+    "layout": { "type": "Omit<DashboardTemplateProps, \"content\" | \"children\">", "required": true },
+    "settings": { "type": "Omit<SettingsTemplateProps, \"content\" | \"children\">", "required": true },
+    "content": {
+      "type": "ComponentSlot",
+      "required": false,
+      "description": "Settings content slot. Pass ComponentConfig JSON for data-driven rendering OR a custom ReactNode.",
+      "example_json": { "component": "ProfileForm", "props": {} },
+      "example_jsx": "<ProfileForm user={user} />"
+    }
+  },
+  "slot_types": {
+    "ComponentSlot": "ComponentConfig JSON (data-driven, registry lookup) OR ReactNode (custom JSX, rendered directly). JSON takes priority."
+  },
+  "note": "children prop also accepted as backward-compat alias for content."
+}

@@ -1,0 +1,16 @@
+/* landing/minimal.css — Minimal/editorial landing theme. Black + white, tight type. */
+[data-theme="minimal"] {
+  --color-primary: #18181b;
+  --color-secondary: #27272a;
+  --color-accent: #71717a;
+  --color-surface: #ffffff;
+  --color-surface-raised: #fafafa;
+  --color-text: #09090b;
+  --color-text-muted: #71717a;
+  --color-border: #e4e4e7;
+  --font-heading: "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --radius-lg: 4px;
+  --landing-hero-bg: #ffffff;
+  --landing-section-alt-bg: #fafafa;
+}

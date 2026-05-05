@@ -1,0 +1,30 @@
+﻿{
+  "component": "Popover",
+  "description": "Contextual floating panel anchored to a trigger. Use for pickers, menus, and rich tooltips.",
+  "props": {
+    "trigger": {
+      "type": "TriggerSlot",
+      "required": true,
+      "description": "Trigger slot. Pass TriggerConfig JSON for a data-driven Button OR a custom ReactNode.",
+      "example_json": { "label": "Pick color", "variant": "outline", "icon": "Palette" },
+      "example_jsx": "<MyColorButton />"
+    },
+    "content": {
+      "type": "ComponentSlot",
+      "required": false,
+      "description": "Floating panel body. Pass ComponentConfig JSON OR a custom ReactNode.",
+      "example_json": { "component": "ColorPicker", "props": { "value": "#fff" } },
+      "example_jsx": "<ColorPicker value={color} onChange={setColor} />"
+    },
+    "open": { "type": "boolean", "required": false },
+    "onOpenChange": { "type": "(open: boolean) => void", "required": false },
+    "align": { "type": "\"start\" | \"center\" | \"end\"", "required": false, "default": "\"center\"" },
+    "side": { "type": "\"top\" | \"right\" | \"bottom\" | \"left\"", "required": false, "default": "\"bottom\"" },
+    "className": { "type": "string", "required": false }
+  },
+  "slot_types": {
+    "ComponentSlot": "ComponentConfig JSON (data-driven, registry lookup) OR ReactNode (custom JSX, rendered directly). JSON takes priority.",
+    "TriggerSlot": "TriggerConfig JSON (renders as Button) OR ReactNode (custom JSX, used directly as trigger). JSON takes priority."
+  },
+  "note": "children prop also accepted as backward-compat alias for content."
+}

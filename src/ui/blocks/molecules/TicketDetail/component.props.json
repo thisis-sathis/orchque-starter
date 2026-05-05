@@ -1,0 +1,9 @@
+{
+  "component": "TicketDetail",
+  "description": "Displays full support ticket thread with staff/user message bubbles and a reply form.",
+  "props": {
+    "ticket": { "type": "object", "required": true, "example": "{ id, subject, status }" },
+    "messages": { "type": "Message[]", "required": true, "example": "[{ id, body, is_staff, created_at }]" },
+    "currentUserId": { "type": "string", "required": true, "example": "uuid-string" }
+  }
+}

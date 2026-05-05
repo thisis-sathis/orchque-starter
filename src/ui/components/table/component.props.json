@@ -1,0 +1,11 @@
+{
+  "component": "Table",
+  "description": "Semantic HTML table with token-based styling. Exports Table, TableHeader, TableBody, TableRow, TableHead, TableCell.",
+  "props": {
+    "Table.className": { "type": "string", "required": false },
+    "TableHead.header": { "type": "string", "required": false, "description": "Column header text. Replaces TableHead children: ReactNode." },
+    "TableCell.value": { "type": "string | number", "required": false, "description": "Cell display value. Replaces TableCell children: ReactNode for simple cells." },
+    "TableCell.colSpan": { "type": "number", "required": false }
+  },
+  "note": "For data-driven table rendering, use DataTable organism with columns: DataTableColumn[]. TableCell children: ReactNode still supported for custom cells."
+}

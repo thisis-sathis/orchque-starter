@@ -1,0 +1,16 @@
+{
+  "component": "HeroBlock",
+  "description": "Landing page hero section. Badge + headline + subheadline + CTAs + optional image.",
+  "props": {
+    "headline": { "type": "string", "required": true, "example": "Build products people love" },
+    "subheadline": { "type": "string", "required": false },
+    "ctaText": { "type": "string", "required": true },
+    "ctaHref": { "type": "string", "required": true },
+    "secondaryCtaText": { "type": "string", "required": false },
+    "secondaryCtaHref": { "type": "string", "required": false },
+    "badge": { "type": "string", "required": false, "description": "Eyebrow text above headline" },
+    "imageSrc": { "type": "string", "required": false },
+    "imageAlt": { "type": "string", "required": false },
+    "className": { "type": "string", "required": false }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "component": "Select",
+  "description": "Dropdown select atom. Radix Select composition: SelectRoot + SelectTrigger + SelectContent + SelectItem.",
+  "props": {
+    "SelectRoot": {
+      "value": { "type": "string", "required": false },
+      "onValueChange": { "type": "function", "required": false, "description": "(value: string) => void" },
+      "defaultValue": { "type": "string", "required": false },
+      "disabled": { "type": "boolean", "required": false }
+    },
+    "SelectTrigger": {
+      "hasError": { "type": "boolean", "required": false },
+      "placeholder": { "type": "string", "required": false },
+      "className": { "type": "string", "required": false }
+    },
+    "SelectItem": {
+      "value": { "type": "string", "required": true },
+      "label": { "type": "string", "required": true, "description": "Item display text. Replaces children: ReactNode." }
+    }
+  },
+  "example": "SelectRoot > SelectTrigger > SelectValue + SelectContent > SelectItem[]"
+}

@@ -1,0 +1,7 @@
+{
+  "component": "UpgradeGate",
+  "description": "Shown when user has no credits left. Displays upgrade CTA with plan details from PRODUCT config.",
+  "props": {
+    "_note": "No props — reads from PRODUCT config for pricing details"
+  }
+}

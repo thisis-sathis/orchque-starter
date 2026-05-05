@@ -1,0 +1,17 @@
+{
+  "component": "OqPhoto",
+  "description": "Photo/image atom with caption support. next/image with aspect ratio, fit mode, and figcaption.",
+  "props": {
+    "src": { "type": "string", "required": true },
+    "alt": { "type": "string", "required": true, "description": "Required. Describe the image content." },
+    "caption": { "type": "string", "required": false, "description": "Visible caption rendered as figcaption" },
+    "width": { "type": "number", "required": false, "default": 800 },
+    "height": { "type": "number", "required": false, "default": 600 },
+    "fill": { "type": "boolean", "required": false, "description": "Use fill layout (parent must be position:relative)" },
+    "priority": { "type": "boolean", "required": false },
+    "aspectRatio": { "type": "enum", "values": ["16/9","4/3","1/1","3/2","9/16"], "required": false },
+    "fit": { "type": "enum", "values": ["cover","contain","fill"], "required": false, "default": "cover" },
+    "radius": { "type": "enum", "values": ["none","sm","md","lg","xl","full"], "required": false, "default": "md" },
+    "className": { "type": "string", "required": false }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "component": "TestimonialsBlock",
+  "description": "3-column grid of TestimonialCard molecules.",
+  "props": {
+    "heading": { "type": "string", "required": false },
+    "subheading": { "type": "string", "required": false },
+    "testimonials": { "type": "TestimonialCardProps[]", "required": true },
+    "className": { "type": "string", "required": false }
+  }
+}

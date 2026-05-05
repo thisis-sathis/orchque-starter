@@ -1,0 +1,9 @@
+{
+  "component": "Spinner",
+  "description": "Inline loading spinner atom. Use for button/async actions. Prefer Skeleton for page loading.",
+  "props": {
+    "size": { "type": "enum", "values": ["xs","sm","md","lg","xl"], "required": false, "default": "md" },
+    "label": { "type": "string", "required": false, "default": "Loading...", "description": "Screen reader label" },
+    "className": { "type": "string", "required": false }
+  }
+}

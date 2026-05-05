@@ -1,0 +1,16 @@
+{
+  "component": "Alert",
+  "description": "Status banner for feedback messages. Supports info, success, warning, and error variants.",
+  "props": {
+    "variant": { "type": "\"info\" | \"success\" | \"warning\" | \"error\"", "required": false, "default": "\"info\"", "example": "\"success\"" },
+    "title": { "type": "string", "required": false, "example": "\"Changes saved\"" },
+    "description": { "type": "string", "required": false, "example": "\"Your settings have been updated successfully.\"" },
+    "action": {
+      "type": "ActionConfig",
+      "required": false,
+      "description": "Optional CTA at the bottom of the alert. Replaces children: ReactNode.",
+      "shape": { "label": "string", "href": "string?", "onClick": "string?" }
+    },
+    "className": { "type": "string", "required": false, "example": "\"mt-4\"" }
+  }
+}

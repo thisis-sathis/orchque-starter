@@ -1,0 +1,9 @@
+{
+  "component": "ForgotPasswordForm",
+  "description": "Full-page forgot password form organism. Sends reset link to email via /api/auth/reset-password.",
+  "props": {
+    "productName": { "type": "string", "required": true, "example": "My SaaS" },
+    "signInHref": { "type": "string", "required": false, "example": "/auth/signin" },
+    "className": { "type": "string", "required": false }
+  }
+}

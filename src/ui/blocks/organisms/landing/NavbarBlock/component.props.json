@@ -1,0 +1,12 @@
+{
+  "component": "NavbarBlock",
+  "description": "Responsive sticky marketing navbar. Logo + links + CTA. Mobile hamburger menu.",
+  "props": {
+    "logoText": { "type": "string", "required": true },
+    "logoSrc": { "type": "string", "required": false },
+    "links": { "type": "NavLink[]", "required": false, "shape": { "label": "string", "href": "string" } },
+    "ctaText": { "type": "string", "required": false },
+    "ctaHref": { "type": "string", "required": false },
+    "className": { "type": "string", "required": false }
+  }
+}

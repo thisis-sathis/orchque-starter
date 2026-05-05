@@ -1,0 +1,13 @@
+{
+  "component": "Input",
+  "description": "Text input atom. Extends HTML input. Error state via --color-failure token.",
+  "props": {
+    "hasError": { "type": "boolean", "required": false, "description": "Shows red border + aria-invalid when true" },
+    "type": { "type": "string", "required": false, "default": "text" },
+    "placeholder": { "type": "string", "required": false },
+    "disabled": { "type": "boolean", "required": false },
+    "value": { "type": "string", "required": false },
+    "onChange": { "type": "function", "required": false },
+    "className": { "type": "string", "required": false }
+  }
+}

@@ -1,0 +1,24 @@
+﻿{
+  "component": "AlertDialog",
+  "description": "Modal for confirming destructive or irreversible actions. Requires explicit user confirmation before proceeding.",
+  "props": {
+    "title": { "type": "string", "required": true, "example": "\"Delete account?\"" },
+    "description": { "type": "string", "required": false, "example": "\"This action cannot be undone.\"" },
+    "onConfirm": { "type": "() => void", "required": true, "example": "() => deleteAccount()" },
+    "trigger": {
+      "type": "TriggerSlot",
+      "required": false,
+      "description": "Trigger slot. Pass TriggerConfig JSON for a data-driven Button OR a custom ReactNode.",
+      "example_json": { "label": "Delete account", "variant": "danger", "icon": "Trash2" },
+      "example_jsx": "<MyDangerButton />"
+    },
+    "open": { "type": "boolean", "required": false },
+    "onOpenChange": { "type": "(open: boolean) => void", "required": false },
+    "cancelLabel": { "type": "string", "required": false, "default": "\"Cancel\"" },
+    "confirmLabel": { "type": "string", "required": false, "default": "\"Confirm\"" },
+    "destructive": { "type": "boolean", "required": false, "default": false }
+  },
+  "slot_types": {
+    "TriggerSlot": "TriggerConfig JSON (renders as Button) OR ReactNode (custom JSX, used directly as trigger). JSON takes priority."
+  }
+}

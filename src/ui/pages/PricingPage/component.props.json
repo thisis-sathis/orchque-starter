@@ -1,0 +1,17 @@
+{
+  "component": "PricingPage",
+  "description": "Standalone pricing page. LandingTemplate + PricingBlock + optional CTABlock.",
+  "props": {
+    "config": {
+      "type": "object",
+      "required": true,
+      "shape": {
+        "theme": "LandingTheme?",
+        "navbar": "NavbarBlockProps",
+        "pricing": "PricingBlockProps",
+        "cta": "CTABlockProps?",
+        "footer": "FooterBlockProps"
+      }
+    }
+  }
+}

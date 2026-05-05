@@ -1,0 +1,14 @@
+{
+  "component": "Button",
+  "description": "Base button atom. CVA-based variants. All colors from CSS token variables.",
+  "props": {
+    "label": { "type": "string", "required": false, "description": "Data-driven button text. Use this instead of children for JSON configs.", "example": "Get started" },
+    "variant": { "type": "enum", "values": ["primary", "secondary", "ghost", "danger", "link", "outline"], "required": false, "default": "primary" },
+    "size": { "type": "enum", "values": ["xs", "sm", "md", "lg", "icon"], "required": false, "default": "md" },
+    "asChild": { "type": "boolean", "required": false, "default": false, "note": "Use true when wrapping a Next.js Link (children required for asChild mode)" },
+    "disabled": { "type": "boolean", "required": false },
+    "onClick": { "type": "function", "required": false },
+    "className": { "type": "string", "required": false }
+  },
+  "note": "label takes priority over children. children is kept for asChild / Link wrapper use cases."
+}

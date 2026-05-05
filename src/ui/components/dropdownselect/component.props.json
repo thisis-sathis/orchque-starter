@@ -1,0 +1,15 @@
+{
+  "component": "DropdownSelect",
+  "description": "Simple single-component select dropdown. Wraps Radix Select with flat options or grouped options API. Use for simple cases; use Select atom for full custom composition.",
+  "props": {
+    "options": { "type": "DropdownSelectOption[]", "required": false, "description": "Flat list. Use options OR groups, not both.", "shape": { "label": "string", "value": "string", "disabled": "boolean?" } },
+    "groups": { "type": "DropdownSelectGroup[]", "required": false, "description": "Grouped list. Use options OR groups, not both.", "shape": { "label": "string", "options": "DropdownSelectOption[]" } },
+    "value": { "type": "string", "required": false },
+    "onValueChange": { "type": "function", "required": false, "description": "(value: string) => void" },
+    "defaultValue": { "type": "string", "required": false },
+    "placeholder": { "type": "string", "required": false, "default": "Select an option" },
+    "disabled": { "type": "boolean", "required": false },
+    "hasError": { "type": "boolean", "required": false },
+    "className": { "type": "string", "required": false }
+  }
+}

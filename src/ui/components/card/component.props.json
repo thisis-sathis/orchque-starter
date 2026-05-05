@@ -1,0 +1,34 @@
+﻿{
+  "component": "Card",
+  "description": "Surface container with optional header, content area, and footer. Core dashboard widget wrapper.",
+  "props": {
+    "title": { "type": "string", "required": false, "example": "\"Monthly Revenue\"" },
+    "description": { "type": "string", "required": false },
+    "content": {
+      "type": "ComponentSlot | ComponentSlot[]",
+      "required": false,
+      "description": "Body slot. Pass ComponentConfig JSON (or an array) for data-driven rendering OR a custom ReactNode for full control.",
+      "example_json": [
+        { "component": "StatCard", "props": { "label": "MRR", "value": "$12k" } },
+        { "component": "StatCard", "props": { "label": "Users", "value": "4,200" } }
+      ],
+      "example_jsx": "<MyCustomChart data={data} />"
+    },
+    "footer": {
+      "type": "ActionConfig[] | ReactNode",
+      "required": false,
+      "description": "Footer slot. Pass ActionConfig[] for data-driven buttons OR a custom ReactNode for full control.",
+      "example_json": [
+        { "label": "View all", "variant": "outline", "href": "/dashboard" }
+      ],
+      "example_jsx": "<MyFooterActions />"
+    },
+    "padding": { "type": "\"none\" | \"sm\" | \"md\" | \"lg\"", "required": false, "default": "\"md\"" },
+    "className": { "type": "string", "required": false }
+  },
+  "slot_types": {
+    "ComponentSlot": "ComponentConfig JSON (data-driven, registry lookup) OR ReactNode (custom JSX, rendered directly). JSON takes priority.",
+    "ActionConfig[]": "Array of button configs rendered as a flex row. If a non-array ReactNode is passed instead, it is rendered directly."
+  },
+  "note": "children prop also accepted as backward-compat alias for content."
+}

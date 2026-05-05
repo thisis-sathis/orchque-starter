@@ -1,0 +1,54 @@
+/* auth-shared.scss — shared styles for all auth form organisms.
+   Import this once in ui/styles.css to make .oq-auth-input and .oq-auth-btn-primary available. */
+
+.oq-auth-input {
+  display: flex;
+  height: var(--space-9x, 36px);
+  width: 100%;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: transparent;
+  padding: var(--space-1x) var(--space-3x);
+  font-size: var(--text-sm);
+  box-shadow: var(--shadow-sm);
+  transition: border-color 0.15s, box-shadow 0.15s;
+  color: var(--color-text);
+
+  &::placeholder {
+    color: var(--color-text-muted);
+  }
+
+  &:focus-visible {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px var(--color-primary) / 0.2;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.oq-auth-btn-primary {
+  width: 100%;
+  height: var(--space-9x, 36px);
+  border-radius: var(--radius-md);
+  background: var(--color-primary);
+  color: var(--color-text-on-primary, #fff);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  box-shadow: var(--shadow-sm);
+  transition: background 0.15s, opacity 0.15s;
+  cursor: pointer;
+  border: none;
+
+  &:hover:not(:disabled) {
+    opacity: 0.9;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}

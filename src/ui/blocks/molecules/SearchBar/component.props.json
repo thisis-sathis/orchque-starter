@@ -1,0 +1,12 @@
+{
+  "component": "SearchBar",
+  "description": "Controlled search input molecule. Icon + input + onSearch on Enter.",
+  "props": {
+    "value": { "type": "string", "required": true },
+    "onChange": { "type": "function", "required": true, "description": "(value: string) => void" },
+    "onSearch": { "type": "function", "required": false, "description": "(value: string) => void — fires on Enter key" },
+    "placeholder": { "type": "string", "required": false, "default": "Search..." },
+    "disabled": { "type": "boolean", "required": false },
+    "className": { "type": "string", "required": false }
+  }
+}

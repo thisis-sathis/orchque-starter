@@ -1,0 +1,7 @@
+{
+  "component": "ProfileForm",
+  "description": "Account settings card — shows email (read-only) and allows password change via /api/auth/update-password.",
+  "props": {
+    "email": { "type": "string", "required": true, "example": "user@example.com" }
+  }
+}

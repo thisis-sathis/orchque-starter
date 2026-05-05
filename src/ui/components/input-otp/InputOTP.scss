@@ -1,0 +1,62 @@
+// InputOTP.scss — OTP slot boxes with active/caret states
+.oq-otp {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2x);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2x);
+  }
+
+  &__group {
+    display: flex;
+    gap: var(--space-1x);
+  }
+
+  &__slot {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 3rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: var(--color-surface);
+    font-size: var(--text-lg);
+    font-weight: 600;
+    color: var(--color-text);
+    transition: border-color 150ms;
+
+    &--active {
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-primary) 20%, transparent);
+    }
+  }
+
+  &__placeholder {
+    color: var(--color-text-subtle);
+    font-size: var(--text-sm);
+  }
+
+  &__caret {
+    position: absolute;
+    width: 2px;
+    height: 1.5rem;
+    background: var(--color-primary);
+    animation: oq-otp-blink 1s step-end infinite;
+  }
+
+  &__separator {
+    color: var(--color-text-muted);
+    font-size: var(--text-sm);
+    user-select: none;
+  }
+}
+
+@keyframes oq-otp-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}

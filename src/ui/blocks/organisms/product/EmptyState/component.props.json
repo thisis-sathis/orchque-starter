@@ -1,0 +1,15 @@
+{
+  "component": "EmptyState",
+  "description": "Empty/zero-state placeholder. Icon + heading + description + optional action.",
+  "props": {
+    "icon": { "type": "IconName", "required": false },
+    "heading": { "type": "string", "required": true },
+    "description": { "type": "string", "required": false },
+    "action": {
+      "type": "object",
+      "required": false,
+      "shape": { "label": "string", "href": "string?", "onClick": "function?" }
+    },
+    "className": { "type": "string", "required": false }
+  }
+}

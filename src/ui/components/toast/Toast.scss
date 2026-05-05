@@ -1,0 +1,10 @@
+// Toast.scss — Sonner toast overrides using design tokens
+:root {
+  --toast-bg: var(--color-surface);
+  --toast-border: var(--color-border);
+  --toast-text: var(--color-text);
+}
+
+.oq-toast-root {
+  // Sonner's [data-sonner-toaster] can be overridden via CSS vars
+}

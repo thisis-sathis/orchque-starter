@@ -1,0 +1,21 @@
+﻿{
+  "component": "DashboardTemplate",
+  "description": "Product dashboard layout. Sidebar + TopNav + main content. Supports simple/basic/pro themes.",
+  "props": {
+    "theme": { "type": "\"simple\" | \"basic\" | \"pro\"", "required": false, "default": "\"basic\"" },
+    "sidebar": { "type": "Omit<SidebarProps, \"collapsed\" | \"onToggleCollapse\">", "required": true },
+    "topNav": { "type": "Omit<TopNavProps, \"onMobileMenuToggle\">", "required": false },
+    "content": {
+      "type": "ComponentSlot",
+      "required": false,
+      "description": "Main area slot. Pass ComponentConfig JSON for data-driven rendering OR a custom ReactNode for full control.",
+      "example_json": { "component": "DashboardOverview", "props": {} },
+      "example_jsx": "<DashboardOverview stats={stats} />"
+    },
+    "className": { "type": "string", "required": false }
+  },
+  "slot_types": {
+    "ComponentSlot": "ComponentConfig JSON (data-driven, registry lookup) OR ReactNode (custom JSX, rendered directly). JSON takes priority."
+  },
+  "note": "children prop also accepted as backward-compat alias for content."
+}

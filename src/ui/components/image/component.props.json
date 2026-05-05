@@ -1,0 +1,13 @@
+{
+  "component": "OqImage",
+  "description": "next/image wrapper atom. Enforces required alt. Never use plain <img>.",
+  "props": {
+    "src": { "type": "string", "required": true },
+    "alt": { "type": "string", "required": true, "description": "Non-optional. Describe the image content." },
+    "width": { "type": "number", "required": false },
+    "height": { "type": "number", "required": false },
+    "fill": { "type": "boolean", "required": false },
+    "priority": { "type": "boolean", "required": false },
+    "className": { "type": "string", "required": false }
+  }
+}

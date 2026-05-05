@@ -1,0 +1,18 @@
+{
+  "component": "Sidebar",
+  "description": "Product sidebar organism. Sections + user menu footer. Collapsible to icon-only mode.",
+  "props": {
+    "sections": {
+      "type": "SidebarSection[]",
+      "required": true,
+      "shape": { "heading": "string?", "items": "NavItemProps[]" }
+    },
+    "collapsed": { "type": "boolean", "required": false },
+    "onToggleCollapse": { "type": "function", "required": false },
+    "logoText": { "type": "string", "required": false },
+    "logoSrc": { "type": "string", "required": false },
+    "user": { "type": "{ name, email?, avatarSrc? }", "required": false },
+    "userActions": { "type": "UserMenuAction[]", "required": false },
+    "className": { "type": "string", "required": false }
+  }
+}

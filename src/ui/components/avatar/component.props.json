@@ -1,0 +1,10 @@
+{
+  "component": "Avatar",
+  "description": "User avatar atom. next/image with initials fallback when src missing or fails.",
+  "props": {
+    "src": { "type": "string", "required": false, "description": "Image URL. Falls back to initials." },
+    "name": { "type": "string", "required": false, "description": "Used to generate initials fallback" },
+    "size": { "type": "enum", "values": ["sm","md","lg"], "required": false, "default": "md", "note": "sm=24px md=36px lg=48px" },
+    "className": { "type": "string", "required": false }
+  }
+}

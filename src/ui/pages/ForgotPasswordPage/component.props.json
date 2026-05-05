@@ -1,0 +1,14 @@
+{
+  "component": "ForgotPasswordPage",
+  "description": "Forgot password email request page. AuthTemplate + email field + submit.",
+  "props": {
+    "logoText": { "type": "string", "required": false },
+    "logoSrc": { "type": "string", "required": false },
+    "onSubmit": { "type": "function", "required": false, "description": "(email: string) => void" },
+    "isLoading": { "type": "boolean", "required": false },
+    "errorMessage": { "type": "string", "required": false },
+    "successMessage": { "type": "string", "required": false, "description": "Show after successful submission" },
+    "loginHref": { "type": "string", "required": false, "default": "/login" },
+    "className": { "type": "string", "required": false }
+  }
+}

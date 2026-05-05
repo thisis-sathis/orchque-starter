@@ -1,0 +1,17 @@
+{
+  "component": "MobileSidebar",
+  "description": "Slide-in drawer navigation for mobile screens. Renders a sticky header bar with hamburger button, and a full-height drawer with nav items.",
+  "props": {
+    "logoText": { "type": "string", "required": true, "example": "My Product" },
+    "items": {
+      "type": "array",
+      "required": true,
+      "items": {
+        "label": { "type": "string", "required": true, "example": "Dashboard" },
+        "href": { "type": "string", "required": true, "example": "/dashboard" },
+        "icon": { "type": "IconName", "required": false, "example": "LayoutDashboard" }
+      }
+    },
+    "className": { "type": "string", "required": false }
+  }
+}

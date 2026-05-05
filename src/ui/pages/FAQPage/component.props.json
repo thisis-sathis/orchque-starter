@@ -1,0 +1,12 @@
+{
+  "component": "FAQPage",
+  "description": "Standalone FAQ page. LandingTemplate + FAQBlock + optional CTABlock.",
+  "props": {
+    "theme": { "type": "LandingTheme", "required": false },
+    "navbar": { "type": "NavbarBlockProps", "required": true },
+    "footer": { "type": "FooterBlockProps", "required": true },
+    "faq": { "type": "FAQBlockProps", "required": true },
+    "cta": { "type": "CTABlockProps", "required": false },
+    "className": { "type": "string", "required": false }
+  }
+}

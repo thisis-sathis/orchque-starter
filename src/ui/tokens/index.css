@@ -1,0 +1,6 @@
+/* index.css — single import for all design tokens. Import this in your globals.css. */
+@import "./colors.css";
+@import "./spacing.css";
+@import "./typography.css";
+@import "./radius.css";
+@import "./shadows.css";
