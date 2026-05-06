@@ -1,0 +1,16 @@
+{
+  "component": "AppPagesShowcaseBlock",
+  "description": "Visual grid showing all included app pages as mini browser mockups.",
+  "props": {
+    "badge": { "type": "string", "required": false, "description": "Optional eyebrow badge label" },
+    "heading": { "type": "string", "required": false, "description": "Section heading" },
+    "subheading": { "type": "string", "required": false, "description": "Descriptive subheading" },
+    "pages": {
+      "type": "AppPage[]",
+      "required": false,
+      "description": "Array of app page mockups to display",
+      "shape": { "variant": "'error' | 'not-found' | 'offline' | 'success' | 'loading' | 'coming-soon' | 'careers' | 'prelaunch' | 'generic'", "label": "string?" }
+    },
+    "className": { "type": "string", "required": false }
+  }
+}

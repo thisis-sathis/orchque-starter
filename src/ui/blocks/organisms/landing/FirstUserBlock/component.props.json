@@ -1,0 +1,18 @@
+{
+  "component": "FirstUserBlock",
+  "description": "First customer/early adopter spotlight with avatar, quote, metric, and case study link.",
+  "props": {
+    "badge": { "type": "string", "required": false, "description": "Top badge. Default: 'First success story'" },
+    "heading": { "type": "string", "required": false, "description": "Section heading" },
+    "quote": { "type": "string", "required": true, "description": "Testimonial quote text" },
+    "authorName": { "type": "string", "required": true, "description": "Author full name" },
+    "authorRole": { "type": "string", "required": true, "description": "Author title or role" },
+    "authorImageSrc": { "type": "string", "required": false, "description": "Author avatar image URL" },
+    "metric": { "type": "string", "required": false, "description": "Key metric value — e.g. '10x'" },
+    "metricLabel": { "type": "string", "required": false, "description": "Label describing the metric" },
+    "company": { "type": "string", "required": false, "description": "Author's company name" },
+    "caseStudyHref": { "type": "string", "required": false, "description": "Link to full case study" },
+    "caseStudyLabel": { "type": "string", "required": false, "description": "CTA label. Default: 'Read the full case study'" },
+    "className": { "type": "string", "required": false }
+  }
+}

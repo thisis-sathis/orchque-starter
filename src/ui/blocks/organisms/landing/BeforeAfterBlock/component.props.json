@@ -1,0 +1,22 @@
+{
+  "component": "BeforeAfterBlock",
+  "description": "Interactive drag-slider comparing before and after states side by side.",
+  "props": {
+    "badge": { "type": "string", "required": false, "description": "Optional eyebrow badge" },
+    "heading": { "type": "string", "required": false, "description": "Section heading" },
+    "subheading": { "type": "string", "required": false, "description": "Descriptive subheading" },
+    "before": {
+      "type": "BeforeAfterSide",
+      "required": true,
+      "description": "Before state content",
+      "shape": { "label": "string?", "items": "string[]?", "imageSrc": "string?" }
+    },
+    "after": {
+      "type": "BeforeAfterSide",
+      "required": true,
+      "description": "After state content",
+      "shape": { "label": "string?", "items": "string[]?", "imageSrc": "string?" }
+    },
+    "className": { "type": "string", "required": false }
+  }
+}

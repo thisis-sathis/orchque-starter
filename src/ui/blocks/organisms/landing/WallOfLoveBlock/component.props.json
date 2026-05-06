@@ -1,0 +1,16 @@
+{
+  "component": "WallOfLoveBlock",
+  "description": "Masonry grid of social-platform testimonial card mockups (Twitter, LinkedIn, etc.).",
+  "props": {
+    "heading": { "type": "string", "required": false, "description": "Section heading" },
+    "subheading": { "type": "string", "required": false, "description": "Supporting subheading" },
+    "items": {
+      "type": "WallOfLoveItem[]",
+      "required": true,
+      "description": "Array of testimonial card items",
+      "shape": { "platform": "'twitter' | 'linkedin' | 'reddit' | 'producthunt' | 'appstore'", "author": "string", "handle": "string?", "content": "string", "avatarSrc": "string?", "likes": "number?", "date": "string?" }
+    },
+    "columns": { "type": "2 | 3 | 4", "required": false, "description": "Number of masonry columns. Default: 3" },
+    "className": { "type": "string", "required": false }
+  }
+}

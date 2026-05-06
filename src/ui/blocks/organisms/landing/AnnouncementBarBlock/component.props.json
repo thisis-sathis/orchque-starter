@@ -1,0 +1,12 @@
+{
+  "component": "AnnouncementBarBlock",
+  "description": "Dismissible top-of-page notification banner with optional link and variant styling.",
+  "props": {
+    "message": { "type": "string", "required": true, "description": "Banner message content" },
+    "linkText": { "type": "string", "required": false, "description": "Optional inline link text" },
+    "linkHref": { "type": "string", "required": false, "description": "Optional inline link URL" },
+    "variant": { "type": "'info' | 'success' | 'warning'", "required": false, "description": "Visual style variant. Default: 'info'" },
+    "dismissible": { "type": "boolean", "required": false, "description": "Whether the banner can be closed. Default: true" },
+    "className": { "type": "string", "required": false }
+  }
+}

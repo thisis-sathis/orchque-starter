@@ -1,0 +1,24 @@
+{
+  "component": "StatusPage",
+  "description": "Full-screen status/feedback page. Used for error, 404, not-found, offline, and success states.",
+  "props": {
+    "icon": { "type": "string", "required": false, "description": "Large emoji or short symbol shown at the top — e.g. '✅', '⚠️', '404'" },
+    "iconIsNumeral": { "type": "boolean", "required": false, "description": "Renders icon as a large numeral in primary color (e.g. for '404'). Default false." },
+    "heading": { "type": "string", "required": true, "description": "Main heading text" },
+    "body": { "type": "string", "required": false, "description": "Supporting paragraph below heading" },
+    "detail": { "type": "string", "required": false, "description": "Small monospace detail line — e.g. 'Error ID: abc123'" },
+    "actions": {
+      "type": "StatusPageAction[]",
+      "required": false,
+      "description": "CTA buttons/links. First is primary by default.",
+      "shape": {
+        "label": "string (required)",
+        "href": "string?",
+        "onClick": "() => void?",
+        "variant": "'primary' | 'secondary'?"
+      }
+    },
+    "footnote": { "type": "ReactNode", "required": false, "description": "Small footnote text/node below the action buttons" },
+    "className": { "type": "string", "required": false }
+  }
+}

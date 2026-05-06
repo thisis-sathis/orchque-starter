@@ -1,0 +1,27 @@
+{
+  "component": "FounderPricingBlock",
+  "description": "Special founder/member pricing with countdown timer, spot progress bar, feature list, and urgency signals.",
+  "props": {
+    "badge": { "type": "string", "required": false, "description": "Top badge. Default: 'Founder pricing'" },
+    "saleBadge": { "type": "string", "required": false, "description": "Sale event badge — e.g. 'Black Friday — 60% off'" },
+    "heading": { "type": "string", "required": true, "description": "Main heading" },
+    "subheading": { "type": "string", "required": false, "description": "Supporting subheading" },
+    "originalPrice": { "type": "number", "required": true, "description": "Original price for strikethrough display" },
+    "salePrice": { "type": "number", "required": true, "description": "Sale price to highlight" },
+    "interval": { "type": "string", "required": false, "description": "Billing interval. Default: 'lifetime'" },
+    "currency": { "type": "string", "required": false, "description": "Currency symbol. Default: '$'" },
+    "spotsTotal": { "type": "number", "required": false, "description": "Total spots available" },
+    "spotsTaken": { "type": "number", "required": false, "description": "Spots already claimed" },
+    "deadline": { "type": "string", "required": false, "description": "ISO deadline string for countdown — e.g. '2026-12-01T00:00:00Z'" },
+    "features": {
+      "type": "FounderPricingFeature[]",
+      "required": true,
+      "description": "Array of included features",
+      "shape": { "label": "string" }
+    },
+    "ctaText": { "type": "string", "required": true, "description": "CTA button text" },
+    "ctaHref": { "type": "string", "required": true, "description": "CTA button link" },
+    "guarantee": { "type": "string", "required": false, "description": "Money-back guarantee text" },
+    "className": { "type": "string", "required": false }
+  }
+}

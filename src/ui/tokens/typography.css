@@ -1,8 +1,8 @@
 /* typography.css — font families and size scale. Override via product.config.json → theme.tokens.font */
 :root {
-  /* Font families — each product_theme sets its own default pair */
-  --font-heading: "Inter", system-ui, sans-serif;
-  --font-body:    "Inter", system-ui, sans-serif;
+  /* Font families — Plus Jakarta Sans as default; crisp and modern */
+  --font-heading: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+  --font-body:    "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
   --font-mono:    "Geist Mono", "Fira Code", monospace;
 
   /* Size scale */
@@ -16,6 +16,8 @@
   --text-3xl:  1.875rem;  /* 30px */
   --text-4xl:  2.25rem;   /* 36px */
   --text-5xl:  3rem;      /* 48px */
+  --text-6xl:  3.5rem;    /* 56px */
+  --text-7xl:  4rem;      /* 64px */
 
   /* Line heights */
   --leading-tight:  1.25;

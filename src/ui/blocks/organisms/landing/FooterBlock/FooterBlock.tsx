@@ -17,6 +17,8 @@ export interface FooterBlockProps {
   logoText: string;
   logoSrc?: string;
   tagline?: string;
+  /** Company address shown below the logo/tagline */
+  address?: string;
   columns?: FooterColumn[];
   legalLinks?: FooterLink[];
   copyrightText?: string;
@@ -27,6 +29,7 @@ export function FooterBlock({
   logoText,
   logoSrc,
   tagline,
+  address,
   columns = [],
   legalLinks = [],
   copyrightText,
@@ -38,24 +41,24 @@ export function FooterBlock({
     <footer
       className={cn(
         "w-full border-t border-[var(--color-border)] bg-[var(--color-surface)]",
-        "px-[var(--space-6x)] py-[var(--space-12x)]",
+        "px-[var(--landing-section-px)] py-[var(--landing-section-py)]",
         className
       )}
     >
       <div className="mx-auto max-w-6xl">
-        {/* Top: brand + columns */}
-        <div
-          className={cn(
-            "grid grid-cols-1 gap-[var(--space-8x)]",
-            columns.length > 0 && "sm:grid-cols-2 md:grid-cols-[1fr_repeat(auto-fit,minmax(120px,1fr))]"
-          )}
-        >
+        {/* Top: brand (col 1) + 3 link columns — single row on desktop */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[var(--space-8x)]">
           {/* Brand */}
           <div className="flex flex-col gap-[var(--space-3x)]">
             <a href="/" className="font-[var(--font-bold)] text-[var(--color-primary)] text-[var(--text-lg)]">
               {logoSrc ? <img src={logoSrc} alt={logoText} className="h-6 w-auto" /> : logoText}
             </a>
             {tagline && <p className="text-[var(--text-sm)] text-[var(--color-text-muted)]">{tagline}</p>}
+            {address && (
+              <p className="text-[var(--text-xs)] text-[var(--color-text-muted)] leading-[var(--leading-relaxed)] whitespace-pre-line">
+                {address}
+              </p>
+            )}
           </div>
 
           {/* Link columns */}

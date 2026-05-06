@@ -1,8 +1,8 @@
 {
   "brand": {
     "name": "Your Product",
-    "tagline": "The tagline goes here",
-    "description": "A short product description for meta tags and og:description.",
+    "tagline": "Ship faster. Build smarter.",
+    "description": "The all-in-one SaaS starter that handles auth, billing, and AI — so you can focus on your product.",
     "domain": "yourproduct.com",
     "supportEmail": "support@yourproduct.com",
     "notifyEmail": "notify@yourproduct.com",
@@ -15,32 +15,34 @@
   },
 
   "theme": {
-    "landing_theme": "tech",
+    "landing_theme": "simple",
     "product_theme": "basic",
-    "dark_mode": true,
+    "dark_mode": false,
 
     "tokens": {
       "colors": {
-        "primary":    "#6366f1",
-        "secondary":  "#8b5cf6",
-        "accent":     "#06b6d4",
+        "primary":    "#4285F4",
+        "secondary":  "#34A853",
+        "accent":     "#7C4DFF",
         "surface":    "#ffffff",
-        "background": "#f8fafc",
-        "text":       "#0f172a",
-        "muted":      "#64748b",
-        "border":     "#e2e8f0",
-        "highlight":  "#fbbf24",
-        "error":      "#ef4444",
-        "success":    "#22c55e"
+        "background": "#f8f9fa",
+        "text":       "#202124",
+        "muted":      "#5f6368",
+        "border":     "#e8eaed",
+        "highlight":  "#FBBC04",
+        "error":      "#EA4335",
+        "success":    "#34A853"
       },
       "font": {
-        "heading": "Geist",
-        "body":    "Geist"
+        "heading": "Plus Jakarta Sans",
+        "body":    "Plus Jakarta Sans"
       },
       "radius": "md",
       "spacing": {
         "base": 4,
-        "density": "default"
+        "density": "default",
+        "section_py": 80,
+        "section_px": 24
       }
     }
   },
@@ -73,28 +75,76 @@
     "nav": {
       "links": [
         { "label": "Features", "href": "/#features" },
-        { "label": "Pricing",  "href": "/pricing" }
+        { "label": "Pricing",  "href": "/pricing" },
+        {
+          "label": "Solutions",
+          "href": "#",
+          "dropdown": [
+            { "label": "AI Automation Agencies",  "href": "/#use-cases", "description": "Deliver client products 10× faster",      "icon": "Building2" },
+            { "label": "SaaS Founders",           "href": "/#use-cases", "description": "Ship your MVP in days, not months",        "icon": "Rocket" },
+            { "label": "Indie Creators",          "href": "/#use-cases", "description": "A real product, not just a landing page",  "icon": "Palette" }
+          ]
+        },
+        {
+          "label": "Resources",
+          "href": "#",
+          "dropdown": [
+            { "label": "Documentation",    "href": "/docs",            "description": "Guides, API reference, and config docs", "icon": "BookOpen" },
+            { "label": "Blog",             "href": "/blog",            "description": "Articles and tutorials",                 "icon": "PenSquare" },
+            { "label": "Case Studies",     "href": "/case-studies",    "description": "How teams ship with this starter",       "icon": "BarChart2" },
+            { "label": "Community",        "href": "/community",       "description": "Join the builder community",             "icon": "Users" },
+            { "label": "Changelog",        "href": "/changelog",       "description": "What's new",                            "icon": "GitMerge" }
+          ]
+        },
+        { "label": "Careers", "href": "/careers" }
       ],
-      "cta": { "label": "Get started", "href": "/auth/signup" }
+      "cta": { "label": "Get started free", "href": "/auth/signup" }
     },
 
     "hero": {
-      "badge": "Free — no credit card required",
-      "headline": "Your Headline Here",
-      "subhead": "A compelling one-liner that explains what your product does and why it matters.",
+      "badge": "Free to start — no credit card required",
+      "headline": "Build and ship your SaaS in days, not months",
+      "subhead": "Everything you need — auth, billing, AI credits, support — pre-wired and ready to customize.",
       "cta": "Get Started Free",
       "ctaHref": "/auth/signup",
-      "secondaryCta": "See how it works",
+      "secondaryCta": "See what's included",
       "secondaryCtaHref": "/#features"
     },
 
     "features": {
-      "heading": "Everything you need",
-      "subheading": "Built with the tools and workflows you already know.",
+      "heading": "Everything you need, nothing you don't",
+      "subheading": "Pre-built with the patterns that every SaaS product needs, so you can move fast from day one.",
       "items": [
-        { "icon": "Zap",      "title": "Feature One",   "description": "Short description of the first key feature." },
-        { "icon": "Shield",   "title": "Feature Two",   "description": "Short description of the second key feature." },
-        { "icon": "BarChart", "title": "Feature Three", "description": "Short description of the third key feature." }
+        {
+          "icon": "Zap",
+          "title": "Instant Setup",
+          "description": "Auth, database, and billing pre-configured. Clone, configure product.config.json, and you're live."
+        },
+        {
+          "icon": "Shield",
+          "title": "Auth & Security",
+          "description": "Email + OAuth sign-in, protected routes, secure sessions — all handled out of the box."
+        },
+        {
+          "icon": "CreditCard",
+          "title": "Billing Built In",
+          "description": "Lemon Squeezy integration with free and pro plans. Upgrade flows and webhook handling included."
+        },
+        {
+          "icon": "BarChart",
+          "title": "Credit System",
+          "description": "Track and limit usage per user with a flexible credit system. Free tier, paid tier, no drama."
+        },
+        {
+          "icon": "MessageSquare",
+          "title": "Support Tickets",
+          "description": "In-app support ticket system so your users can reach you without leaving your product."
+        },
+        {
+          "icon": "Settings2",
+          "title": "Data-Driven Config",
+          "description": "One JSON file controls your brand, copy, nav, pricing, and theme. Zero code changes needed."
+        }
       ]
     },
 
@@ -112,8 +162,9 @@
           "ctaHref": "/auth/signup",
           "features": [
             "3 actions per month",
-            "Core features",
-            "Community support"
+            "Core product features",
+            "Community support",
+            "Email sign-in"
           ]
         },
         "pro": {
@@ -127,9 +178,10 @@
           "highlighted": true,
           "features": [
             "Unlimited actions",
-            "Priority support",
-            "Advanced features",
-            "Export results"
+            "Priority email support",
+            "All advanced features",
+            "Export results",
+            "Early access to new features"
           ]
         }
       }
@@ -145,27 +197,1133 @@
       "items": [
         {
           "question": "How do I get started?",
-          "answer": "Sign up for a free account and you'll have access to all core features immediately."
+          "answer": "Sign up for a free account — no credit card required. You'll get immediate access to all core features and 3 free actions per month."
+        },
+        {
+          "question": "What counts as an action?",
+          "answer": "An action is one use of the core product feature. Free users get 3 per month; Pro users get unlimited."
         },
         {
           "question": "Can I upgrade or downgrade my plan?",
-          "answer": "Yes, you can change your plan at any time from your account settings."
+          "answer": "Yes. You can upgrade to Pro at any time from your account settings, and cancel whenever you want — no lock-in."
+        },
+        {
+          "question": "Is my data secure?",
+          "answer": "Yes. All data is stored in a Supabase Postgres database with encrypted connections. We never sell your data."
         }
       ]
     },
 
     "cta": {
-      "heading": "Ready to ship?",
-      "subheading": "Join builders who are launching faster.",
+      "heading": "Ready to ship your product?",
+      "subheading": "Join builders who are launching faster with a solid foundation.",
       "ctaText": "Get started free",
       "ctaHref": "/auth/signup"
     },
 
     "footer": {
-      "tagline": "Built to help you ship faster.",
+      "tagline": "Ship faster. Build smarter.",
+      "address": "Your Company Inc.\n123 Builder Street, Suite 100\nSan Francisco, CA 94105\nUnited States",
       "links": [
         { "label": "Privacy", "href": "/legal/privacy" },
         { "label": "Terms",   "href": "/legal/terms" }
+      ],
+      "columns": [
+        {
+          "heading": "Product",
+          "links": [
+            { "label": "Features",   "href": "/#features" },
+            { "label": "Pricing",    "href": "/pricing" },
+            { "label": "Changelog",  "href": "/changelog" },
+            { "label": "Roadmap",    "href": "/#roadmap" },
+            { "label": "Dashboard",  "href": "/dashboard" }
+          ]
+        },
+        {
+          "heading": "Resources",
+          "links": [
+            { "label": "Docs",           "href": "/docs" },
+            { "label": "Blog",           "href": "/blog" },
+            { "label": "Case Studies",   "href": "/case-studies" },
+            { "label": "Community",      "href": "/community" },
+            { "label": "Templates",      "href": "/templates" }
+          ]
+        },
+        {
+          "heading": "Company",
+          "links": [
+            { "label": "About",      "href": "/#about" },
+            { "label": "Careers",    "href": "/careers" },
+            { "label": "Affiliates", "href": "/affiliates" },
+            { "label": "Contact",    "href": "/contact" },
+            { "label": "Legal",      "href": "/legal/privacy" }
+          ]
+        }
+      ]
+    }
+  },
+
+  "landing_sections": {
+    "appPagesShowcase": {
+      "badge": "Every page included",
+      "heading": "App pages — all built, ready to ship",
+      "subheading": "Every utility page your product needs — error handling, loading states, success flows, and more — pre-built and styled to match your brand."
+    },
+
+    "codeViewer": {
+      "badge": "Real code. Copy or download.",
+      "heading": "See exactly what you're getting",
+      "subheading": "Browse real files from the starter. Copy any file or download them all as a ZIP.",
+      "zipFilename": "saas-starter-examples.zip"
+    },
+
+    "announcement": {
+      "message": "🎉 v2.0 just launched — new UI kit, dark mode, and 3 new themes.",
+      "linkText": "See what's new",
+      "linkHref": "/changelog",
+      "variant": "info",
+      "dismissible": true
+    },
+
+    "companyLogos": {
+      "heading": "Trusted by teams at",
+      "logos": [
+        { "name": "Stripe" },
+        { "name": "Notion" },
+        { "name": "Linear" },
+        { "name": "Vercel" },
+        { "name": "Supabase" },
+        { "name": "Figma" },
+        { "name": "Loom" },
+        { "name": "Pitch" },
+        { "name": "Arc" },
+        { "name": "Raycast" }
+      ]
+    },
+
+    "whyBetter": {
+      "badge": "Built different",
+      "heading": "Accessibility, SEO & security — not an afterthought",
+      "subheading": "Every page is built to pass Lighthouse, WCAG AA, and OWASP Top 10 — so you ship with confidence.",
+      "points": [
+        { "icon": "Accessibility",  "title": "WCAG AA accessibility",   "description": "Semantic HTML, ARIA labels, keyboard navigation, and focus management built into every component." },
+        { "icon": "Search",         "title": "SEO-ready out of the box", "description": "Open Graph, sitemap, robots.txt, and structured metadata pre-configured for every page." },
+        { "icon": "Shield",         "title": "Security first",          "description": "CSRF protection, input validation, rate limiting, and secure session handling included by default." },
+        { "icon": "Gauge",          "title": "Lighthouse 95+ scores",   "description": "Optimised for Core Web Vitals — lazy loading, font subsetting, and minimal JS bundle." },
+        { "icon": "Globe",          "title": "i18n-ready structure",    "description": "App architecture supports adding multiple locales without a rewrite." }
+      ],
+      "ctaText": "See the tech details",
+      "ctaHref": "/docs/architecture"
+    },
+
+    "customerStories": {
+      "badge": "Customer stories",
+      "heading": "Real teams. Real results.",
+      "subheading": "See how founders and agencies are shipping faster with this starter.",
+      "stories": [
+        {
+          "company": "LaunchPad Agency",
+          "industry": "AI Automation",
+          "metric": "10×",
+          "metricLabel": "faster client delivery",
+          "quote": "We used to spend 3 weeks on every new client's auth and billing setup. Now we configure a JSON file and we're done in an afternoon.",
+          "authorName": "Marcus Webb",
+          "authorRole": "Founder, LaunchPad Agency",
+          "href": "/case-studies/launchpad"
+        },
+        {
+          "company": "FormFlow",
+          "industry": "SaaS / Forms",
+          "metric": "$8k",
+          "metricLabel": "MRR in first month",
+          "quote": "I shipped FormFlow in 4 days. The billing and auth just worked. I spent my whole time on the actual form builder — which is the product.",
+          "authorName": "Priya Nair",
+          "authorRole": "Solo Founder, FormFlow",
+          "href": "/case-studies/formflow"
+        },
+        {
+          "company": "Summr",
+          "industry": "AI Productivity",
+          "metric": "72h",
+          "metricLabel": "from idea to paying users",
+          "quote": "Summr went from a Notion doc to a live product with paying customers in 72 hours. The starter handled everything except the AI logic.",
+          "authorName": "Jordan Blake",
+          "authorRole": "Indie Maker, Summr",
+          "href": "/case-studies/summr"
+        }
+      ]
+    },
+
+    "awards": {
+      "badge": "Recognition",
+      "heading": "Recognised by the builder community",
+      "subheading": "Trusted and featured across top developer and product communities.",
+      "awards": [
+        { "icon": "Trophy",    "title": "#1 Product of the Day", "issuer": "Product Hunt",   "year": "2026" },
+        { "icon": "Star",      "title": "Top SaaS Starter",      "issuer": "Hacker News",    "year": "2026" },
+        { "icon": "Award",     "title": "Best DX Tool",          "issuer": "Dev.to",         "year": "2026" },
+        { "icon": "BadgeCheck","title": "Editor's Choice",       "issuer": "Indie Hackers",  "year": "2026" }
+      ]
+    },
+
+    "careers": {
+      "badge": "We're hiring",
+      "heading": "Join us — build the future of SaaS tooling",
+      "subheading": "We're a small, remote-first team that ships fast and cares deeply about developer experience.",
+      "perks": [
+        { "icon": "Globe",      "title": "Fully remote",          "description": "Work from anywhere in the world, async-first culture." },
+        { "icon": "Zap",        "title": "Ship fast, often",      "description": "Small team, big impact. Your work ships in days, not quarters." },
+        { "icon": "Heart",      "title": "Equity + ownership",    "description": "Everyone on the team has meaningful stake in what we build." },
+        { "icon": "BookOpen",   "title": "Learning budget",       "description": "$2,000/year for courses, conferences, and tools." },
+        { "icon": "Coffee",     "title": "Async meetings",        "description": "We default to written communication. Fewer calls, more focus." },
+        { "icon": "Users",      "title": "Small, tight team",     "description": "You'll know everyone by name and ship with real autonomy." }
+      ],
+      "jobs": [
+        {
+          "title": "Senior Full-Stack Engineer",
+          "department": "Engineering",
+          "location": "Remote",
+          "type": "Full-time",
+          "href": "/careers/senior-fullstack"
+        },
+        {
+          "title": "Developer Advocate",
+          "department": "Marketing",
+          "location": "Remote",
+          "type": "Full-time",
+          "href": "/careers/devrel"
+        },
+        {
+          "title": "Product Designer",
+          "department": "Design",
+          "location": "Remote",
+          "type": "Contract",
+          "href": "/careers/designer"
+        }
+      ],
+      "ctaText": "See all open roles",
+      "ctaHref": "/careers"
+    },
+
+    "community": {
+      "badge": "Community",
+      "heading": "Build alongside 5,000+ makers",
+      "subheading": "Get help, share what you're building, and connect with other founders using this starter.",
+      "stats": [
+        { "value": "5,000+", "label": "Community members" },
+        { "value": "200+",   "label": "Projects shipped" },
+        { "value": "50+",    "label": "Contributors" },
+        { "value": "24/7",   "label": "Active discussions" }
+      ],
+      "channels": [
+        {
+          "icon": "MessageCircle",
+          "platform": "Discord",
+          "description": "Ask questions, share your build, and get real-time help from other builders.",
+          "members": "3,200",
+          "href": "https://discord.gg/yourserver",
+          "ctaLabel": "Join Discord"
+        },
+        {
+          "icon": "Github",
+          "platform": "GitHub Discussions",
+          "description": "Open issues, submit PRs, and follow the public roadmap.",
+          "members": "1,100",
+          "href": "https://github.com/yourrepo",
+          "ctaLabel": "Star on GitHub"
+        },
+        {
+          "icon": "Twitter",
+          "platform": "Twitter / X",
+          "description": "Follow for tips, product updates, and community highlights.",
+          "members": "800",
+          "href": "https://twitter.com/yourhandle",
+          "ctaLabel": "Follow @yourhandle"
+        }
+      ]
+    },
+
+    "resources": {
+      "badge": "Resources",
+      "heading": "Everything you need to ship",
+      "subheading": "Guides, case studies, templates, and tutorials — all in one place.",
+      "items": [
+        {
+          "type": "guide",
+          "icon": "Rocket",
+          "title": "Quick Start: Clone to live in 10 minutes",
+          "description": "Step-by-step setup from git clone to a live Vercel deployment.",
+          "tag": "Getting started",
+          "readTime": "10 min",
+          "href": "/docs/quick-start"
+        },
+        {
+          "type": "case-study",
+          "icon": "BarChart2",
+          "title": "How LaunchPad Agency delivers 10× faster",
+          "description": "A real-world case study on using this starter for agency client work.",
+          "tag": "Case Study",
+          "readTime": "5 min",
+          "href": "/case-studies/launchpad"
+        },
+        {
+          "type": "article",
+          "icon": "PenSquare",
+          "title": "Why data-driven UI is the future of SaaS tooling",
+          "description": "When your entire product is configurable from one JSON file, iteration goes through the roof.",
+          "tag": "Opinion",
+          "readTime": "4 min",
+          "href": "/blog/data-driven-ui"
+        },
+        {
+          "type": "guide",
+          "icon": "CreditCard",
+          "title": "Lemon Squeezy billing in 30 minutes",
+          "description": "Connect payments, webhooks, and plan gating without losing your mind.",
+          "tag": "Billing",
+          "readTime": "8 min",
+          "href": "/docs/billing"
+        },
+        {
+          "type": "case-study",
+          "icon": "Zap",
+          "title": "FormFlow: $8k MRR in the first month",
+          "description": "Solo founder ships a form builder SaaS in 4 days using this starter.",
+          "tag": "Case Study",
+          "readTime": "6 min",
+          "href": "/case-studies/formflow"
+        },
+        {
+          "type": "template",
+          "icon": "Layout",
+          "title": "Landing page copy template",
+          "description": "A fill-in-the-blank copy template for every landing section, ready to drop into product.config.json.",
+          "tag": "Template",
+          "readTime": "Free",
+          "href": "/templates/landing-copy"
+        },
+        {
+          "type": "launch-kit",
+          "icon": "Rocket",
+          "title": "SaaS Launch Kit — Product Hunt, Twitter, Reddit",
+          "description": "Copy, graphics templates, and step-by-step launch checklist for your first big launch day.",
+          "tag": "Launch Kit",
+          "readTime": "Free",
+          "href": "/resources/launch-kit"
+        },
+        {
+          "type": "launch-kit",
+          "icon": "Star",
+          "title": "Indie Maker Launch Kit",
+          "description": "Everything a solo founder needs to go from zero to first 100 users — email sequences, social posts, and announcement templates.",
+          "tag": "Launch Kit",
+          "readTime": "Free",
+          "href": "/resources/indie-launch-kit"
+        },
+        {
+          "type": "skill",
+          "icon": "BookOpen",
+          "title": "Skill: Ship faster with data-driven UI",
+          "description": "Learn how to separate content from code and build products you can iterate without engineering.",
+          "tag": "Skill",
+          "readTime": "15 min",
+          "href": "/skills/data-driven-ui"
+        },
+        {
+          "type": "skill",
+          "icon": "Shield",
+          "title": "Skill: Auth + billing in under an hour",
+          "description": "A hands-on walkthrough of connecting Supabase auth and Lemon Squeezy billing from scratch.",
+          "tag": "Skill",
+          "readTime": "45 min",
+          "href": "/skills/auth-billing"
+        }
+      ]
+    },
+
+    "scheduleMeeting": {
+      "badge": "Talk to us",
+      "heading": "See it live — book a 30-minute demo",
+      "subheading": "We'll walk you through the starter, answer your questions, and help you figure out if it's the right fit.",
+      "perks": [
+        { "label": "No sales pressure — just a real conversation" },
+        { "label": "See the full dashboard and UI kit live" },
+        { "label": "Get answers to your specific use case" },
+        { "label": "Walk away with a clear next step" }
+      ],
+      "ctaText": "Book a 30-min demo",
+      "calendarHref": "https://cal.com/yourhandle/demo",
+      "hostName": "Your Name",
+      "hostRole": "Founder",
+      "availabilityNote": "Usually responds within a few hours"
+    },
+
+    "problemSolution": {
+      "badge": "The problem",
+      "heading": "Building SaaS the old way is a trap",
+      "subheading": "Founders spend weeks on infrastructure that has nothing to do with their idea.",
+      "problemHeading": "The old way",
+      "problemItems": [
+        { "label": "Weeks wasted on auth, billing, and database setup" },
+        { "label": "Generic AI tools that don't know your product" },
+        { "label": "Boilerplates that are half-done or unmaintained" },
+        { "label": "No structure — everything is duct-taped together" },
+        { "label": "Start from scratch every single time" }
+      ],
+      "solutionHeading": "The new way",
+      "solutionItems": [
+        { "label": "Auth, billing, credits, and support pre-wired on day one" },
+        { "label": "One config file controls your entire product" },
+        { "label": "UI kit driven by data — change copy without touching code" },
+        { "label": "Clear architecture: tokens → components → blocks → pages" },
+        { "label": "Clone, configure, and ship in days — not weeks" }
+      ]
+    },
+
+    "howItWorks": {
+      "badge": "How it works",
+      "heading": "From idea to live product in 4 steps",
+      "subheading": "No guesswork. Just a clear path from zero to shipped.",
+      "steps": [
+        {
+          "step": 1,
+          "icon": "Lightbulb",
+          "title": "Clone and configure",
+          "description": "Clone the repo and edit product.config.json — set your brand, copy, colors, and pricing. Nothing else to change."
+        },
+        {
+          "step": 2,
+          "icon": "Settings2",
+          "title": "Connect your services",
+          "description": "Add your Supabase URL, Lemon Squeezy keys, and email credentials. The integrations are already wired — just fill in the values."
+        },
+        {
+          "step": 3,
+          "icon": "Zap",
+          "title": "Build your core feature",
+          "description": "The dashboard, auth, billing, and support are ready. Focus 100% on the thing only you can build — your product's core value."
+        },
+        {
+          "step": 4,
+          "icon": "Rocket",
+          "title": "Deploy and ship",
+          "description": "Deploy to Vercel in one click. Share your link. Get your first users. Iterate fast."
+        }
+      ],
+      "ctaText": "Start building now",
+      "ctaHref": "/auth/signup"
+    },
+
+    "useCases": {
+      "badge": "Who it's for",
+      "heading": "Built for builders like you",
+      "subheading": "Whether you're a solo founder, an agency, or a creator — this gets you moving fast.",
+      "cases": [
+        {
+          "icon": "Building2",
+          "audience": "AI Automation Agencies",
+          "tagline": "Deliver client products 10x faster",
+          "bullets": [
+            "Pre-built UI your clients can use day one",
+            "White-label ready with custom branding",
+            "Billing and credit system already handled",
+            "Support tickets built in — no extra tools"
+          ]
+        },
+        {
+          "icon": "Rocket",
+          "audience": "Solo SaaS Founders",
+          "tagline": "Stop setting up, start shipping",
+          "bullets": [
+            "Auth, billing, and database done for you",
+            "Launch your MVP this week, not next month",
+            "One config file — no code changes for copy/theme",
+            "Pricing, FAQ, features — all data-driven"
+          ]
+        },
+        {
+          "icon": "Palette",
+          "audience": "Indie Creators & Makers",
+          "tagline": "A real product, not just a landing page",
+          "bullets": [
+            "Full dashboard with user accounts",
+            "Free tier + paid tier out of the box",
+            "Looks great — clean, modern UI kit included",
+            "Easy to customize without deep React knowledge"
+          ]
+        }
+      ]
+    },
+
+    "whatsIncluded": {
+      "badge": "What's included",
+      "heading": "Everything built — just configure and launch",
+      "subheading": "Pages, systems, UI kit, and integrations — pre-wired so you start at 80%, not zero.",
+      "categories": [
+        {
+          "icon": "Layout",
+          "title": "Landing pages",
+          "items": ["Hero + Nav + Footer", "Features section", "Pricing section", "FAQ accordion", "Demo block (code view)", "Wall of love", "Comparison table", "Metrics + uptime", "Video embed", "Blog preview", "Docs preview", "CTA + waitlist", "Company logos (2 row)", "Problem → Solution", "How it works steps", "Use cases (who it's for)", "Why we're better (a11y, SEO, security)", "Customer stories / case studies", "Awards & recognition", "Community section", "Resources hub", "Careers section", "About creator", "Affiliates", "Announcement bar", "Founder pricing + Black Friday sale", "Enterprise form", "Bonus offer / value stack", "Book a demo + inbox confirm", "Schedule meeting"]
+        },
+        {
+          "icon": "LayoutDashboard",
+          "title": "Product dashboard",
+          "items": ["Dashboard home + stats", "Product feature page", "Settings page", "Billing page", "Support tickets", "New ticket form", "Ticket detail view"]
+        },
+        {
+          "icon": "Shield",
+          "title": "Auth system",
+          "items": ["Email sign-in", "OAuth (Google)", "Sign-up flow", "Forgot / reset password", "Auth error page", "Protected routes"]
+        },
+        {
+          "icon": "CreditCard",
+          "title": "Billing & credits",
+          "items": ["Lemon Squeezy integration", "Free + Pro plans", "Credit tracking", "Plan-gated features", "Webhook handling", "Upgrade flow"]
+        },
+        {
+          "icon": "Palette",
+          "title": "UI kit",
+          "items": ["40+ atomic components", "Landing block organisms", "CSS variable tokens", "3 landing themes", "2 product themes", "Dark mode ready"]
+        },
+        {
+          "icon": "Settings2",
+          "title": "Config system",
+          "items": ["product.config.json", "Brand, copy, colors", "Nav, pricing, FAQ", "Theme + font", "Feature flags", "Zero code changes needed"]
+        }
+      ],
+      "ctaText": "Get the starter",
+      "ctaHref": "/auth/signup"
+    },
+
+    "demo": {
+      "heading": "See it in action",
+      "subheading": "Type a prompt and watch your product come to life instantly.",
+      "placeholder": "e.g. Build me a landing page for a fitness app",
+      "suggestedPrompts": [
+        "Build me a landing page for a fitness app",
+        "Create a pricing section with 3 tiers",
+        "Generate a dashboard with stats and empty state"
+      ]
+    },
+
+    "wallOfLove": {
+      "heading": "Wall of love",
+      "subheading": "Real words from real builders",
+      "items": [
+        { "name": "Alex Turner",   "handle": "@alexbuilds",   "source": "twitter",     "likes": 284, "comments": 31, "shares": 89,  "quote": "Shipped my SaaS in 3 days flat. The config system is genius — I just updated one JSON file and everything changed." },
+        { "name": "Priya Sharma",  "handle": "@priyadev",     "source": "producthunt", "likes": 47,                                 "quote": "Finally a starter that doesn't make me wade through 500 lines of boilerplate. Auth + billing just worked." },
+        { "name": "Marcus Lee",    "handle": "@marcuslee_io", "source": "reddit",      "likes": 831, "comments": 74,               "quote": "Used this for my side project and got to paying customers in a week.\nThe support system built-in saved me so much time. No extra Intercom setup, no Zendesk — it's all just there." },
+        { "name": "Sophie Chen",   "handle": "@sophiecode",   "source": "instagram",   "likes": 512,                               "quote": "The UI kit is incredible. Every component is data-driven. I replaced the whole landing copy in under 10 minutes." },
+        { "name": "Jordan Blake",  "handle": "@jblake_dev",   "source": "twitter",     "likes": 193, "comments": 22, "shares": 41, "quote": "The theme system is really well designed. I switched from 'tech' to 'minimal' and the whole look changed instantly." },
+        { "name": "Nadia Kowalski","handle": "@nadiabuilds",  "source": "linkedin",    "likes": 88,  "comments": 11,               "quote": "As a solo founder this is everything. I don't have to think about auth, billing, credits — it's all there." }
+      ]
+    },
+
+    "comparison": {
+      "heading": "Built for product builders, not just chatting",
+      "ourLabel": "Your Product",
+      "theirLabel": "ChatGPT",
+      "rows": [
+        { "feature": "Purpose-built for your domain", "ours": true, "theirs": false },
+        { "feature": "Integrated billing & credits", "ours": true, "theirs": false },
+        { "feature": "User accounts & auth", "ours": true, "theirs": false },
+        { "feature": "Custom UI & branding", "ours": true, "theirs": false },
+        { "feature": "Support ticket system", "ours": true, "theirs": false },
+        { "feature": "API access", "ours": true, "theirs": "Paid only" },
+        { "feature": "Data stays in your database", "ours": true, "theirs": false },
+        { "feature": "White-label & custom domain", "ours": true, "theirs": false }
+      ]
+    },
+
+    "metrics": {
+      "heading": "Built for reliability",
+      "subheading": "Performance you can trust, with transparency you deserve.",
+      "stats": [
+        { "label": "Uptime", "value": "99.9%", "sub": "Last 90 days" },
+        { "label": "Avg response", "value": "< 200ms", "sub": "API latency" },
+        { "label": "Users served", "value": "10k+", "sub": "And growing" },
+        { "label": "Support SLA", "value": "< 24h", "sub": "First response" }
+      ]
+    },
+
+    "video": {
+      "heading": "See the full workflow in 2 minutes",
+      "subheading": "From clone to live product — watch how fast you can ship.",
+      "duration": "2 min overview"
+    },
+
+    "featuredOn": {
+      "heading": "Featured on",
+      "mentions": [
+        { "name": "Product Hunt" },
+        { "name": "Hacker News" },
+        { "name": "Dev.to" },
+        { "name": "Indie Hackers" },
+        { "name": "BetaList" }
+      ]
+    },
+
+    "aboutCreator": {
+      "heading": "Meet the creator",
+      "name": "Your Name",
+      "role": "Founder & Builder",
+      "bio": "I've been building SaaS products for over 5 years. After spending weeks on the same auth, billing, and onboarding setup for every project, I built this starter so I — and you — never have to again. I ship in public and believe the best software is built fast, with real feedback.",
+      "highlights": [
+        "5+ years building SaaS products",
+        "Shipped 10+ products as a solo founder",
+        "Obsessed with developer experience",
+        "Open to feedback — reach out anytime"
+      ],
+      "socialLinks": [
+        { "platform": "twitter", "href": "https://twitter.com/yourhandle" },
+        { "platform": "github",  "href": "https://github.com/yourhandle" },
+        { "platform": "website", "href": "https://yourwebsite.com" }
+      ]
+    },
+
+    "waitlist": {
+      "heading": "Want early access?",
+      "subheading": "Join the waitlist and be first in line when we open new spots.",
+      "badge": "Limited spots available",
+      "buttonText": "Claim your spot",
+      "successMessage": "You're on the list! We'll email you as soon as a spot opens."
+    },
+
+    "blog": {
+      "heading": "From the blog",
+      "posts": [
+        {
+          "slug": "ship-saas-in-3-days",
+          "title": "How to ship a SaaS product in 3 days",
+          "excerpt": "A step-by-step breakdown of how I used this starter to go from idea to paying customers in 72 hours.",
+          "date": "May 1, 2026",
+          "tag": "Tutorial",
+          "readTime": "5 min",
+          "authorName": "Your Name"
+        },
+        {
+          "slug": "data-driven-ui",
+          "title": "Why data-driven UI is the future of SaaS tooling",
+          "excerpt": "When your entire product is configurable from one JSON file, iteration speed goes through the roof.",
+          "date": "Apr 22, 2026",
+          "tag": "Product",
+          "readTime": "4 min",
+          "authorName": "Your Name"
+        },
+        {
+          "slug": "billing-without-pain",
+          "title": "Setting up Lemon Squeezy billing in under 30 minutes",
+          "excerpt": "A practical guide to wiring up payments, webhooks, and plan gating — without losing your mind.",
+          "date": "Apr 10, 2026",
+          "tag": "Guide",
+          "readTime": "6 min",
+          "authorName": "Your Name"
+        }
+      ]
+    },
+
+    "affiliates": {
+      "heading": "Earn by sharing",
+      "subheading": "Refer a paying customer and earn 30% commission every month they stay subscribed.",
+      "commission": "30%",
+      "ctaText": "Become an affiliate",
+      "ctaHref": "/affiliates",
+      "perks": [
+        { "icon": "DollarSign", "title": "Recurring commission", "description": "Earn 30% every month for the lifetime of each customer you refer." },
+        { "icon": "Clock",      "title": "Instant payouts",      "description": "Get paid within 24 hours of a conversion via your preferred method." },
+        { "icon": "BarChart2",  "title": "Real-time dashboard",  "description": "Track clicks, conversions, and earnings in your affiliate dashboard." }
+      ]
+    },
+
+    "docs": {
+      "heading": "Documentation",
+      "subheading": "Everything you need to get up and running in minutes.",
+      "links": [
+        { "icon": "Rocket",      "title": "Quick Start",           "description": "Clone, configure, and deploy your first product in under 10 minutes.", "href": "/docs/quick-start" },
+        { "icon": "Settings2",   "title": "Configuration",         "description": "A full reference for every key in product.config.json.",              "href": "/docs/config" },
+        { "icon": "CreditCard",  "title": "Billing & Payments",    "description": "Set up Lemon Squeezy, webhook handling, and plan gating.",            "href": "/docs/billing" },
+        { "icon": "Shield",      "title": "Auth & Security",       "description": "How authentication, sessions, and protected routes work.",             "href": "/docs/auth" },
+        { "icon": "Palette",     "title": "Themes & Tokens",       "description": "Change your landing or product theme from one config value.",         "href": "/docs/themes" },
+        { "icon": "BookOpen",    "title": "API Reference",         "description": "All available API routes and how to extend them.",                    "href": "/docs/api" }
+      ]
+    },
+
+    "founderPricing": {
+      "badge": "Founder pricing",
+      "saleBadge": "Black Friday — 60% off",
+      "heading": "Lock in founder pricing before it's gone",
+      "subheading": "Pay once, ship forever. This price goes up when the launch window closes.",
+      "originalPrice": 249,
+      "salePrice": 97,
+      "interval": "lifetime",
+      "currency": "$",
+      "spotsTotal": 50,
+      "spotsTaken": 33,
+      "deadline": "2026-12-01T00:00:00Z",
+      "features": [
+        { "label": "Full source code — no subscription" },
+        { "label": "All future updates included" },
+        { "label": "Auth, billing, credits, support pre-wired" },
+        { "label": "UI kit with 40+ components" },
+        { "label": "3 landing themes + dark mode" },
+        { "label": "Discord community access" },
+        { "label": "License for unlimited projects" }
+      ],
+      "ctaText": "Claim founder price — $97",
+      "ctaHref": "/auth/signup",
+      "guarantee": "30-day money-back guarantee — no questions asked"
+    },
+
+    "enterprise": {
+      "badge": "Enterprise",
+      "heading": "Built for teams that ship at scale",
+      "subheading": "Custom contracts, SLA guarantees, SSO, and dedicated support for teams of 20+.",
+      "features": [
+        { "icon": "Building2",    "title": "Custom licensing",          "description": "Unlimited seats, white-labelling, and commercial redistribution rights." },
+        { "icon": "Shield",       "title": "SLA & uptime guarantee",     "description": "99.9% uptime SLA with dedicated incident response and status page." },
+        { "icon": "Lock",         "title": "SSO / SAML",                "description": "Single sign-on with your identity provider — Okta, Azure AD, Google Workspace." },
+        { "icon": "HeadphonesIcon","title": "Priority support",          "description": "A dedicated Slack channel and a named engineering contact for your team." },
+        { "icon": "GitBranch",    "title": "Private fork & codebase",    "description": "Your team gets a private fork with a direct line to maintainers." },
+        { "icon": "BarChart2",    "title": "Usage analytics",            "description": "Advanced analytics dashboard for usage, revenue, and churn metrics." }
+      ]
+    },
+
+    "bonusOffer": {
+      "badge": "Sign-up bonus — this week only",
+      "heading": "Everything included when you join today",
+      "subheading": "Stack of bonuses automatically added to your account at checkout.",
+      "bonuses": [
+        { "icon": "Rocket",      "title": "Quick-start video walkthrough",   "description": "60-min screen-share: clone to live product in one session.",            "value": "$97 value" },
+        { "icon": "PenSquare",   "title": "Landing copy template pack",      "description": "Fill-in-the-blank copy for every landing section in product.config.json.", "value": "$49 value" },
+        { "icon": "Layout",      "title": "Extra landing theme — 'Agency'",  "description": "A bolder, high-contrast theme built for agencies and product studios.",  "value": "$29 value" },
+        { "icon": "Users",       "title": "Private Discord + office hours",  "description": "Weekly live Q&A with the founder and community of builders.",           "value": "$199 value" }
+      ],
+      "totalValue": "$374",
+      "offerPrice": "just $97",
+      "ctaText": "Get everything — $97",
+      "ctaHref": "/auth/signup",
+      "urgencyNote": "Bonus #2 (copy template) expires Friday at midnight"
+    },
+
+    "bookDemo": {
+      "badge": "Live demo",
+      "heading": "See the full product — live, with your questions answered",
+      "subheading": "30 minutes with the founder. No deck. Just a real demo of the product you're considering.",
+      "perks": [
+        "See the full dashboard and UI kit live",
+        "Get answers to your specific use case",
+        "No sales pressure — just a real conversation",
+        "Walk away with a clear next step"
+      ],
+      "successHeading": "Check your inbox",
+      "successMessage": "We've received your request and will send a calendar invite within a few hours. Check your inbox (and spam folder) for the confirmation email.",
+      "ctaText": "Book my free 30-min demo"
+    },
+
+    "beforeAfter": {
+      "badge": "Before vs After",
+      "heading": "See the difference for yourself",
+      "subheading": "Drag the handle to compare building the old way versus using this starter.",
+      "before": {
+        "label": "Without this starter",
+        "items": [
+          "Weeks spent on auth and billing setup",
+          "Inconsistent UI across every page",
+          "No config system — copy is hardcoded",
+          "Start from zero on every project",
+          "No documentation, no structure"
+        ]
+      },
+      "after": {
+        "label": "With this starter",
+        "items": [
+          "Auth, billing, and credits on day one",
+          "Cohesive UI kit driven by design tokens",
+          "One JSON file controls all copy and theme",
+          "Clone and configure — ship in days",
+          "Docs, architecture, and best practices included"
+        ]
+      }
+    },
+
+    "countdown": {
+      "badge": "⏳ Limited time offer",
+      "heading": "Founder pricing closes in",
+      "subheading": "After the launch window closes, pricing goes up. Lock in the founder rate now.",
+      "deadline": "2026-12-01T00:00:00Z",
+      "ctaText": "Claim founder pricing — $97",
+      "ctaHref": "/auth/signup"
+    },
+
+    "roadmap": {
+      "badge": "Product roadmap",
+      "heading": "What we're building next",
+      "subheading": "A transparent look at where the product is today — and where it's going.",
+      "phases": [
+        {
+          "phase": 1,
+          "title": "Foundation",
+          "description": "Core infrastructure — auth, billing, database, support, and the config system.",
+          "status": "done",
+          "icon": "CheckCircle",
+          "items": ["Auth (email + OAuth)", "Lemon Squeezy billing", "Credit system", "Support tickets", "product.config.json system"]
+        },
+        {
+          "phase": 2,
+          "title": "Landing page system",
+          "description": "Full data-driven landing page with 30+ sections, 3 themes, and a complete UI kit.",
+          "status": "in-progress",
+          "icon": "Zap",
+          "items": ["30+ landing blocks", "3 landing themes", "UI kit (40+ atoms)", "Dark mode", "Responsive mobile"]
+        },
+        {
+          "phase": 3,
+          "title": "AI + Integrations",
+          "description": "AI generation features, email automation, and third-party integrations.",
+          "status": "upcoming",
+          "icon": "Sparkles",
+          "items": ["OpenAI / Gemini integration", "Email automation (Resend)", "Analytics (PostHog)", "CMS integration", "Webhook framework"]
+        },
+        {
+          "phase": 4,
+          "title": "Scale & Grow",
+          "description": "Multi-tenancy, team plans, affiliate system, and enterprise features.",
+          "status": "upcoming",
+          "icon": "Building2",
+          "items": ["Multi-tenant workspace", "Team / org plans", "Affiliate dashboard", "Advanced analytics", "SSO / SAML"]
+        }
+      ]
+    },
+
+    "pickYourPath": {
+      "badge": "Choose your starting point",
+      "heading": "How do you plan to use this?",
+      "subheading": "Pick the path that fits you — we'll point you straight to what matters most.",
+      "paths": [
+        {
+          "icon": "Rocket",
+          "title": "Ship my MVP fast",
+          "description": "You have an idea and want a live product with paying users as quickly as possible.",
+          "bullets": ["Auth + billing done for you", "Configure once, ship fast", "Free to start — no CC required"],
+          "ctaText": "Start building my MVP →",
+          "ctaHref": "/auth/signup"
+        },
+        {
+          "icon": "Building2",
+          "title": "Build for my clients",
+          "description": "You run an agency or do freelance work and want a white-label base for client projects.",
+          "bullets": ["White-label ready", "Reusable across every project", "Clear architecture for handoff"],
+          "ctaText": "Get the agency license →",
+          "ctaHref": "/auth/signup"
+        },
+        {
+          "icon": "Palette",
+          "title": "Learn by building",
+          "description": "You want to study a real, production-quality Next.js codebase to level up your skills.",
+          "bullets": ["Real-world patterns", "Thoroughly documented", "Great starting point for side projects"],
+          "ctaText": "Explore the code →",
+          "ctaHref": "/docs"
+        }
+      ]
+    },
+
+    "next24Hours": {
+      "badge": "What happens next",
+      "heading": "Your first 24 hours after signing up",
+      "subheading": "You won't spend them setting up auth or billing. You'll spend them building.",
+      "steps": [
+        {
+          "time": "0 min",
+          "icon": "Download",
+          "title": "Clone the repo",
+          "description": "git clone, npm install, and you have a running Next.js app with auth and billing ready."
+        },
+        {
+          "time": "5 min",
+          "icon": "Settings2",
+          "title": "Edit product.config.json",
+          "description": "Set your brand name, colors, copy, and pricing. No code changes. Just JSON."
+        },
+        {
+          "time": "15 min",
+          "icon": "Zap",
+          "title": "Connect your services",
+          "description": "Add your Supabase URL, Lemon Squeezy keys, and email credentials in .env.local."
+        },
+        {
+          "time": "1 hour",
+          "icon": "Code",
+          "title": "Build your core feature",
+          "description": "Everything else is handled. Focus 100% on the thing only you can build."
+        },
+        {
+          "time": "24 hours",
+          "icon": "Rocket",
+          "title": "Ship and share",
+          "description": "Deploy to Vercel in one click. Share your link. Get your first users. Iterate."
+        }
+      ],
+      "ctaText": "Start now — it's free",
+      "ctaHref": "/auth/signup"
+    },
+
+    "whyWeBuilt": {
+      "badge": "The origin story",
+      "heading": "Why we built this",
+      "story": "I've spent years building SaaS products — and every single time, I wasted the first 2–3 weeks on the exact same things: auth setup, billing integration, database schema, and boilerplate UI.\n\nThe idea wasn't the hard part. The infrastructure was.\n\nSo I built this starter to solve that problem — for myself first, and then for every other founder who was tired of reinventing the wheel. One config file. Production-quality code. Ship in days, not weeks.",
+      "highlights": [
+        "Built from real experience shipping 10+ SaaS products",
+        "Every decision made to maximise iteration speed",
+        "Open to feedback — this is built in public"
+      ],
+      "ctaText": "Read the full story",
+      "ctaHref": "/blog/why-we-built-this"
+    },
+
+    "tryWithoutSignup": {
+      "badge": "No commitment",
+      "heading": "Try it before you sign up",
+      "subheading": "No credit card. No account. Just paste your idea and see what ships.",
+      "ctaText": "Try it free — no account needed",
+      "ctaHref": "/try",
+      "secondaryCtaText": "See how it works",
+      "secondaryCtaHref": "/#demo",
+      "trust": ["No sign-up required", "No credit card", "Your data stays private"]
+    },
+
+    "commonMistakes": {
+      "badge": "Avoid these",
+      "heading": "Mistakes most builders make",
+      "subheading": "We've seen — and made — all of these. Here's how to skip the pain.",
+      "mistakes": [
+        {
+          "mistake": "Spending 3 weeks on auth before writing a single line of product code",
+          "fix": "Clone this starter — auth is already done on day one"
+        },
+        {
+          "mistake": "Hardcoding all landing copy directly in JSX components",
+          "fix": "All copy lives in product.config.json — change everything without touching code"
+        },
+        {
+          "mistake": "Building a custom UI component library from scratch for every project",
+          "fix": "40+ production-ready components with design token system included"
+        },
+        {
+          "mistake": "Launching with no billing system, then scrambling to add it later",
+          "fix": "Lemon Squeezy integration with free + pro plans is pre-wired and ready"
+        },
+        {
+          "mistake": "No support system — users email you directly with no structure",
+          "fix": "In-app support ticket system included out of the box"
+        }
+      ],
+      "ctaText": "Skip the mistakes — get started",
+      "ctaHref": "/auth/signup"
+    },
+
+    "firstUser": {
+      "badge": "First success story",
+      "heading": "From idea to paying users in 72 hours",
+      "quote": "I had the idea on a Monday. By Wednesday night, Summr was live with a landing page, auth, billing, and my first paying user. The starter handled everything except the AI logic — which is literally the only part I needed to build.",
+      "authorName": "Jordan Blake",
+      "authorRole": "Indie Maker",
+      "company": "Summr",
+      "metric": "72h",
+      "metricLabel": "idea to paying users",
+      "caseStudyHref": "/case-studies/summr"
+    },
+
+    "socialCards": {
+      "badge": "Share your launch",
+      "heading": "Your launch, ready to share",
+      "subheading": "See how your product looks when shared on different platforms — and copy the format.",
+      "cards": [
+        {
+          "platform": "twitter",
+          "displayName": "Your Name",
+          "username": "@yourhandle",
+          "content": "Just shipped my SaaS in 3 days 🚀\n\nAuth ✅ Billing ✅ Support ✅ Landing page ✅\n\nAll I had to build was the actual product.\n\nUsed @YourProduct starter → link in bio",
+          "likes": 284,
+          "comments": 31,
+          "shares": 89
+        },
+        {
+          "platform": "instagram",
+          "username": "yourhandle",
+          "content": "Shipped my first SaaS in 72 hours 🙌 From idea to paying users — without touching auth or billing once. This is how fast you can move when the infrastructure is already done.\n\n#buildinpublic #saas #indiemaker #startup",
+          "likes": 421
+        },
+        {
+          "platform": "reddit",
+          "username": "yourhandle",
+          "content": "I shipped a SaaS in 3 days — here's what made it possible\nAuth, billing, credits, support, and a full landing page were already built. I only had to write the core product feature. AMA.",
+          "likes": 847,
+          "comments": 93
+        }
+      ]
+    },
+
+    "leaderboard": {
+      "badge": "Community leaderboard",
+      "heading": "Top builders this month",
+      "subheading": "The most active community members — shipping, contributing, and sharing.",
+      "pointsLabel": "pts",
+      "ctaText": "Join the community →",
+      "ctaHref": "/community",
+      "entries": [
+        { "rank": 1, "name": "Marcus Webb",   "handle": "@marcuswebb",   "points": 4820, "badge": "Top Contributor", "badgeColor": "#4285F4" },
+        { "rank": 2, "name": "Priya Sharma",  "handle": "@priyadev",     "points": 3910, "badge": "Ship Streak",     "badgeColor": "#34A853" },
+        { "rank": 3, "name": "Jordan Blake",  "handle": "@jblake_dev",   "points": 3440, "badge": "Case Study",      "badgeColor": "#FBBC04" },
+        { "rank": 4, "name": "Sophie Chen",   "handle": "@sophiecode",   "points": 2780 },
+        { "rank": 5, "name": "Nadia Kowalski","handle": "@nadiabuilds",  "points": 2210 },
+        { "rank": 6, "name": "Alex Turner",   "handle": "@alexbuilds",   "points": 1990, "highlight": true }
+      ]
+    },
+
+    "pricingBundle": {
+      "badge": "Best value bundle",
+      "heading": "Everything you need — one price",
+      "subheading": "Get the starter, the UI kit, the templates, and community access as one bundle. Save over 60%.",
+      "totalValue": "374",
+      "bundlePrice": "97",
+      "currency": "$",
+      "savings": "74%",
+      "guarantee": "30-day money-back guarantee — no questions asked",
+      "note": "One-time payment. Lifetime access.",
+      "ctaText": "Get the full bundle — $97",
+      "ctaHref": "/auth/signup",
+      "items": [
+        { "icon": "Code",      "title": "Full SaaS Starter (source code)", "description": "Auth, billing, credits, support, and dashboard pre-wired.", "value": "149" },
+        { "icon": "Palette",   "title": "UI Kit (40+ components)",          "description": "Atoms, molecules, and landing blocks with token system.",   "value": "79"  },
+        { "icon": "FileText",  "title": "Landing copy template pack",       "description": "Fill-in-the-blank copy for every landing section.",          "value": "49"  },
+        { "icon": "Video",     "title": "Quick-start video walkthrough",    "description": "60-min screen-share: clone to live in one session.",          "value": "97"  }
+      ]
+    },
+
+    "comingSoon": {
+      "badge": "Coming Soon",
+      "heading": "AI planner is almost ready",
+      "subheading": "We're adding an AI-powered product planner. Be the first to get access when it launches.",
+      "launchDate": "Q3 2026",
+      "waitlistCtaText": "Notify me on launch",
+      "waitlistPlaceholder": "your@email.com",
+      "successMessage": "You're on the list! We'll notify you the moment it goes live.",
+      "previewHint": "Your AI product planner — features, roadmap, and copy — all from one prompt."
+    },
+
+    "whatIsThis": {
+      "badge": "Quick explainer",
+      "heading": "What is this, exactly?",
+      "subheading": "Straight answers to the first questions every builder asks.",
+      "items": [
+        {
+          "question": "Is this a template or a real product?",
+          "icon": "Package",
+          "answer": [
+            { "text": "It's a " },
+            { "text": "production-ready SaaS starter", "color": "primary", "bold": true },
+            { "text": " — not a Figma file, not a half-finished template. It has " },
+            { "text": "working auth", "color": "success", "bold": true },
+            { "text": ", " },
+            { "text": "real billing", "color": "success", "bold": true },
+            { "text": ", a credit system, support tickets, and a complete UI kit. You clone it, configure a JSON file, and ship." }
+          ],
+          "tags": ["Next.js", "Supabase", "Lemon Squeezy", "TypeScript"]
+        },
+        {
+          "question": "Do I need to know React or TypeScript?",
+          "icon": "Code",
+          "answer": [
+            { "text": "You need " },
+            { "text": "basic React familiarity", "bold": true },
+            { "text": " — but the config system means most customisation happens in " },
+            { "text": "product.config.json", "color": "accent", "bold": true },
+            { "text": ", not in code. For copy, theming, nav, pricing, and FAQ — " },
+            { "text": "zero code changes needed", "color": "success", "bold": true },
+            { "text": "." }
+          ],
+          "tags": ["Beginner-friendly", "Config-driven", "No rewrite needed"]
+        },
+        {
+          "question": "Is it a subscription or do I own the code?",
+          "icon": "Key",
+          "answer": [
+            { "text": "You " },
+            { "text": "own the source code outright", "color": "primary", "bold": true },
+            { "text": ". Pay once. No monthly fees to us. No lock-in. The only recurring costs are your own infrastructure — Supabase, Vercel, Lemon Squeezy — which all have generous " },
+            { "text": "free tiers", "color": "success", "bold": true },
+            { "text": " to get started." }
+          ],
+          "tags": ["One-time purchase", "Lifetime access", "No lock-in"]
+        }
+      ]
+    },
+
+    "install": {
+      "badge": "Get started in seconds",
+      "heading": "Install and run in under 2 minutes",
+      "subheading": "Clone the repo, install dependencies, and you're live with a working app.",
+      "note": "Requires Node.js 18+ and npm, yarn, or pnpm.",
+      "commands": [
+        { "label": "npm",  "manager": "npm",  "command": "npm install && npm run dev" },
+        { "label": "yarn", "manager": "yarn", "command": "yarn && yarn dev" },
+        { "label": "pnpm", "manager": "pnpm", "command": "pnpm install && pnpm dev" }
+      ]
+    },
+
+    "imageBanner": {
+      "badge": "Start building today",
+      "heading": "Your SaaS. Shipped this week.",
+      "subheading": "Stop setting up infrastructure. Start building the product only you can build.",
+      "ctaText": "Get started free",
+      "ctaHref": "/auth/signup",
+      "secondaryCtaText": "See what's included",
+      "secondaryCtaHref": "/#features",
+      "overlayOpacity": 55,
+      "minHeight": 480
+    },
+
+    "reels": {
+      "badge": "Watch builders ship",
+      "heading": "Real projects. Real speed.",
+      "subheading": "Short walkthroughs from founders who shipped with this starter.",
+      "items": [
+        {
+          "title": "Clone to live product in 10 minutes",
+          "duration": "10:24",
+          "tag": "Getting started",
+          "href": "/docs/quick-start"
+        },
+        {
+          "title": "How I set up Lemon Squeezy billing in 30 min",
+          "duration": "28:45",
+          "tag": "Billing",
+          "href": "/docs/billing"
+        },
+        {
+          "title": "Building a landing page with 0 code changes",
+          "duration": "6:12",
+          "tag": "Landing pages",
+          "href": "/blog/data-driven-ui"
+        },
+        {
+          "title": "FormFlow: $8k MRR in the first month",
+          "duration": "15:33",
+          "tag": "Case Study",
+          "href": "/case-studies/formflow"
+        },
+        {
+          "title": "Full dashboard walkthrough",
+          "duration": "9:00",
+          "tag": "Product tour",
+          "href": "/docs/dashboard"
+        },
+        {
+          "title": "Customising themes with CSS tokens",
+          "duration": "7:48",
+          "tag": "UI kit",
+          "href": "/docs/themes"
+        }
       ]
     }
   },
@@ -194,8 +1352,8 @@
       ],
       "emptyState": {
         "icon": "Zap",
-        "heading": "Ready to get started",
-        "description": "Head to the Product tab to begin. You have free actions this month.",
+        "heading": "You're all set — let's build",
+        "description": "Head to the Product tab to run your first action. You have 3 free actions this month.",
         "action": { "label": "Go to Product", "href": "/dashboard/product" }
       }
     },
@@ -231,21 +1389,21 @@
 
     "support": {
       "heading": "Support",
-      "subheading": "Get help with any issue.",
+      "subheading": "Need help? Open a ticket and we'll get back to you within 24 hours.",
       "emptyState": {
         "icon": "MessageSquare",
-        "heading": "No tickets yet",
-        "description": "Open a ticket and we'll get back to you within 24 hours.",
+        "heading": "No open tickets",
+        "description": "Everything looks good! If you run into an issue, open a ticket below.",
         "action": { "label": "Open a ticket", "href": "/dashboard/support/new" }
       }
     },
 
     "onboarding": {
-      "heading": "Welcome! Let's get you set up.",
+      "heading": "Welcome — let's get you set up in 3 steps.",
       "steps": [
-        { "id": "profile",  "title": "Set up your profile",  "description": "Add your name and avatar." },
-        { "id": "product",  "title": "Try the product",      "description": "Run your first action." },
-        { "id": "billing",  "title": "Choose a plan",        "description": "Upgrade when you're ready." }
+        { "id": "profile",  "title": "Set up your profile",  "description": "Add your name so we know who you are." },
+        { "id": "product",  "title": "Try the product",      "description": "Run your first action and see what it can do." },
+        { "id": "billing",  "title": "Choose a plan",        "description": "Upgrade to Pro when you're ready for more." }
       ]
     }
   }

@@ -1,0 +1,16 @@
+{
+  "component": "UseCasesBlock",
+  "description": "'Who it's for' self-identification cards for different builder/user personas.",
+  "props": {
+    "badge": { "type": "string", "required": false, "description": "Top badge. Default: 'Who it\\'s for'" },
+    "heading": { "type": "string", "required": false, "description": "Section heading. Default: 'Built for builders like you'" },
+    "subheading": { "type": "string", "required": false, "description": "Supporting subheading" },
+    "cases": {
+      "type": "UseCase[]",
+      "required": true,
+      "description": "Array of use case cards",
+      "shape": { "icon": "string?", "audience": "string", "tagline": "string", "bullets": "string[]" }
+    },
+    "className": { "type": "string", "required": false }
+  }
+}

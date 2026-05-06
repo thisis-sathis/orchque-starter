@@ -1,0 +1,15 @@
+{
+  "component": "WhyWeBuildBlock",
+  "description": "Founder story section — left image, right narrative — explaining the motivation behind the product.",
+  "props": {
+    "badge": { "type": "string", "required": false, "description": "Optional eyebrow badge" },
+    "heading": { "type": "string", "required": false, "description": "Section heading. Default: 'Why we built this'" },
+    "story": { "type": "string", "required": true, "description": "Founder story narrative paragraph(s)" },
+    "highlights": { "type": "string[]", "required": false, "description": "Key highlight bullet points beside the story" },
+    "imageSrc": { "type": "string", "required": false, "description": "Founder or team image URL" },
+    "imageAlt": { "type": "string", "required": false, "description": "Image alt text. Default: 'Founder'" },
+    "ctaText": { "type": "string", "required": false, "description": "Optional CTA button text" },
+    "ctaHref": { "type": "string", "required": false, "description": "Optional CTA button link" },
+    "className": { "type": "string", "required": false }
+  }
+}

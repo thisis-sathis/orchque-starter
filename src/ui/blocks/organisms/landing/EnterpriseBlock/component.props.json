@@ -1,0 +1,17 @@
+{
+  "component": "EnterpriseBlock",
+  "description": "Enterprise tier CTA section with feature checklist and inline inquiry form.",
+  "props": {
+    "badge": { "type": "string", "required": false, "description": "Section badge. Default: 'Enterprise'" },
+    "heading": { "type": "string", "required": true, "description": "Section heading" },
+    "subheading": { "type": "string", "required": false, "description": "Descriptive subheading" },
+    "features": {
+      "type": "EnterpriseFeature[]",
+      "required": true,
+      "description": "Array of enterprise features shown as a checklist",
+      "shape": { "label": "string", "description": "string?" }
+    },
+    "formEndpoint": { "type": "string", "required": false, "description": "POST endpoint for the inquiry form. Default: '/api/enterprise'" },
+    "className": { "type": "string", "required": false }
+  }
+}

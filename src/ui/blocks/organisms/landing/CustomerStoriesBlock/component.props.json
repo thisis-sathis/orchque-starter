@@ -1,0 +1,16 @@
+{
+  "component": "CustomerStoriesBlock",
+  "description": "Featured customer success stories with metrics, quotes, and case study links.",
+  "props": {
+    "badge": { "type": "string", "required": false, "description": "Optional eyebrow badge" },
+    "heading": { "type": "string", "required": true, "description": "Section heading" },
+    "subheading": { "type": "string", "required": false, "description": "Descriptive subheading" },
+    "stories": {
+      "type": "CustomerStory[]",
+      "required": true,
+      "description": "Array of customer story/case study objects",
+      "shape": { "name": "string", "company": "string?", "role": "string?", "quote": "string", "metric": "string?", "metricLabel": "string?", "avatarSrc": "string?", "caseStudyHref": "string?" }
+    },
+    "className": { "type": "string", "required": false }
+  }
+}

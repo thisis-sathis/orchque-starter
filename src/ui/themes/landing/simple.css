@@ -1,0 +1,10 @@
+/* landing/simple.css — Clean, Google-inspired landing theme.
+   Colors come from the default tokens in colors.css (already Google palette).
+   This file only overrides what's unique: font, radius, and layout backgrounds. */
+[data-theme="simple"] {
+  --font-heading: var(--font-dm-sans, "DM Sans", system-ui, sans-serif);
+  --font-body:    var(--font-dm-sans, "DM Sans", system-ui, sans-serif);
+  --radius-lg: 8px;
+  --landing-hero-bg: #ffffff;
+  --landing-section-alt-bg: #f8f9fa;
+}

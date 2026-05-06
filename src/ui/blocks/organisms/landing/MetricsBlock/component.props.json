@@ -1,0 +1,22 @@
+{
+  "component": "MetricsBlock",
+  "description": "Uptime and performance metrics with stat cards and a 90-day status bar indicator.",
+  "props": {
+    "heading": { "type": "string", "required": false, "description": "Section heading. Default: 'Built for reliability'" },
+    "subheading": { "type": "string", "required": false, "description": "Supporting subheading" },
+    "stats": {
+      "type": "MetricStat[]",
+      "required": false,
+      "description": "Array of stat cards",
+      "shape": { "label": "string", "value": "string", "sub": "string?" }
+    },
+    "uptimeLabel": { "type": "string", "required": false, "description": "Label for the uptime bar. Default: '90-day uptime'" },
+    "uptimeDays": {
+      "type": "UptimeDay[]",
+      "required": false,
+      "description": "Array of daily uptime status for the bar",
+      "shape": { "status": "'up' | 'degraded' | 'down'" }
+    },
+    "className": { "type": "string", "required": false }
+  }
+}

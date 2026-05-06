@@ -1,0 +1,16 @@
+{
+  "component": "ReelsBlock",
+  "description": "Horizontally scrollable collection of video reel cards with thumbnails, tags, and durations.",
+  "props": {
+    "badge": { "type": "string", "required": false, "description": "Optional eyebrow badge" },
+    "heading": { "type": "string", "required": false, "description": "Section heading" },
+    "subheading": { "type": "string", "required": false, "description": "Supporting subheading" },
+    "reels": {
+      "type": "Reel[]",
+      "required": true,
+      "description": "Array of video reel cards",
+      "shape": { "title": "string", "duration": "string?", "thumbnailSrc": "string?", "href": "string", "tag": "string?" }
+    },
+    "className": { "type": "string", "required": false }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "component": "AwardsBlock",
+  "description": "Awards, certifications, and recognition badges displayed in a grid.",
+  "props": {
+    "badge": { "type": "string", "required": false, "description": "Optional section eyebrow badge" },
+    "heading": { "type": "string", "required": true, "description": "Section heading" },
+    "subheading": { "type": "string", "required": false, "description": "Descriptive subheading" },
+    "awards": {
+      "type": "Award[]",
+      "required": true,
+      "description": "Array of award/certification objects",
+      "shape": { "label": "string", "issuer": "string?", "year": "string?", "imageSrc": "string?", "href": "string?" }
+    },
+    "className": { "type": "string", "required": false }
+  }
+}

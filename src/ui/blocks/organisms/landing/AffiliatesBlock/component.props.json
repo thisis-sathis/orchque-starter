@@ -1,0 +1,18 @@
+{
+  "component": "AffiliatesBlock",
+  "description": "Affiliate/referral program CTA section showing commission rate, perks, and a join CTA.",
+  "props": {
+    "heading": { "type": "string", "required": false, "description": "Section heading. Default: 'Earn by sharing'" },
+    "subheading": { "type": "string", "required": false, "description": "Descriptive subheading" },
+    "commission": { "type": "string", "required": false, "description": "Commission percentage. Default: '30%'" },
+    "ctaText": { "type": "string", "required": false, "description": "CTA button text" },
+    "ctaHref": { "type": "string", "required": false, "description": "CTA link destination" },
+    "perks": {
+      "type": "AffiliatePerk[]",
+      "required": false,
+      "description": "Array of affiliate perks/benefits",
+      "shape": { "icon": "string?", "label": "string", "description": "string?" }
+    },
+    "className": { "type": "string", "required": false }
+  }
+}

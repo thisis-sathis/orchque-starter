@@ -1,0 +1,17 @@
+{
+  "component": "BlogPreviewBlock",
+  "description": "3-column preview grid of recent blog posts with a view-all link.",
+  "props": {
+    "heading": { "type": "string", "required": false, "description": "Section heading. Default: 'From the blog'" },
+    "subheading": { "type": "string", "required": false, "description": "Descriptive subheading" },
+    "posts": {
+      "type": "BlogPost[]",
+      "required": true,
+      "description": "Array of blog post preview objects",
+      "shape": { "title": "string", "excerpt": "string?", "href": "string", "date": "string?", "tag": "string?", "imageSrc": "string?" }
+    },
+    "allPostsHref": { "type": "string", "required": false, "description": "Link to view all posts. Default: '/blog'" },
+    "allPostsLabel": { "type": "string", "required": false, "description": "Label for the view-all link" },
+    "className": { "type": "string", "required": false }
+  }
+}

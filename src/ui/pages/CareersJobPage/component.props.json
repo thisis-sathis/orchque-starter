@@ -1,0 +1,31 @@
+{
+  "component": "CareersJobPage",
+  "description": "Job posting detail page with inline apply form. LandingTemplate with job metadata, sectioned role details, and sticky application form.",
+  "props": {
+    "theme": { "type": "LandingTheme", "required": false, "description": "Optional landing theme override" },
+    "navbar": { "type": "NavbarBlockProps", "required": true, "description": "Navbar configuration" },
+    "footer": { "type": "FooterBlockProps", "required": true, "description": "Footer configuration" },
+    "backHref": { "type": "string", "required": false, "description": "Back navigation link. Default: '/careers'" },
+    "backLabel": { "type": "string", "required": false, "description": "Back link label. Default: '← Back to all roles'" },
+    "title": { "type": "string", "required": true, "description": "Job title — e.g. 'Senior Full-Stack Engineer'" },
+    "department": { "type": "string", "required": false, "description": "Department tag — e.g. 'Engineering'" },
+    "location": { "type": "string", "required": false, "description": "Location tag — e.g. 'Remote'" },
+    "type": { "type": "string", "required": false, "description": "Employment type — e.g. 'Full-time'" },
+    "salary": { "type": "string", "required": false, "description": "Salary range — e.g. '$120k – $160k'" },
+    "summary": { "type": "string", "required": false, "description": "Role summary paragraph" },
+    "sections": {
+      "type": "JobSection[]",
+      "required": false,
+      "description": "Structured role detail sections (responsibilities, requirements, nice-to-have)",
+      "shape": {
+        "heading": "string",
+        "items": "string[]",
+        "marker": "string? (default '→')"
+      }
+    },
+    "applyHeading": { "type": "string", "required": false, "description": "Heading in the apply card. Default: 'Apply for this role'" },
+    "onApply": { "type": "(data: { name: string; email: string; linkedin: string; message: string }) => Promise<void>", "required": true, "description": "Async submit handler for application form. Throws on error." },
+    "successHeading": { "type": "string", "required": false, "description": "Heading after successful apply. Default: 'Application received'" },
+    "successBody": { "type": "string", "required": false, "description": "Body after successful apply." }
+  }
+}

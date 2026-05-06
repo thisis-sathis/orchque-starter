@@ -1,3 +1,4 @@
+"use client";
 // FAQBlock.tsx — accordion FAQ section organism. Uses Radix Accordion.
 import React from "react";
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
@@ -20,7 +21,7 @@ export function FAQBlock({ heading, subheading, items, className }: FAQBlockProp
   return (
     <section
       className={cn(
-        "w-full px-[var(--space-6x)] py-[var(--space-12x)]",
+        "w-full px-[var(--landing-section-px)] py-[var(--landing-section-py)]",
         "bg-[var(--landing-section-alt-bg,var(--color-surface-raised))]",
         className
       )}

@@ -1,0 +1,15 @@
+{
+  "component": "BookDemoBlock",
+  "description": "Inline demo booking form with name/email fields, perk list, and post-submit confirmation state.",
+  "props": {
+    "badge": { "type": "string", "required": false, "description": "Section badge. Default: 'Live demo'" },
+    "heading": { "type": "string", "required": true, "description": "Section heading" },
+    "subheading": { "type": "string", "required": false, "description": "Descriptive subheading" },
+    "perks": { "type": "string[]", "required": false, "description": "Array of benefits/perks to show beside the form" },
+    "formEndpoint": { "type": "string", "required": false, "description": "POST endpoint for form submission. Default: '/api/book-demo'" },
+    "ctaText": { "type": "string", "required": false, "description": "Submit button text. Default: 'Book my free demo'" },
+    "successHeading": { "type": "string", "required": false, "description": "Success state heading" },
+    "successMessage": { "type": "string", "required": false, "description": "Success confirmation body text" },
+    "className": { "type": "string", "required": false }
+  }
+}

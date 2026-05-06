@@ -1,0 +1,17 @@
+{
+  "component": "CodeViewerBlock",
+  "description": "Multi-file syntax-highlighted code viewer with tab switching, copy-to-clipboard, and download-as-zip.",
+  "props": {
+    "badge": { "type": "string", "required": false, "description": "Optional eyebrow badge" },
+    "heading": { "type": "string", "required": false, "description": "Section heading" },
+    "subheading": { "type": "string", "required": false, "description": "Descriptive subheading" },
+    "files": {
+      "type": "CodeFile[]",
+      "required": true,
+      "description": "Array of code files to display",
+      "shape": { "filename": "string", "language": "string", "code": "string" }
+    },
+    "zipFilename": { "type": "string", "required": false, "description": "Filename for the downloaded zip archive" },
+    "className": { "type": "string", "required": false }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "component": "LeaderboardBlock",
+  "description": "Community leaderboard showing ranked entries with points, badges, and avatars.",
+  "props": {
+    "badge": { "type": "string", "required": false, "description": "Optional eyebrow badge" },
+    "heading": { "type": "string", "required": false, "description": "Section heading" },
+    "subheading": { "type": "string", "required": false, "description": "Supporting subheading" },
+    "entries": {
+      "type": "LeaderboardEntry[]",
+      "required": true,
+      "description": "Array of leaderboard entries",
+      "shape": { "rank": "number", "name": "string", "points": "number", "avatarSrc": "string?", "badge": "string?" }
+    },
+    "pointsLabel": { "type": "string", "required": false, "description": "Column label for points. Default: 'points'" },
+    "ctaText": { "type": "string", "required": false, "description": "Optional CTA button text" },
+    "ctaHref": { "type": "string", "required": false, "description": "Optional CTA button link" },
+    "className": { "type": "string", "required": false }
+  }
+}

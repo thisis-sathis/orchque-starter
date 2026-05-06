@@ -1,0 +1,17 @@
+{
+  "component": "ResourcesBlock",
+  "description": "Resources hub with filterable articles, guides, case studies, videos, and templates.",
+  "props": {
+    "badge": { "type": "string", "required": false, "description": "Optional eyebrow badge" },
+    "heading": { "type": "string", "required": true, "description": "Section heading" },
+    "subheading": { "type": "string", "required": false, "description": "Supporting subheading" },
+    "resources": {
+      "type": "Resource[]",
+      "required": true,
+      "description": "Array of resource items",
+      "shape": { "type": "'article' | 'guide' | 'case-study' | 'video' | 'template'", "title": "string", "description": "string?", "href": "string", "tag": "string?" }
+    },
+    "showFilter": { "type": "boolean", "required": false, "description": "Show type filter tabs above resources. Default: false" },
+    "className": { "type": "string", "required": false }
+  }
+}

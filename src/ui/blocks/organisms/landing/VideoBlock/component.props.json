@@ -1,0 +1,13 @@
+{
+  "component": "VideoBlock",
+  "description": "Demo video embed section with YouTube/Loom/Vimeo support, optional poster image, and duration badge.",
+  "props": {
+    "heading": { "type": "string", "required": false, "description": "Section heading. Default: 'See how it works'" },
+    "subheading": { "type": "string", "required": false, "description": "Supporting subheading. Default: 'Watch a 2-minute overview of the full workflow.'" },
+    "embedUrl": { "type": "string", "required": false, "description": "Full embed URL (YouTube /embed/, Loom, or Vimeo)" },
+    "posterSrc": { "type": "string", "required": false, "description": "Poster/thumbnail image shown before play" },
+    "posterAlt": { "type": "string", "required": false, "description": "Poster alt text. Default: 'Product demo video'" },
+    "duration": { "type": "string", "required": false, "description": "Video duration label — e.g. '2 min'" },
+    "className": { "type": "string", "required": false }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "component": "FeaturedOnBlock",
+  "description": "Press logo strip showing 'Featured on' / 'As seen in' publication mentions.",
+  "props": {
+    "heading": { "type": "string", "required": false, "description": "Section heading. Default: 'Featured on'" },
+    "mentions": {
+      "type": "PressMention[]",
+      "required": true,
+      "description": "Array of press mentions",
+      "shape": { "name": "string", "logoSrc": "string?", "href": "string?" }
+    },
+    "className": { "type": "string", "required": false }
+  }
+}

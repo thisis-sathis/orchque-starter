@@ -1,0 +1,16 @@
+{
+  "component": "PrelaunchPage",
+  "description": "Full-page pre-launch waitlist. No nav/footer — pure conversion. Shows countdown, trust items, and email signup.",
+  "props": {
+    "brandName": { "type": "string", "required": true, "description": "Product/brand name shown as the logo/wordmark" },
+    "spotsLeft": { "type": "number", "required": false, "description": "Number of early spots remaining — shown as urgency badge" },
+    "heading": { "type": "string", "required": false, "description": "Main headline. Default: 'Launching soon'" },
+    "subheading": { "type": "string", "required": false, "description": "Supporting paragraph below headline" },
+    "launchDate": { "type": "string", "required": false, "description": "ISO date string for expected launch — e.g. '2026-08-01T00:00:00Z'" },
+    "trustItems": { "type": "string[]", "required": false, "description": "Short trust signals listed below the form" },
+    "onSubmit": { "type": "(email: string) => Promise<void>", "required": true, "description": "Async handler for email form submit. Resolves on success, throws on error." },
+    "submitLabel": { "type": "string", "required": false, "description": "Submit button text. Default: 'Get early access'" },
+    "successHeading": { "type": "string", "required": false, "description": "Heading shown after successful signup. Default: 'Check your inbox'" },
+    "successBody": { "type": "string", "required": false, "description": "Body shown after successful signup." }
+  }
+}

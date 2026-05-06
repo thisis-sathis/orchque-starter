@@ -1,0 +1,17 @@
+{
+  "component": "ComparisonBlock",
+  "description": "Feature comparison table showing your product versus competitors row by row.",
+  "props": {
+    "heading": { "type": "string", "required": false, "description": "Section heading. Default: 'How we compare'" },
+    "subheading": { "type": "string", "required": false, "description": "Descriptive subheading" },
+    "ourLabel": { "type": "string", "required": false, "description": "Column header for your product. Default: 'Our product'" },
+    "theirLabel": { "type": "string", "required": false, "description": "Column header for the competitor. Default: 'ChatGPT'" },
+    "rows": {
+      "type": "ComparisonRow[]",
+      "required": true,
+      "description": "Array of feature comparison rows",
+      "shape": { "feature": "string", "ours": "boolean | string", "theirs": "boolean | string" }
+    },
+    "className": { "type": "string", "required": false }
+  }
+}

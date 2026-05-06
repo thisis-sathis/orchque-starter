@@ -35,7 +35,7 @@ export function HeroBlock({
       className={cn(
         "relative w-full overflow-hidden",
         "bg-[var(--landing-hero-bg,var(--color-surface))]",
-        "px-[var(--space-6x)] py-[var(--space-12x)]",
+        "px-[var(--landing-section-px)] py-[var(--landing-section-py)]",
         "md:py-[calc(var(--space-12x)*2)]",
         className
       )}
@@ -57,7 +57,7 @@ export function HeroBlock({
           id="hero-headline"
           className="text-[var(--text-5xl)] font-[var(--font-bold)] text-[var(--color-text)]
             leading-[var(--leading-tight)] tracking-[var(--tracking-tight)]
-            md:text-[3.5rem] lg:text-[4rem]"
+            md:text-[var(--text-6xl)] lg:text-[var(--text-7xl)]"
         >
           {headline}
         </h1>

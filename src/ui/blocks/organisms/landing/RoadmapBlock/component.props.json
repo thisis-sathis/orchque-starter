@@ -1,0 +1,16 @@
+{
+  "component": "RoadmapBlock",
+  "description": "Product roadmap section with phase-based status (done, in-progress, upcoming) and item lists.",
+  "props": {
+    "badge": { "type": "string", "required": false, "description": "Optional eyebrow badge" },
+    "heading": { "type": "string", "required": false, "description": "Section heading" },
+    "subheading": { "type": "string", "required": false, "description": "Supporting subheading" },
+    "phases": {
+      "type": "RoadmapPhase[]",
+      "required": true,
+      "description": "Array of roadmap phases",
+      "shape": { "title": "string", "status": "'done' | 'in-progress' | 'upcoming'", "items": "string[]" }
+    },
+    "className": { "type": "string", "required": false }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "component": "ComingSoonBlock",
+  "description": "Coming-soon overlay with frosted-glass effect, optional waitlist email signup, and launch date.",
+  "props": {
+    "badge": { "type": "string", "required": false, "description": "Section badge. Default: 'Coming Soon'" },
+    "heading": { "type": "string", "required": false, "description": "Main heading. Default: 'Something exciting is coming'" },
+    "subheading": { "type": "string", "required": false, "description": "Supporting subheading text" },
+    "launchDate": { "type": "string", "required": false, "description": "Optional launch date display string" },
+    "waitlistCtaText": { "type": "string", "required": false, "description": "Waitlist button text. Default: 'Notify me'" },
+    "waitlistPlaceholder": { "type": "string", "required": false, "description": "Email input placeholder" },
+    "successMessage": { "type": "string", "required": false, "description": "Success confirmation message" },
+    "previewHint": { "type": "string", "required": false, "description": "Optional preview text displayed behind the blur" },
+    "className": { "type": "string", "required": false }
+  }
+}

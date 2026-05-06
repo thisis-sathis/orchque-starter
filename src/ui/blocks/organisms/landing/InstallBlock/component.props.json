@@ -1,0 +1,18 @@
+{
+  "component": "InstallBlock",
+  "description": "npm/pnpm/yarn install command display with copy-to-clipboard and optional package manager tabs.",
+  "props": {
+    "badge": { "type": "string", "required": false, "description": "Optional eyebrow badge" },
+    "heading": { "type": "string", "required": false, "description": "Section heading" },
+    "subheading": { "type": "string", "required": false, "description": "Supporting subheading" },
+    "command": { "type": "string", "required": false, "description": "Single install command shorthand" },
+    "commands": {
+      "type": "InstallCommand[]",
+      "required": false,
+      "description": "Array of package manager commands for tabbed display",
+      "shape": { "manager": "string", "command": "string" }
+    },
+    "note": { "type": "string", "required": false, "description": "Additional note or instructions below the command" },
+    "className": { "type": "string", "required": false }
+  }
+}

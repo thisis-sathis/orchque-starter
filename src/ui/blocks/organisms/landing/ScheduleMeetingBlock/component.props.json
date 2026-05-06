@@ -1,0 +1,22 @@
+{
+  "component": "ScheduleMeetingBlock",
+  "description": "Book-a-demo/schedule-a-call section with host info, perk list, and calendar link.",
+  "props": {
+    "badge": { "type": "string", "required": false, "description": "Optional eyebrow badge" },
+    "heading": { "type": "string", "required": true, "description": "Section heading" },
+    "subheading": { "type": "string", "required": false, "description": "Supporting subheading" },
+    "perks": {
+      "type": "MeetingPerk[]",
+      "required": false,
+      "description": "Array of perks shown beside the booking CTA",
+      "shape": { "icon": "string?", "label": "string" }
+    },
+    "ctaText": { "type": "string", "required": false, "description": "CTA button text. Default: 'Book a 30-min demo'" },
+    "calendarHref": { "type": "string", "required": false, "description": "Calendly or cal.com link. Default: '#'" },
+    "hostName": { "type": "string", "required": false, "description": "Host name" },
+    "hostRole": { "type": "string", "required": false, "description": "Host title or role" },
+    "hostAvatarSrc": { "type": "string", "required": false, "description": "Host avatar image URL" },
+    "availabilityNote": { "type": "string", "required": false, "description": "Response time note. Default: 'Usually responds within a few hours'" },
+    "className": { "type": "string", "required": false }
+  }
+}

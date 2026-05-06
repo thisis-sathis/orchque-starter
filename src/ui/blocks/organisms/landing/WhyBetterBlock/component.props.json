@@ -1,0 +1,21 @@
+{
+  "component": "WhyBetterBlock",
+  "description": "Image + checklist comparison showing why this product is better — pillar-based pitch covering a11y, security, DX, etc.",
+  "props": {
+    "badge": { "type": "string", "required": false, "description": "Optional eyebrow badge" },
+    "heading": { "type": "string", "required": true, "description": "Section heading" },
+    "subheading": { "type": "string", "required": false, "description": "Supporting subheading" },
+    "imageSrc": { "type": "string", "required": false, "description": "Image URL shown beside the checklist" },
+    "imageAlt": { "type": "string", "required": false, "description": "Image alt text. Default: ''" },
+    "imageRight": { "type": "boolean", "required": false, "description": "Put the image on the right side. Default: false" },
+    "points": {
+      "type": "WhyBetterPoint[]",
+      "required": true,
+      "description": "Array of benefit points",
+      "shape": { "icon": "string?", "title": "string", "description": "string?" }
+    },
+    "ctaText": { "type": "string", "required": false, "description": "Optional CTA button text" },
+    "ctaHref": { "type": "string", "required": false, "description": "Optional CTA button link" },
+    "className": { "type": "string", "required": false }
+  }
+}

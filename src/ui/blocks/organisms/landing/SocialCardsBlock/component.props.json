@@ -1,0 +1,16 @@
+{
+  "component": "SocialCardsBlock",
+  "description": "Tabbed social proof section showing Twitter/Instagram/Reddit post card mockups.",
+  "props": {
+    "badge": { "type": "string", "required": false, "description": "Optional eyebrow badge" },
+    "heading": { "type": "string", "required": false, "description": "Section heading" },
+    "subheading": { "type": "string", "required": false, "description": "Supporting subheading" },
+    "cards": {
+      "type": "SocialCard[]",
+      "required": true,
+      "description": "Array of social platform cards",
+      "shape": { "platform": "'twitter' | 'instagram' | 'reddit'", "author": "string", "handle": "string?", "content": "string", "likes": "number?", "avatarSrc": "string?" }
+    },
+    "className": { "type": "string", "required": false }
+  }
+}

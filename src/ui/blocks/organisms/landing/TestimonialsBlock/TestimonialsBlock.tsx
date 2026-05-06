@@ -13,7 +13,7 @@ export interface TestimonialsBlockProps {
 export function TestimonialsBlock({ heading, subheading, testimonials, className }: TestimonialsBlockProps) {
   return (
     <section
-      className={cn("w-full px-[var(--space-6x)] py-[var(--space-12x)]", className)}
+      className={cn("w-full px-[var(--landing-section-px)] py-[var(--landing-section-py)]", className)}
       aria-labelledby={heading ? "testimonials-heading" : undefined}
     >
       <div className="mx-auto max-w-6xl flex flex-col gap-[var(--space-10x)]">

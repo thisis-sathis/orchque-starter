@@ -1,0 +1,16 @@
+{
+  "component": "WhatIsThisBlock",
+  "description": "Q&A explainer section with highlighted keywords, tag chips, and rich text answers.",
+  "props": {
+    "badge": { "type": "string", "required": false, "description": "Optional eyebrow badge" },
+    "heading": { "type": "string", "required": false, "description": "Section heading. Default: 'What is this?'" },
+    "subheading": { "type": "string", "required": false, "description": "Supporting subheading" },
+    "items": {
+      "type": "QAItem[]",
+      "required": true,
+      "description": "Array of Q&A items",
+      "shape": { "question": "string", "answer": "string", "icon": "string?", "tags": "string[]?" }
+    },
+    "className": { "type": "string", "required": false }
+  }
+}

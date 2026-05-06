@@ -14,7 +14,7 @@ export function PricingBlock({ heading, subheading, plans, className }: PricingB
   return (
     <section
       className={cn(
-        "w-full px-[var(--space-6x)] py-[var(--space-12x)]",
+        "w-full px-[var(--landing-section-px)] py-[var(--landing-section-py)]",
         "bg-[var(--landing-section-alt-bg,var(--color-surface-raised))]",
         className
       )}

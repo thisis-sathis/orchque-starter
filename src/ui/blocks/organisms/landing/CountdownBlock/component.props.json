@@ -1,0 +1,14 @@
+{
+  "component": "CountdownBlock",
+  "description": "Live countdown timer to a deadline with days/hours/minutes/seconds units and optional CTA.",
+  "props": {
+    "badge": { "type": "string", "required": false, "description": "Optional eyebrow badge" },
+    "heading": { "type": "string", "required": false, "description": "Section heading. Default: 'Offer closes in'" },
+    "subheading": { "type": "string", "required": false, "description": "Optional subheading" },
+    "deadline": { "type": "string", "required": true, "description": "ISO date string for countdown target — e.g. '2026-12-31T23:59:59Z'" },
+    "ctaText": { "type": "string", "required": false, "description": "CTA button text. Default: 'Claim now'" },
+    "ctaHref": { "type": "string", "required": false, "description": "CTA link. Default: '/auth/signup'" },
+    "expiredMessage": { "type": "string", "required": false, "description": "Message shown after deadline has passed" },
+    "className": { "type": "string", "required": false }
+  }
+}

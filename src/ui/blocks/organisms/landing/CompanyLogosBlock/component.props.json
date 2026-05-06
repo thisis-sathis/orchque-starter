@@ -1,0 +1,15 @@
+{
+  "component": "CompanyLogosBlock",
+  "description": "'Trusted by teams at…' logo strip — two-row responsive company logo grid.",
+  "props": {
+    "heading": { "type": "string", "required": false, "description": "Section heading. Default: 'Trusted by teams at'" },
+    "subheading": { "type": "string", "required": false, "description": "Optional subheading below logos" },
+    "logos": {
+      "type": "CompanyLogo[]",
+      "required": true,
+      "description": "Array of company logos",
+      "shape": { "name": "string", "logoSrc": "string?", "href": "string?" }
+    },
+    "className": { "type": "string", "required": false }
+  }
+}

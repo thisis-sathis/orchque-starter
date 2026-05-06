@@ -1,0 +1,18 @@
+{
+  "component": "Next24HoursBlock",
+  "description": "Timeline showing what new users will accomplish in their first 24 hours.",
+  "props": {
+    "badge": { "type": "string", "required": false, "description": "Optional eyebrow badge" },
+    "heading": { "type": "string", "required": false, "description": "Section heading" },
+    "subheading": { "type": "string", "required": false, "description": "Supporting subheading" },
+    "steps": {
+      "type": "Hour24Step[]",
+      "required": true,
+      "description": "Array of timeline steps",
+      "shape": { "time": "string", "icon": "string?", "title": "string", "description": "string" }
+    },
+    "ctaText": { "type": "string", "required": false, "description": "Optional CTA button text" },
+    "ctaHref": { "type": "string", "required": false, "description": "Optional CTA button link" },
+    "className": { "type": "string", "required": false }
+  }
+}

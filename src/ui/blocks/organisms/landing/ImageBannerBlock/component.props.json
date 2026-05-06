@@ -1,0 +1,17 @@
+{
+  "component": "ImageBannerBlock",
+  "description": "Full-width hero section with optional background image, dark overlay, and centered copy with dual CTAs.",
+  "props": {
+    "badge": { "type": "string", "required": false, "description": "Optional eyebrow badge" },
+    "heading": { "type": "string", "required": true, "description": "Main heading" },
+    "subheading": { "type": "string", "required": false, "description": "Supporting subheading" },
+    "ctaText": { "type": "string", "required": false, "description": "Primary CTA button text" },
+    "ctaHref": { "type": "string", "required": false, "description": "Primary CTA link. Default: '#'" },
+    "secondaryCtaText": { "type": "string", "required": false, "description": "Secondary CTA text" },
+    "secondaryCtaHref": { "type": "string", "required": false, "description": "Secondary CTA link. Default: '#'" },
+    "imageSrc": { "type": "string", "required": false, "description": "Background image URL. Falls back to gradient if omitted." },
+    "overlayOpacity": { "type": "number", "required": false, "description": "Dark overlay intensity 0–100. Default: 55" },
+    "minHeight": { "type": "number", "required": false, "description": "Minimum section height in px. Default: 480" },
+    "className": { "type": "string", "required": false }
+  }
+}

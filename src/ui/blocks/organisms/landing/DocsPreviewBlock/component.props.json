@@ -1,0 +1,17 @@
+{
+  "component": "DocsPreviewBlock",
+  "description": "Documentation quick-links section with icon cards and a view-all docs link.",
+  "props": {
+    "heading": { "type": "string", "required": false, "description": "Section heading. Default: 'Documentation'" },
+    "subheading": { "type": "string", "required": false, "description": "Descriptive subheading" },
+    "links": {
+      "type": "DocLink[]",
+      "required": true,
+      "description": "Array of documentation quick-links",
+      "shape": { "title": "string", "description": "string?", "href": "string", "icon": "string?" }
+    },
+    "allDocsHref": { "type": "string", "required": false, "description": "Link to full documentation. Default: '/docs'" },
+    "allDocsLabel": { "type": "string", "required": false, "description": "Label for the full docs link" },
+    "className": { "type": "string", "required": false }
+  }
+}

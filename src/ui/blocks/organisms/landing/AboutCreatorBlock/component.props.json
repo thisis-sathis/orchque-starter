@@ -1,0 +1,20 @@
+{
+  "component": "AboutCreatorBlock",
+  "description": "Creator/founder spotlight section with photo, bio, social links, and highlight bullet points.",
+  "props": {
+    "heading": { "type": "string", "required": false, "description": "Section heading. Default: 'Meet the creator'" },
+    "name": { "type": "string", "required": true, "description": "Creator's full name" },
+    "role": { "type": "string", "required": false, "description": "Creator's role or title" },
+    "bio": { "type": "string", "required": true, "description": "Creator's biography paragraph" },
+    "imageSrc": { "type": "string", "required": false, "description": "URL to creator profile image" },
+    "imageAlt": { "type": "string", "required": false, "description": "Alt text for the profile image" },
+    "socialLinks": {
+      "type": "SocialLink[]",
+      "required": false,
+      "description": "Social media links — twitter, linkedin, github, website",
+      "shape": { "platform": "'twitter' | 'linkedin' | 'github' | 'website'", "href": "string", "label": "string?" }
+    },
+    "highlights": { "type": "string[]", "required": false, "description": "Key highlight bullet points" },
+    "className": { "type": "string", "required": false }
+  }
+}

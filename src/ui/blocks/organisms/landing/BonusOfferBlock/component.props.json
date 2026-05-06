@@ -1,0 +1,21 @@
+{
+  "component": "BonusOfferBlock",
+  "description": "Value-stacking bonus section with itemized bonuses, total value, offer price, and urgency CTA.",
+  "props": {
+    "badge": { "type": "string", "required": false, "description": "Section badge. Default: 'Limited-time bonus'" },
+    "heading": { "type": "string", "required": true, "description": "Section heading" },
+    "subheading": { "type": "string", "required": false, "description": "Descriptive subheading" },
+    "bonuses": {
+      "type": "BonusItem[]",
+      "required": true,
+      "description": "Array of bonus items with individual values",
+      "shape": { "icon": "string?", "title": "string", "description": "string?", "value": "string" }
+    },
+    "totalValue": { "type": "string", "required": true, "description": "Total value string — e.g. '$497 total value'" },
+    "offerPrice": { "type": "string", "required": true, "description": "Offer price string — e.g. 'yours for just $49'" },
+    "ctaText": { "type": "string", "required": true, "description": "CTA button text" },
+    "ctaHref": { "type": "string", "required": true, "description": "CTA link destination" },
+    "urgencyNote": { "type": "string", "required": false, "description": "Optional urgency message — e.g. 'Bonus #3 expires in 48 hours'" },
+    "className": { "type": "string", "required": false }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "component": "ProblemSolutionBlock",
+  "description": "Side-by-side before/after comparison of the old broken way versus the new solution.",
+  "props": {
+    "badge": { "type": "string", "required": false, "description": "Top badge. Default: 'The problem'" },
+    "heading": { "type": "string", "required": false, "description": "Section heading. Default: 'Building SaaS is broken'" },
+    "subheading": { "type": "string", "required": false, "description": "Supporting subheading" },
+    "problemHeading": { "type": "string", "required": false, "description": "Problem column title. Default: 'The old way'" },
+    "problemItems": {
+      "type": "ProblemItem[]",
+      "required": true,
+      "description": "Array of problem items",
+      "shape": { "icon": "string?", "label": "string" }
+    },
+    "solutionHeading": { "type": "string", "required": false, "description": "Solution column title. Default: 'The new way'" },
+    "solutionItems": {
+      "type": "SolutionItem[]",
+      "required": true,
+      "description": "Array of solution items",
+      "shape": { "icon": "string?", "label": "string" }
+    },
+    "className": { "type": "string", "required": false }
+  }
+}

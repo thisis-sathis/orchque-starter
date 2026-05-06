@@ -1,0 +1,19 @@
+{
+  "component": "WhatsIncludedBlock",
+  "description": "Visual breakdown of everything included in the product — pages, systems, UI kit — with itemized categories and total count.",
+  "props": {
+    "badge": { "type": "string", "required": false, "description": "Top badge. Default: 'What\\'s included'" },
+    "heading": { "type": "string", "required": false, "description": "Main heading. Default: 'Everything already built — just configure and launch'" },
+    "subheading": { "type": "string", "required": false, "description": "Supporting subheading" },
+    "categories": {
+      "type": "IncludedCategory[]",
+      "required": true,
+      "description": "Array of categories with their items",
+      "shape": { "icon": "string?", "title": "string", "items": "string[]" }
+    },
+    "totalLabel": { "type": "string", "required": false, "description": "Custom label for the total item count" },
+    "ctaText": { "type": "string", "required": false, "description": "CTA button text. Default: 'Get the starter'" },
+    "ctaHref": { "type": "string", "required": false, "description": "CTA button link. Default: '/auth/signup'" },
+    "className": { "type": "string", "required": false }
+  }
+}

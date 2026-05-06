@@ -1,0 +1,18 @@
+{
+  "component": "HowItWorksBlock",
+  "description": "Numbered step-by-step workflow section showing how to go from idea to live product.",
+  "props": {
+    "badge": { "type": "string", "required": false, "description": "Top badge. Default: 'How it works'" },
+    "heading": { "type": "string", "required": false, "description": "Main heading. Default: 'From idea to live product — in minutes'" },
+    "subheading": { "type": "string", "required": false, "description": "Supporting subheading" },
+    "steps": {
+      "type": "WorkStep[]",
+      "required": true,
+      "description": "Array of numbered workflow steps",
+      "shape": { "title": "string", "description": "string", "icon": "string?" }
+    },
+    "ctaText": { "type": "string", "required": false, "description": "Optional CTA button text" },
+    "ctaHref": { "type": "string", "required": false, "description": "Optional CTA button link" },
+    "className": { "type": "string", "required": false }
+  }
+}

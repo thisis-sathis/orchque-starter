@@ -1,0 +1,13 @@
+{
+  "component": "ProductPage",
+  "description": "Core product feature page in the dashboard. DashboardTemplate with PageHeader, CreditChip, and the product input/result/upgrade-gate flow.",
+  "props": {
+    "layout": {
+      "type": "Omit<DashboardTemplateProps, 'children'>",
+      "required": true,
+      "description": "DashboardTemplate layout config — sidebar, nav, user info"
+    },
+    "heading": { "type": "string", "required": false, "description": "Page heading — e.g. 'Generate Copy'. Default: 'Get started'" },
+    "subheading": { "type": "string", "required": false, "description": "Page subheading — e.g. 'Describe what you need'. Default shown when omitted." }
+  }
+}

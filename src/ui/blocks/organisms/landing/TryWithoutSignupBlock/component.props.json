@@ -1,0 +1,15 @@
+{
+  "component": "TryWithoutSignupBlock",
+  "description": "Conversion section encouraging visitors to try the product without creating an account.",
+  "props": {
+    "badge": { "type": "string", "required": false, "description": "Top badge. Default: 'No commitment'" },
+    "heading": { "type": "string", "required": false, "description": "Main heading. Default: 'Try it before you sign up'" },
+    "subheading": { "type": "string", "required": false, "description": "Supporting subheading" },
+    "ctaText": { "type": "string", "required": false, "description": "Primary CTA text. Default: 'Try it free — no account needed'" },
+    "ctaHref": { "type": "string", "required": false, "description": "Primary CTA link. Default: '/try'" },
+    "secondaryCtaText": { "type": "string", "required": false, "description": "Secondary CTA text. Default: 'See how it works'" },
+    "secondaryCtaHref": { "type": "string", "required": false, "description": "Secondary CTA link. Default: '/#demo'" },
+    "trust": { "type": "string[]", "required": false, "description": "Array of trust signal strings shown below CTAs" },
+    "className": { "type": "string", "required": false }
+  }
+}

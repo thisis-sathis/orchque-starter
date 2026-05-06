@@ -1,0 +1,16 @@
+{
+  "component": "PickYourPathBlock",
+  "description": "Interactive path-selector with three selectable user-type cards, each with tailored bullets and CTA.",
+  "props": {
+    "badge": { "type": "string", "required": false, "description": "Optional eyebrow badge" },
+    "heading": { "type": "string", "required": false, "description": "Section heading" },
+    "subheading": { "type": "string", "required": false, "description": "Supporting subheading" },
+    "paths": {
+      "type": "Path[]",
+      "required": true,
+      "description": "Array of selectable paths",
+      "shape": { "icon": "string?", "title": "string", "description": "string", "bullets": "string[]", "ctaText": "string", "ctaHref": "string" }
+    },
+    "className": { "type": "string", "required": false }
+  }
+}

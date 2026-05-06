@@ -1,0 +1,18 @@
+{
+  "component": "CommonMistakesBlock",
+  "description": "Two-column table comparing common mistakes with better alternatives.",
+  "props": {
+    "badge": { "type": "string", "required": false, "description": "Optional eyebrow badge" },
+    "heading": { "type": "string", "required": false, "description": "Section heading" },
+    "subheading": { "type": "string", "required": false, "description": "Descriptive subheading" },
+    "mistakes": {
+      "type": "Mistake[]",
+      "required": true,
+      "description": "Array of mistake/fix pairs",
+      "shape": { "mistake": "string", "fix": "string" }
+    },
+    "ctaText": { "type": "string", "required": false, "description": "Optional CTA button text" },
+    "ctaHref": { "type": "string", "required": false, "description": "Optional CTA link destination" },
+    "className": { "type": "string", "required": false }
+  }
+}

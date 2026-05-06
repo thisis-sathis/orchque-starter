@@ -1,0 +1,25 @@
+{
+  "component": "CareersBlock",
+  "description": "Open job positions and company culture/perks showcase for the landing careers section.",
+  "props": {
+    "badge": { "type": "string", "required": false, "description": "Optional eyebrow badge" },
+    "heading": { "type": "string", "required": true, "description": "Section heading" },
+    "subheading": { "type": "string", "required": false, "description": "Descriptive subheading" },
+    "perks": {
+      "type": "CareersPerk[]",
+      "required": false,
+      "description": "Company culture/work perks",
+      "shape": { "icon": "string?", "label": "string", "description": "string?" }
+    },
+    "jobs": {
+      "type": "JobListing[]",
+      "required": false,
+      "description": "Array of open job positions",
+      "shape": { "title": "string", "department": "string?", "location": "string?", "type": "string?", "href": "string" }
+    },
+    "ctaText": { "type": "string", "required": false, "description": "CTA button text. Default: 'See all open roles'" },
+    "ctaHref": { "type": "string", "required": false, "description": "CTA link destination. Default: '/careers'" },
+    "emptyMessage": { "type": "string", "required": false, "description": "Message shown when no open positions" },
+    "className": { "type": "string", "required": false }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "component": "CommunityBlock",
+  "description": "Community channels grid displaying platform cards (Discord, GitHub, Twitter, etc.) with stats and join CTAs.",
+  "props": {
+    "badge": { "type": "string", "required": false, "description": "Optional eyebrow badge" },
+    "heading": { "type": "string", "required": true, "description": "Section heading" },
+    "subheading": { "type": "string", "required": false, "description": "Descriptive subheading" },
+    "stats": {
+      "type": "CommunityStat[]",
+      "required": false,
+      "description": "Community statistics shown above the channel cards",
+      "shape": { "label": "string", "value": "string" }
+    },
+    "channels": {
+      "type": "CommunityChannel[]",
+      "required": true,
+      "description": "Array of community channel objects",
+      "shape": { "platform": "string", "label": "string", "href": "string", "memberCount": "string?", "description": "string?" }
+    },
+    "className": { "type": "string", "required": false }
+  }
+}

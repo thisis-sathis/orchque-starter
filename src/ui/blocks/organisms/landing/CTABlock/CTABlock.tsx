@@ -17,7 +17,7 @@ export function CTABlock({ heading, subheading, ctaText, ctaHref, secondaryCtaTe
   return (
     <section
       className={cn(
-        "w-full px-[var(--space-6x)] py-[var(--space-12x)]",
+        "w-full px-[var(--landing-section-px)] py-[var(--landing-section-py)]",
         "bg-[var(--color-primary)] text-[var(--color-text-on-primary)]",
         className
       )}

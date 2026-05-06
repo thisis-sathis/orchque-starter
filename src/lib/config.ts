@@ -30,6 +30,9 @@ export const icons = rawConfig.icons;
 /** Everything the marketing/landing site reads */
 export const landing = rawConfig.landing;
 
+/** Extended landing sections (demo, wallOfLove, comparison, metrics, video, featuredOn, aboutCreator, waitlist, blog, affiliates, docs) */
+export const landingSections = rawConfig.landing_sections;
+
 /** Everything the product dashboard reads */
 export const product = rawConfig.product;
 

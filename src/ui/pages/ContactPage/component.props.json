@@ -1,0 +1,24 @@
+{
+  "component": "ContactPage",
+  "description": "Full-page contact form with navbar and footer. LandingTemplate wrapping a centered form with name/email/subject/message fields and success state.",
+  "props": {
+    "theme": { "type": "LandingTheme", "required": false, "description": "Optional landing theme override" },
+    "navbar": { "type": "NavbarBlockProps", "required": true, "description": "Navbar configuration — logoText, links, ctaText, ctaHref" },
+    "footer": { "type": "FooterBlockProps", "required": true, "description": "Footer configuration — logoText, tagline, legalLinks" },
+    "heading": { "type": "string", "required": false, "description": "Page heading. Default: 'Contact us'" },
+    "subheading": { "type": "string", "required": false, "description": "Subheading below heading. Default: 'Have a question or need help?...'" },
+    "supportEmail": { "type": "string", "required": false, "description": "Direct contact email shown as a fallback link" },
+    "subjects": {
+      "type": "ContactSubject[]",
+      "required": false,
+      "description": "Subject dropdown options. Default: billing, bug, feature, other.",
+      "shape": {
+        "value": "string",
+        "label": "string"
+      }
+    },
+    "onSubmit": { "type": "(data: { name: string; email: string; subject: string; message: string }) => Promise<void>", "required": true, "description": "Async submit handler. Throws on error." },
+    "submitLabel": { "type": "string", "required": false, "description": "Submit button label. Default: 'Send message'" },
+    "successMessage": { "type": "string", "required": false, "description": "Custom success message after send" }
+  }
+}

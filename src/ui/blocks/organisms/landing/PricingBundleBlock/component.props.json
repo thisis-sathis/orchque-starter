@@ -1,0 +1,25 @@
+{
+  "component": "PricingBundleBlock",
+  "description": "Bundle deal pricing section with item value stacking, savings callout, and CTA.",
+  "props": {
+    "badge": { "type": "string", "required": false, "description": "Optional eyebrow badge" },
+    "heading": { "type": "string", "required": false, "description": "Section heading" },
+    "subheading": { "type": "string", "required": false, "description": "Supporting subheading" },
+    "items": {
+      "type": "BundleItem[]",
+      "required": true,
+      "description": "Array of bundle items",
+      "shape": { "icon": "string?", "title": "string", "description": "string?", "value": "string" }
+    },
+    "totalValue": { "type": "string", "required": true, "description": "Total value of all bundle items" },
+    "bundlePrice": { "type": "string", "required": true, "description": "Bundle price to display" },
+    "currency": { "type": "string", "required": false, "description": "Currency symbol. Default: '$'" },
+    "interval": { "type": "string", "required": false, "description": "Billing interval label" },
+    "savings": { "type": "string", "required": false, "description": "Savings amount or percentage — e.g. '60%'" },
+    "ctaText": { "type": "string", "required": false, "description": "CTA button text. Default: 'Get the bundle'" },
+    "ctaHref": { "type": "string", "required": false, "description": "CTA button link. Default: '#'" },
+    "guarantee": { "type": "string", "required": false, "description": "Money-back guarantee text" },
+    "note": { "type": "string", "required": false, "description": "Additional footnote or note" },
+    "className": { "type": "string", "required": false }
+  }
+}

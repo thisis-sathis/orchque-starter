@@ -192,6 +192,24 @@ export type { OnboardingPageProps, OnboardingStep } from './pages/OnboardingPage
 export { WallOfLovePage } from './pages/WallOfLovePage';
 export type { WallOfLovePageProps } from './pages/WallOfLovePage';
 
+export { SupportPage } from './pages/SupportPage';
+export type { SupportPageProps, SupportTicket } from './pages/SupportPage';
+
+export { ProductPage } from './pages/ProductPage';
+export type { ProductPageProps } from './pages/ProductPage';
+
+export { StatusPage } from './pages/StatusPage';
+export type { StatusPageProps, StatusPageAction } from './pages/StatusPage';
+
+export { PrelaunchPage } from './pages/PrelaunchPage';
+export type { PrelaunchPageProps } from './pages/PrelaunchPage';
+
+export { ContactPage } from './pages/ContactPage';
+export type { ContactPageProps, ContactSubject } from './pages/ContactPage';
+
+export { CareersJobPage } from './pages/CareersJobPage';
+export type { CareersJobPageProps, JobSection } from './pages/CareersJobPage';
+
 export { LegalPage } from './pages/LegalPage';
 export type { LegalPageProps, LegalSection } from './pages/LegalPage';
 

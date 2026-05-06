@@ -1,0 +1,13 @@
+{
+  "component": "WaitlistBlock",
+  "description": "Email waitlist/early-access signup section with badge, heading, input, and success state.",
+  "props": {
+    "badge": { "type": "string", "required": false, "description": "Optional eyebrow badge" },
+    "heading": { "type": "string", "required": false, "description": "Section heading. Default: 'Join the waitlist'" },
+    "subheading": { "type": "string", "required": false, "description": "Subheading. Default: 'Be the first to know when we launch. No spam, ever.'" },
+    "placeholder": { "type": "string", "required": false, "description": "Email input placeholder. Default: 'Enter your email address'" },
+    "buttonText": { "type": "string", "required": false, "description": "Submit button text. Default: 'Join waitlist'" },
+    "successMessage": { "type": "string", "required": false, "description": "Success message. Default: 'You\\'re on the list! We\\'ll reach out soon.'" },
+    "className": { "type": "string", "required": false }
+  }
+}
