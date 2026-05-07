@@ -7,35 +7,33 @@
     "supportEmail": "support@yourproduct.com",
     "notifyEmail": "notify@yourproduct.com",
     "assets": {
-      "logo":    "/logo.svg",
+      "logo": "/logo.svg",
       "ogImage": "/og.png",
       "favicon": "/favicon.ico",
-      "hero":    "/hero.png"
+      "hero": "/hero.png"
     }
   },
-
   "theme": {
     "landing_theme": "simple",
     "product_theme": "basic",
     "dark_mode": false,
-
     "tokens": {
       "colors": {
-        "primary":    "#4285F4",
-        "secondary":  "#34A853",
-        "accent":     "#7C4DFF",
-        "surface":    "#ffffff",
+        "primary": "#4285F4",
+        "secondary": "#34A853",
+        "accent": "#7C4DFF",
+        "surface": "#ffffff",
         "background": "#f8f9fa",
-        "text":       "#202124",
-        "muted":      "#5f6368",
-        "border":     "#e8eaed",
-        "highlight":  "#FBBC04",
-        "error":      "#EA4335",
-        "success":    "#34A853"
+        "text": "#202124",
+        "muted": "#5f6368",
+        "border": "#e8eaed",
+        "highlight": "#FBBC04",
+        "error": "#EA4335",
+        "success": "#34A853"
       },
       "font": {
         "heading": "Plus Jakarta Sans",
-        "body":    "Plus Jakarta Sans"
+        "body": "Plus Jakarta Sans"
       },
       "radius": "md",
       "spacing": {
@@ -46,61 +44,108 @@
       }
     }
   },
-
   "features": {
-    "auth":       true,
-    "payments":   true,
-    "waitlist":   false,
-    "analytics":  false,
-    "aiPlanner":  false,
-    "referral":   false,
-    "support":    true,
+    "auth": true,
+    "payments": true,
+    "waitlist": false,
+    "analytics": false,
+    "aiPlanner": false,
+    "referral": false,
+    "support": true,
     "onboarding": false
   },
-
   "tier": "product",
-
   "icons": {
-    "logo":      "Zap",
+    "logo": "Zap",
     "dashboard": "LayoutDashboard",
-    "settings":  "Settings2",
-    "billing":   "CreditCard",
-    "support":   "MessageSquare",
-    "product":   "Zap",
-    "users":     "Users",
+    "settings": "Settings2",
+    "billing": "CreditCard",
+    "support": "MessageSquare",
+    "product": "Zap",
+    "users": "Users",
     "analytics": "BarChart2"
   },
-
   "landing": {
     "nav": {
       "links": [
-        { "label": "Features", "href": "/#features" },
-        { "label": "Pricing",  "href": "/pricing" },
+        {
+          "label": "Features",
+          "href": "/#features"
+        },
+        {
+          "label": "Pricing",
+          "href": "/pricing"
+        },
         {
           "label": "Solutions",
           "href": "#",
           "dropdown": [
-            { "label": "AI Automation Agencies",  "href": "/#use-cases", "description": "Deliver client products 10× faster",      "icon": "Building2" },
-            { "label": "SaaS Founders",           "href": "/#use-cases", "description": "Ship your MVP in days, not months",        "icon": "Rocket" },
-            { "label": "Indie Creators",          "href": "/#use-cases", "description": "A real product, not just a landing page",  "icon": "Palette" }
+            {
+              "label": "AI Automation Agencies",
+              "href": "/#use-cases",
+              "description": "Deliver client products 10× faster",
+              "icon": "Building2"
+            },
+            {
+              "label": "SaaS Founders",
+              "href": "/#use-cases",
+              "description": "Ship your MVP in days, not months",
+              "icon": "Rocket"
+            },
+            {
+              "label": "Indie Creators",
+              "href": "/#use-cases",
+              "description": "A real product, not just a landing page",
+              "icon": "Palette"
+            }
           ]
         },
         {
           "label": "Resources",
           "href": "#",
           "dropdown": [
-            { "label": "Documentation",    "href": "/docs",            "description": "Guides, API reference, and config docs", "icon": "BookOpen" },
-            { "label": "Blog",             "href": "/blog",            "description": "Articles and tutorials",                 "icon": "PenSquare" },
-            { "label": "Case Studies",     "href": "/case-studies",    "description": "How teams ship with this starter",       "icon": "BarChart2" },
-            { "label": "Community",        "href": "/community",       "description": "Join the builder community",             "icon": "Users" },
-            { "label": "Changelog",        "href": "/changelog",       "description": "What's new",                            "icon": "GitMerge" }
+            {
+              "label": "Documentation",
+              "href": "/docs",
+              "description": "Guides, API reference, and config docs",
+              "icon": "BookOpen"
+            },
+            {
+              "label": "Blog",
+              "href": "/blog",
+              "description": "Articles and tutorials",
+              "icon": "PenSquare"
+            },
+            {
+              "label": "Case Studies",
+              "href": "/case-studies",
+              "description": "How teams ship with this starter",
+              "icon": "BarChart2"
+            },
+            {
+              "label": "Community",
+              "href": "/community",
+              "description": "Join the builder community",
+              "icon": "Users"
+            },
+            {
+              "label": "Changelog",
+              "href": "/changelog",
+              "description": "What's new",
+              "icon": "GitMerge"
+            }
           ]
         },
-        { "label": "Careers", "href": "/careers" }
+        {
+          "label": "Careers",
+          "href": "/careers"
+        }
       ],
-      "cta": { "label": "Get started free", "href": "/auth/signup" }
+      "cta": {
+        "label": "Get started free",
+        "href": "/auth/signup"
+      }
     },
-
     "hero": {
       "badge": "Free to start — no credit card required",
       "headline": "Build and ship your SaaS in days, not months",
@@ -110,7 +155,6 @@
       "secondaryCta": "See what's included",
       "secondaryCtaHref": "/#features"
     },
-
     "features": {
       "heading": "Everything you need, nothing you don't",
       "subheading": "Pre-built with the patterns that every SaaS product needs, so you can move fast from day one.",
@@ -147,7 +191,6 @@
         }
       ]
     },
-
     "pricing": {
       "heading": "Simple, transparent pricing",
       "subheading": "Start free. Upgrade when you need more.",
@@ -186,12 +229,10 @@
         }
       }
     },
-
     "testimonials": {
       "heading": "Loved by builders",
       "items": []
     },
-
     "faq": {
       "heading": "Frequently asked questions",
       "items": [
@@ -213,70 +254,156 @@
         }
       ]
     },
-
     "cta": {
       "heading": "Ready to ship your product?",
       "subheading": "Join builders who are launching faster with a solid foundation.",
       "ctaText": "Get started free",
       "ctaHref": "/auth/signup"
     },
-
     "footer": {
       "tagline": "Ship faster. Build smarter.",
       "address": "Your Company Inc.\n123 Builder Street, Suite 100\nSan Francisco, CA 94105\nUnited States",
       "links": [
-        { "label": "Privacy", "href": "/legal/privacy" },
-        { "label": "Terms",   "href": "/legal/terms" }
+        {
+          "label": "Privacy",
+          "href": "/legal/privacy"
+        },
+        {
+          "label": "Terms",
+          "href": "/legal/terms"
+        }
       ],
       "columns": [
         {
           "heading": "Product",
           "links": [
-            { "label": "Features",   "href": "/#features" },
-            { "label": "Pricing",    "href": "/pricing" },
-            { "label": "Changelog",  "href": "/changelog" },
-            { "label": "Roadmap",    "href": "/#roadmap" },
-            { "label": "Dashboard",  "href": "/dashboard" }
+            {
+              "label": "Features",
+              "href": "/#features"
+            },
+            {
+              "label": "Pricing",
+              "href": "/pricing"
+            },
+            {
+              "label": "Changelog",
+              "href": "/changelog"
+            },
+            {
+              "label": "Roadmap",
+              "href": "/#roadmap"
+            },
+            {
+              "label": "Dashboard",
+              "href": "/dashboard"
+            }
           ]
         },
         {
           "heading": "Resources",
           "links": [
-            { "label": "Docs",           "href": "/docs" },
-            { "label": "Blog",           "href": "/blog" },
-            { "label": "Case Studies",   "href": "/case-studies" },
-            { "label": "Community",      "href": "/community" },
-            { "label": "Templates",      "href": "/templates" }
+            {
+              "label": "Docs",
+              "href": "/docs"
+            },
+            {
+              "label": "Blog",
+              "href": "/blog"
+            },
+            {
+              "label": "Case Studies",
+              "href": "/case-studies"
+            },
+            {
+              "label": "Community",
+              "href": "/community"
+            },
+            {
+              "label": "Templates",
+              "href": "/templates"
+            }
           ]
         },
         {
           "heading": "Company",
           "links": [
-            { "label": "About",      "href": "/#about" },
-            { "label": "Careers",    "href": "/careers" },
-            { "label": "Affiliates", "href": "/affiliates" },
-            { "label": "Contact",    "href": "/contact" },
-            { "label": "Legal",      "href": "/legal/privacy" }
+            {
+              "label": "About",
+              "href": "/#about"
+            },
+            {
+              "label": "Careers",
+              "href": "/careers"
+            },
+            {
+              "label": "Affiliates",
+              "href": "/affiliates"
+            },
+            {
+              "label": "Contact",
+              "href": "/contact"
+            },
+            {
+              "label": "Legal",
+              "href": "/legal/privacy"
+            }
           ]
         }
       ]
     }
   },
-
   "landing_sections": {
     "appPagesShowcase": {
+      "component": "AppPagesShowcaseBlock",
       "badge": "Every page included",
       "heading": "App pages — all built, ready to ship",
       "subheading": "Every utility page your product needs — error handling, loading states, success flows, and more — pre-built and styled to match your brand."
     },
-
     "codeViewer": {
+      "component": "CodeViewerBlock",
       "badge": "Real code. Copy or download.",
       "heading": "See exactly what you're getting",
       "subheading": "Browse real files from the starter. Copy any file or download them all as a ZIP.",
-      "zipFilename": "saas-starter-examples.zip"
+      "zipFilename": "saas-starter-examples.zip",
+      "files": [
+        {
+          "filename": "product.config.json",
+          "language": "JSON",
+          "description": "One file controls your entire product — brand, copy, pricing, nav, theme",
+          "content": "{\n  \"brand\": {\n    \"name\": \"Your Product\",\n    \"tagline\": \"Ship faster. Build smarter.\",\n    \"domain\": \"yourproduct.com\",\n    \"supportEmail\": \"support@yourproduct.com\"\n  },\n  \"theme\": {\n    \"landing_theme\": \"simple\",\n    \"tokens\": {\n      \"colors\": {\n        \"primary\": \"#4285F4\",\n        \"secondary\": \"#34A853\"\n      },\n      \"font\": {\n        \"heading\": \"Plus Jakarta Sans\"\n      }\n    }\n  },\n  \"landing_sections\": {\n    \"navbar\": {\n      \"component\": \"NavbarBlock\",\n      \"links\": [\n        {\n          \"label\": \"Features\",\n          \"href\": \"/#features\"\n        },\n        {\n          \"label\": \"Pricing\",\n          \"href\": \"/pricing\"\n        }\n      ],\n      \"ctaText\": \"Get started free\",\n      \"ctaHref\": \"/auth/signup\"\n    },\n    \"hero\": {\n      \"component\": \"HeroBlock\",\n      \"headline\": \"Build and ship your SaaS in days\",\n      \"ctaText\": \"Get Started Free\",\n      \"ctaHref\": \"/auth/signup\"\n    },\n    \"pricing\": {\n      \"component\": \"PricingBlock\",\n      \"plans\": [\n        {\n          \"name\": \"Free\",\n          \"price\": 0\n        },\n        {\n          \"name\": \"Pro\",\n          \"price\": 9,\n          \"featured\": true\n        }\n      ]\n    },\n    \"sections\": [\n      \"navbar\",\n      \"hero\",\n      \"features\",\n      \"pricing\",\n      \"faq\",\n      \"cta\",\n      \"footer\"\n    ]\n  }\n}"
+        },
+        {
+          "filename": "src/app/page.tsx",
+          "language": "TSX",
+          "description": "Landing page — all blocks driven by product.config.json, zero JSX imports",
+          "content": "import { LandingRenderer } from \"@/ui/LandingRenderer\";\nimport { landingSections } from \"@/lib/config\";\n\nexport default function HomePage() {\n  return <LandingRenderer config={landingSections} />;\n}"
+        },
+        {
+          "filename": "src/lib/config.ts",
+          "language": "TS",
+          "description": "Typed config exports — every block imports from here, never raw JSON",
+          "content": "import raw from \"../../product.config.json\";\n\nexport const brand = raw.brand;\nexport const theme = raw.theme;\nexport const landingSections = {\n  ...raw.landing_sections,\n  // inject brand.name since JSON cannot self-reference\n  navbar: { ...raw.landing_sections.navbar, logoText: raw.brand.name },\n  footer: { ...raw.landing_sections.footer, logoText: raw.brand.name },\n};"
+        },
+        {
+          "filename": "src/app/not-found.tsx",
+          "language": "TSX",
+          "description": "Custom 404 page — styled, with Go Home + Contact CTAs",
+          "content": "import Link from \"next/link\";\n\nexport default function NotFound() {\n  return (\n    <main className=\"min-h-screen flex flex-col items-center justify-center gap-6 px-6 text-center\">\n      <div className=\"text-8xl font-black text-gray-100 select-none\">404</div>\n      <h1 className=\"text-2xl font-bold\">Hmm, that page does not exist.</h1>\n      <p className=\"text-gray-500 max-w-sm\">The link might be broken, or the page may have moved.</p>\n      <div className=\"flex gap-3\">\n        <Link href=\"/\" className=\"btn-primary\">Go home</Link>\n        <Link href=\"/contact\" className=\"btn-ghost\">Contact support</Link>\n      </div>\n    </main>\n  );\n}"
+        },
+        {
+          "filename": "src/app/error.tsx",
+          "language": "TSX",
+          "description": "Error boundary — catches runtime errors, shows Try Again + Home",
+          "content": "\"use client\";\nimport { useEffect } from \"react\";\nimport Link from \"next/link\";\n\nexport default function GlobalError({ error, reset }: { error: Error; reset: () => void }) {\n  useEffect(() => { console.error(error); }, [error]);\n  return (\n    <main className=\"min-h-screen flex flex-col items-center justify-center gap-6 px-6 text-center\">\n      <h1 className=\"text-2xl font-bold\">Something went wrong</h1>\n      <div className=\"flex gap-3\">\n        <button onClick={reset} className=\"btn-primary\">Try again</button>\n        <Link href=\"/\" className=\"btn-ghost\">Go home</Link>\n      </div>\n    </main>\n  );\n}"
+        },
+        {
+          "filename": "src/ui/tokens/spacing.css",
+          "language": "CSS",
+          "description": "CSS variable token system — all spacing is data-driven",
+          "content": ":root {\n  --space-base: 4px;\n  --space-1x:   4px;\n  --space-2x:   8px;\n  --space-4x:   16px;\n  --space-6x:   24px;\n  --space-8x:   32px;\n  --space-12x:  48px;\n  --space-16x:  64px;\n  --space-20x:  80px;\n  --space-24x:  96px;\n\n  /* Semantic section tokens */\n  --landing-section-py: calc(var(--space-base) * 20);\n  --landing-section-px: calc(var(--space-base) * 6);\n}"
+        }
+      ]
     },
-
     "announcement": {
       "message": "🎉 v2.0 just launched — new UI kit, dark mode, and 3 new themes.",
       "linkText": "See what's new",
@@ -284,39 +411,79 @@
       "variant": "info",
       "dismissible": true
     },
-
     "companyLogos": {
+      "component": "CompanyLogosBlock",
       "heading": "Trusted by teams at",
       "logos": [
-        { "name": "Stripe" },
-        { "name": "Notion" },
-        { "name": "Linear" },
-        { "name": "Vercel" },
-        { "name": "Supabase" },
-        { "name": "Figma" },
-        { "name": "Loom" },
-        { "name": "Pitch" },
-        { "name": "Arc" },
-        { "name": "Raycast" }
+        {
+          "name": "Stripe"
+        },
+        {
+          "name": "Notion"
+        },
+        {
+          "name": "Linear"
+        },
+        {
+          "name": "Vercel"
+        },
+        {
+          "name": "Supabase"
+        },
+        {
+          "name": "Figma"
+        },
+        {
+          "name": "Loom"
+        },
+        {
+          "name": "Pitch"
+        },
+        {
+          "name": "Arc"
+        },
+        {
+          "name": "Raycast"
+        }
       ]
     },
-
     "whyBetter": {
+      "component": "WhyBetterBlock",
       "badge": "Built different",
       "heading": "Accessibility, SEO & security — not an afterthought",
       "subheading": "Every page is built to pass Lighthouse, WCAG AA, and OWASP Top 10 — so you ship with confidence.",
       "points": [
-        { "icon": "Accessibility",  "title": "WCAG AA accessibility",   "description": "Semantic HTML, ARIA labels, keyboard navigation, and focus management built into every component." },
-        { "icon": "Search",         "title": "SEO-ready out of the box", "description": "Open Graph, sitemap, robots.txt, and structured metadata pre-configured for every page." },
-        { "icon": "Shield",         "title": "Security first",          "description": "CSRF protection, input validation, rate limiting, and secure session handling included by default." },
-        { "icon": "Gauge",          "title": "Lighthouse 95+ scores",   "description": "Optimised for Core Web Vitals — lazy loading, font subsetting, and minimal JS bundle." },
-        { "icon": "Globe",          "title": "i18n-ready structure",    "description": "App architecture supports adding multiple locales without a rewrite." }
+        {
+          "icon": "Accessibility",
+          "title": "WCAG AA accessibility",
+          "description": "Semantic HTML, ARIA labels, keyboard navigation, and focus management built into every component."
+        },
+        {
+          "icon": "Search",
+          "title": "SEO-ready out of the box",
+          "description": "Open Graph, sitemap, robots.txt, and structured metadata pre-configured for every page."
+        },
+        {
+          "icon": "Shield",
+          "title": "Security first",
+          "description": "CSRF protection, input validation, rate limiting, and secure session handling included by default."
+        },
+        {
+          "icon": "Gauge",
+          "title": "Lighthouse 95+ scores",
+          "description": "Optimised for Core Web Vitals — lazy loading, font subsetting, and minimal JS bundle."
+        },
+        {
+          "icon": "Globe",
+          "title": "i18n-ready structure",
+          "description": "App architecture supports adding multiple locales without a rewrite."
+        }
       ],
       "ctaText": "See the tech details",
       "ctaHref": "/docs/architecture"
     },
-
     "customerStories": {
+      "component": "CustomerStoriesBlock",
       "badge": "Customer stories",
       "heading": "Real teams. Real results.",
       "subheading": "See how founders and agencies are shipping faster with this starter.",
@@ -353,30 +520,74 @@
         }
       ]
     },
-
     "awards": {
+      "component": "AwardsBlock",
       "badge": "Recognition",
       "heading": "Recognised by the builder community",
       "subheading": "Trusted and featured across top developer and product communities.",
       "awards": [
-        { "icon": "Trophy",    "title": "#1 Product of the Day", "issuer": "Product Hunt",   "year": "2026" },
-        { "icon": "Star",      "title": "Top SaaS Starter",      "issuer": "Hacker News",    "year": "2026" },
-        { "icon": "Award",     "title": "Best DX Tool",          "issuer": "Dev.to",         "year": "2026" },
-        { "icon": "BadgeCheck","title": "Editor's Choice",       "issuer": "Indie Hackers",  "year": "2026" }
+        {
+          "icon": "Trophy",
+          "title": "#1 Product of the Day",
+          "issuer": "Product Hunt",
+          "year": "2026"
+        },
+        {
+          "icon": "Star",
+          "title": "Top SaaS Starter",
+          "issuer": "Hacker News",
+          "year": "2026"
+        },
+        {
+          "icon": "Award",
+          "title": "Best DX Tool",
+          "issuer": "Dev.to",
+          "year": "2026"
+        },
+        {
+          "icon": "BadgeCheck",
+          "title": "Editor's Choice",
+          "issuer": "Indie Hackers",
+          "year": "2026"
+        }
       ]
     },
-
     "careers": {
+      "component": "CareersBlock",
       "badge": "We're hiring",
       "heading": "Join us — build the future of SaaS tooling",
       "subheading": "We're a small, remote-first team that ships fast and cares deeply about developer experience.",
       "perks": [
-        { "icon": "Globe",      "title": "Fully remote",          "description": "Work from anywhere in the world, async-first culture." },
-        { "icon": "Zap",        "title": "Ship fast, often",      "description": "Small team, big impact. Your work ships in days, not quarters." },
-        { "icon": "Heart",      "title": "Equity + ownership",    "description": "Everyone on the team has meaningful stake in what we build." },
-        { "icon": "BookOpen",   "title": "Learning budget",       "description": "$2,000/year for courses, conferences, and tools." },
-        { "icon": "Coffee",     "title": "Async meetings",        "description": "We default to written communication. Fewer calls, more focus." },
-        { "icon": "Users",      "title": "Small, tight team",     "description": "You'll know everyone by name and ship with real autonomy." }
+        {
+          "icon": "Globe",
+          "title": "Fully remote",
+          "description": "Work from anywhere in the world, async-first culture."
+        },
+        {
+          "icon": "Zap",
+          "title": "Ship fast, often",
+          "description": "Small team, big impact. Your work ships in days, not quarters."
+        },
+        {
+          "icon": "Heart",
+          "title": "Equity + ownership",
+          "description": "Everyone on the team has meaningful stake in what we build."
+        },
+        {
+          "icon": "BookOpen",
+          "title": "Learning budget",
+          "description": "$2,000/year for courses, conferences, and tools."
+        },
+        {
+          "icon": "Coffee",
+          "title": "Async meetings",
+          "description": "We default to written communication. Fewer calls, more focus."
+        },
+        {
+          "icon": "Users",
+          "title": "Small, tight team",
+          "description": "You'll know everyone by name and ship with real autonomy."
+        }
       ],
       "jobs": [
         {
@@ -404,16 +615,28 @@
       "ctaText": "See all open roles",
       "ctaHref": "/careers"
     },
-
     "community": {
+      "component": "CommunityBlock",
       "badge": "Community",
       "heading": "Build alongside 5,000+ makers",
       "subheading": "Get help, share what you're building, and connect with other founders using this starter.",
       "stats": [
-        { "value": "5,000+", "label": "Community members" },
-        { "value": "200+",   "label": "Projects shipped" },
-        { "value": "50+",    "label": "Contributors" },
-        { "value": "24/7",   "label": "Active discussions" }
+        {
+          "value": "5,000+",
+          "label": "Community members"
+        },
+        {
+          "value": "200+",
+          "label": "Projects shipped"
+        },
+        {
+          "value": "50+",
+          "label": "Contributors"
+        },
+        {
+          "value": "24/7",
+          "label": "Active discussions"
+        }
       ],
       "channels": [
         {
@@ -442,8 +665,8 @@
         }
       ]
     },
-
     "resources": {
+      "component": "ResourcesBlock",
       "badge": "Resources",
       "heading": "Everything you need to ship",
       "subheading": "Guides, case studies, templates, and tutorials — all in one place.",
@@ -540,16 +763,24 @@
         }
       ]
     },
-
     "scheduleMeeting": {
+      "component": "ScheduleMeetingBlock",
       "badge": "Talk to us",
       "heading": "See it live — book a 30-minute demo",
       "subheading": "We'll walk you through the starter, answer your questions, and help you figure out if it's the right fit.",
       "perks": [
-        { "label": "No sales pressure — just a real conversation" },
-        { "label": "See the full dashboard and UI kit live" },
-        { "label": "Get answers to your specific use case" },
-        { "label": "Walk away with a clear next step" }
+        {
+          "label": "No sales pressure — just a real conversation"
+        },
+        {
+          "label": "See the full dashboard and UI kit live"
+        },
+        {
+          "label": "Get answers to your specific use case"
+        },
+        {
+          "label": "Walk away with a clear next step"
+        }
       ],
       "ctaText": "Book a 30-min demo",
       "calendarHref": "https://cal.com/yourhandle/demo",
@@ -557,30 +788,50 @@
       "hostRole": "Founder",
       "availabilityNote": "Usually responds within a few hours"
     },
-
     "problemSolution": {
+      "component": "ProblemSolutionBlock",
       "badge": "The problem",
       "heading": "Building SaaS the old way is a trap",
       "subheading": "Founders spend weeks on infrastructure that has nothing to do with their idea.",
       "problemHeading": "The old way",
       "problemItems": [
-        { "label": "Weeks wasted on auth, billing, and database setup" },
-        { "label": "Generic AI tools that don't know your product" },
-        { "label": "Boilerplates that are half-done or unmaintained" },
-        { "label": "No structure — everything is duct-taped together" },
-        { "label": "Start from scratch every single time" }
+        {
+          "label": "Weeks wasted on auth, billing, and database setup"
+        },
+        {
+          "label": "Generic AI tools that don't know your product"
+        },
+        {
+          "label": "Boilerplates that are half-done or unmaintained"
+        },
+        {
+          "label": "No structure — everything is duct-taped together"
+        },
+        {
+          "label": "Start from scratch every single time"
+        }
       ],
       "solutionHeading": "The new way",
       "solutionItems": [
-        { "label": "Auth, billing, credits, and support pre-wired on day one" },
-        { "label": "One config file controls your entire product" },
-        { "label": "UI kit driven by data — change copy without touching code" },
-        { "label": "Clear architecture: tokens → components → blocks → pages" },
-        { "label": "Clone, configure, and ship in days — not weeks" }
+        {
+          "label": "Auth, billing, credits, and support pre-wired on day one"
+        },
+        {
+          "label": "One config file controls your entire product"
+        },
+        {
+          "label": "UI kit driven by data — change copy without touching code"
+        },
+        {
+          "label": "Clear architecture: tokens → components → blocks → pages"
+        },
+        {
+          "label": "Clone, configure, and ship in days — not weeks"
+        }
       ]
     },
-
     "howItWorks": {
+      "component": "HowItWorksBlock",
       "badge": "How it works",
       "heading": "From idea to live product in 4 steps",
       "subheading": "No guesswork. Just a clear path from zero to shipped.",
@@ -613,8 +864,8 @@
       "ctaText": "Start building now",
       "ctaHref": "/auth/signup"
     },
-
     "useCases": {
+      "component": "UseCasesBlock",
       "badge": "Who it's for",
       "heading": "Built for builders like you",
       "subheading": "Whether you're a solo founder, an agency, or a creator — this gets you moving fast.",
@@ -654,8 +905,8 @@
         }
       ]
     },
-
     "whatsIncluded": {
+      "component": "WhatsIncludedBlock",
       "badge": "What's included",
       "heading": "Everything built — just configure and launch",
       "subheading": "Pages, systems, UI kit, and integrations — pre-wired so you start at 80%, not zero.",
@@ -663,39 +914,106 @@
         {
           "icon": "Layout",
           "title": "Landing pages",
-          "items": ["Hero + Nav + Footer", "Features section", "Pricing section", "FAQ accordion", "Demo block (code view)", "Wall of love", "Comparison table", "Metrics + uptime", "Video embed", "Blog preview", "Docs preview", "CTA + waitlist", "Company logos (2 row)", "Problem → Solution", "How it works steps", "Use cases (who it's for)", "Why we're better (a11y, SEO, security)", "Customer stories / case studies", "Awards & recognition", "Community section", "Resources hub", "Careers section", "About creator", "Affiliates", "Announcement bar", "Founder pricing + Black Friday sale", "Enterprise form", "Bonus offer / value stack", "Book a demo + inbox confirm", "Schedule meeting"]
+          "items": [
+            "Hero + Nav + Footer",
+            "Features section",
+            "Pricing section",
+            "FAQ accordion",
+            "Demo block (code view)",
+            "Wall of love",
+            "Comparison table",
+            "Metrics + uptime",
+            "Video embed",
+            "Blog preview",
+            "Docs preview",
+            "CTA + waitlist",
+            "Company logos (2 row)",
+            "Problem → Solution",
+            "How it works steps",
+            "Use cases (who it's for)",
+            "Why we're better (a11y, SEO, security)",
+            "Customer stories / case studies",
+            "Awards & recognition",
+            "Community section",
+            "Resources hub",
+            "Careers section",
+            "About creator",
+            "Affiliates",
+            "Announcement bar",
+            "Founder pricing + Black Friday sale",
+            "Enterprise form",
+            "Bonus offer / value stack",
+            "Book a demo + inbox confirm",
+            "Schedule meeting"
+          ]
         },
         {
           "icon": "LayoutDashboard",
           "title": "Product dashboard",
-          "items": ["Dashboard home + stats", "Product feature page", "Settings page", "Billing page", "Support tickets", "New ticket form", "Ticket detail view"]
+          "items": [
+            "Dashboard home + stats",
+            "Product feature page",
+            "Settings page",
+            "Billing page",
+            "Support tickets",
+            "New ticket form",
+            "Ticket detail view"
+          ]
         },
         {
           "icon": "Shield",
           "title": "Auth system",
-          "items": ["Email sign-in", "OAuth (Google)", "Sign-up flow", "Forgot / reset password", "Auth error page", "Protected routes"]
+          "items": [
+            "Email sign-in",
+            "OAuth (Google)",
+            "Sign-up flow",
+            "Forgot / reset password",
+            "Auth error page",
+            "Protected routes"
+          ]
         },
         {
           "icon": "CreditCard",
           "title": "Billing & credits",
-          "items": ["Lemon Squeezy integration", "Free + Pro plans", "Credit tracking", "Plan-gated features", "Webhook handling", "Upgrade flow"]
+          "items": [
+            "Lemon Squeezy integration",
+            "Free + Pro plans",
+            "Credit tracking",
+            "Plan-gated features",
+            "Webhook handling",
+            "Upgrade flow"
+          ]
         },
         {
           "icon": "Palette",
           "title": "UI kit",
-          "items": ["40+ atomic components", "Landing block organisms", "CSS variable tokens", "3 landing themes", "2 product themes", "Dark mode ready"]
+          "items": [
+            "40+ atomic components",
+            "Landing block organisms",
+            "CSS variable tokens",
+            "3 landing themes",
+            "2 product themes",
+            "Dark mode ready"
+          ]
         },
         {
           "icon": "Settings2",
           "title": "Config system",
-          "items": ["product.config.json", "Brand, copy, colors", "Nav, pricing, FAQ", "Theme + font", "Feature flags", "Zero code changes needed"]
+          "items": [
+            "product.config.json",
+            "Brand, copy, colors",
+            "Nav, pricing, FAQ",
+            "Theme + font",
+            "Feature flags",
+            "Zero code changes needed"
+          ]
         }
       ],
       "ctaText": "Get the starter",
       "ctaHref": "/auth/signup"
     },
-
     "demo": {
+      "component": "DemoSection",
       "heading": "See it in action",
       "subheading": "Type a prompt and watch your product come to life instantly.",
       "placeholder": "e.g. Build me a landing page for a fitness app",
@@ -705,65 +1023,165 @@
         "Generate a dashboard with stats and empty state"
       ]
     },
-
     "wallOfLove": {
+      "component": "WallOfLoveBlock",
       "heading": "Wall of love",
       "subheading": "Real words from real builders",
       "items": [
-        { "name": "Alex Turner",   "handle": "@alexbuilds",   "source": "twitter",     "likes": 284, "comments": 31, "shares": 89,  "quote": "Shipped my SaaS in 3 days flat. The config system is genius — I just updated one JSON file and everything changed." },
-        { "name": "Priya Sharma",  "handle": "@priyadev",     "source": "producthunt", "likes": 47,                                 "quote": "Finally a starter that doesn't make me wade through 500 lines of boilerplate. Auth + billing just worked." },
-        { "name": "Marcus Lee",    "handle": "@marcuslee_io", "source": "reddit",      "likes": 831, "comments": 74,               "quote": "Used this for my side project and got to paying customers in a week.\nThe support system built-in saved me so much time. No extra Intercom setup, no Zendesk — it's all just there." },
-        { "name": "Sophie Chen",   "handle": "@sophiecode",   "source": "instagram",   "likes": 512,                               "quote": "The UI kit is incredible. Every component is data-driven. I replaced the whole landing copy in under 10 minutes." },
-        { "name": "Jordan Blake",  "handle": "@jblake_dev",   "source": "twitter",     "likes": 193, "comments": 22, "shares": 41, "quote": "The theme system is really well designed. I switched from 'tech' to 'minimal' and the whole look changed instantly." },
-        { "name": "Nadia Kowalski","handle": "@nadiabuilds",  "source": "linkedin",    "likes": 88,  "comments": 11,               "quote": "As a solo founder this is everything. I don't have to think about auth, billing, credits — it's all there." }
+        {
+          "name": "Alex Turner",
+          "handle": "@alexbuilds",
+          "source": "twitter",
+          "likes": 284,
+          "comments": 31,
+          "shares": 89,
+          "quote": "Shipped my SaaS in 3 days flat. The config system is genius — I just updated one JSON file and everything changed."
+        },
+        {
+          "name": "Priya Sharma",
+          "handle": "@priyadev",
+          "source": "producthunt",
+          "likes": 47,
+          "quote": "Finally a starter that doesn't make me wade through 500 lines of boilerplate. Auth + billing just worked."
+        },
+        {
+          "name": "Marcus Lee",
+          "handle": "@marcuslee_io",
+          "source": "reddit",
+          "likes": 831,
+          "comments": 74,
+          "quote": "Used this for my side project and got to paying customers in a week.\nThe support system built-in saved me so much time. No extra Intercom setup, no Zendesk — it's all just there."
+        },
+        {
+          "name": "Sophie Chen",
+          "handle": "@sophiecode",
+          "source": "instagram",
+          "likes": 512,
+          "quote": "The UI kit is incredible. Every component is data-driven. I replaced the whole landing copy in under 10 minutes."
+        },
+        {
+          "name": "Jordan Blake",
+          "handle": "@jblake_dev",
+          "source": "twitter",
+          "likes": 193,
+          "comments": 22,
+          "shares": 41,
+          "quote": "The theme system is really well designed. I switched from 'tech' to 'minimal' and the whole look changed instantly."
+        },
+        {
+          "name": "Nadia Kowalski",
+          "handle": "@nadiabuilds",
+          "source": "linkedin",
+          "likes": 88,
+          "comments": 11,
+          "quote": "As a solo founder this is everything. I don't have to think about auth, billing, credits — it's all there."
+        }
       ]
     },
-
     "comparison": {
+      "component": "ComparisonBlock",
       "heading": "Built for product builders, not just chatting",
       "ourLabel": "Your Product",
       "theirLabel": "ChatGPT",
       "rows": [
-        { "feature": "Purpose-built for your domain", "ours": true, "theirs": false },
-        { "feature": "Integrated billing & credits", "ours": true, "theirs": false },
-        { "feature": "User accounts & auth", "ours": true, "theirs": false },
-        { "feature": "Custom UI & branding", "ours": true, "theirs": false },
-        { "feature": "Support ticket system", "ours": true, "theirs": false },
-        { "feature": "API access", "ours": true, "theirs": "Paid only" },
-        { "feature": "Data stays in your database", "ours": true, "theirs": false },
-        { "feature": "White-label & custom domain", "ours": true, "theirs": false }
+        {
+          "feature": "Purpose-built for your domain",
+          "ours": true,
+          "theirs": false
+        },
+        {
+          "feature": "Integrated billing & credits",
+          "ours": true,
+          "theirs": false
+        },
+        {
+          "feature": "User accounts & auth",
+          "ours": true,
+          "theirs": false
+        },
+        {
+          "feature": "Custom UI & branding",
+          "ours": true,
+          "theirs": false
+        },
+        {
+          "feature": "Support ticket system",
+          "ours": true,
+          "theirs": false
+        },
+        {
+          "feature": "API access",
+          "ours": true,
+          "theirs": "Paid only"
+        },
+        {
+          "feature": "Data stays in your database",
+          "ours": true,
+          "theirs": false
+        },
+        {
+          "feature": "White-label & custom domain",
+          "ours": true,
+          "theirs": false
+        }
       ]
     },
-
     "metrics": {
+      "component": "MetricsBlock",
       "heading": "Built for reliability",
       "subheading": "Performance you can trust, with transparency you deserve.",
       "stats": [
-        { "label": "Uptime", "value": "99.9%", "sub": "Last 90 days" },
-        { "label": "Avg response", "value": "< 200ms", "sub": "API latency" },
-        { "label": "Users served", "value": "10k+", "sub": "And growing" },
-        { "label": "Support SLA", "value": "< 24h", "sub": "First response" }
+        {
+          "label": "Uptime",
+          "value": "99.9%",
+          "sub": "Last 90 days"
+        },
+        {
+          "label": "Avg response",
+          "value": "< 200ms",
+          "sub": "API latency"
+        },
+        {
+          "label": "Users served",
+          "value": "10k+",
+          "sub": "And growing"
+        },
+        {
+          "label": "Support SLA",
+          "value": "< 24h",
+          "sub": "First response"
+        }
       ]
     },
-
     "video": {
+      "component": "VideoBlock",
       "heading": "See the full workflow in 2 minutes",
       "subheading": "From clone to live product — watch how fast you can ship.",
       "duration": "2 min overview"
     },
-
     "featuredOn": {
+      "component": "FeaturedOnBlock",
       "heading": "Featured on",
       "mentions": [
-        { "name": "Product Hunt" },
-        { "name": "Hacker News" },
-        { "name": "Dev.to" },
-        { "name": "Indie Hackers" },
-        { "name": "BetaList" }
+        {
+          "name": "Product Hunt"
+        },
+        {
+          "name": "Hacker News"
+        },
+        {
+          "name": "Dev.to"
+        },
+        {
+          "name": "Indie Hackers"
+        },
+        {
+          "name": "BetaList"
+        }
       ]
     },
-
     "aboutCreator": {
+      "component": "AboutCreatorBlock",
       "heading": "Meet the creator",
       "name": "Your Name",
       "role": "Founder & Builder",
@@ -775,21 +1193,30 @@
         "Open to feedback — reach out anytime"
       ],
       "socialLinks": [
-        { "platform": "twitter", "href": "https://twitter.com/yourhandle" },
-        { "platform": "github",  "href": "https://github.com/yourhandle" },
-        { "platform": "website", "href": "https://yourwebsite.com" }
+        {
+          "platform": "twitter",
+          "href": "https://twitter.com/yourhandle"
+        },
+        {
+          "platform": "github",
+          "href": "https://github.com/yourhandle"
+        },
+        {
+          "platform": "website",
+          "href": "https://yourwebsite.com"
+        }
       ]
     },
-
     "waitlist": {
+      "component": "WaitlistBlock",
       "heading": "Want early access?",
       "subheading": "Join the waitlist and be first in line when we open new spots.",
       "badge": "Limited spots available",
       "buttonText": "Claim your spot",
       "successMessage": "You're on the list! We'll email you as soon as a spot opens."
     },
-
     "blog": {
+      "component": "BlogPreviewBlock",
       "heading": "From the blog",
       "posts": [
         {
@@ -821,34 +1248,76 @@
         }
       ]
     },
-
     "affiliates": {
+      "component": "AffiliatesBlock",
       "heading": "Earn by sharing",
       "subheading": "Refer a paying customer and earn 30% commission every month they stay subscribed.",
       "commission": "30%",
       "ctaText": "Become an affiliate",
       "ctaHref": "/affiliates",
       "perks": [
-        { "icon": "DollarSign", "title": "Recurring commission", "description": "Earn 30% every month for the lifetime of each customer you refer." },
-        { "icon": "Clock",      "title": "Instant payouts",      "description": "Get paid within 24 hours of a conversion via your preferred method." },
-        { "icon": "BarChart2",  "title": "Real-time dashboard",  "description": "Track clicks, conversions, and earnings in your affiliate dashboard." }
+        {
+          "icon": "DollarSign",
+          "title": "Recurring commission",
+          "description": "Earn 30% every month for the lifetime of each customer you refer."
+        },
+        {
+          "icon": "Clock",
+          "title": "Instant payouts",
+          "description": "Get paid within 24 hours of a conversion via your preferred method."
+        },
+        {
+          "icon": "BarChart2",
+          "title": "Real-time dashboard",
+          "description": "Track clicks, conversions, and earnings in your affiliate dashboard."
+        }
       ]
     },
-
     "docs": {
+      "component": "DocsPreviewBlock",
       "heading": "Documentation",
       "subheading": "Everything you need to get up and running in minutes.",
       "links": [
-        { "icon": "Rocket",      "title": "Quick Start",           "description": "Clone, configure, and deploy your first product in under 10 minutes.", "href": "/docs/quick-start" },
-        { "icon": "Settings2",   "title": "Configuration",         "description": "A full reference for every key in product.config.json.",              "href": "/docs/config" },
-        { "icon": "CreditCard",  "title": "Billing & Payments",    "description": "Set up Lemon Squeezy, webhook handling, and plan gating.",            "href": "/docs/billing" },
-        { "icon": "Shield",      "title": "Auth & Security",       "description": "How authentication, sessions, and protected routes work.",             "href": "/docs/auth" },
-        { "icon": "Palette",     "title": "Themes & Tokens",       "description": "Change your landing or product theme from one config value.",         "href": "/docs/themes" },
-        { "icon": "BookOpen",    "title": "API Reference",         "description": "All available API routes and how to extend them.",                    "href": "/docs/api" }
+        {
+          "icon": "Rocket",
+          "title": "Quick Start",
+          "description": "Clone, configure, and deploy your first product in under 10 minutes.",
+          "href": "/docs/quick-start"
+        },
+        {
+          "icon": "Settings2",
+          "title": "Configuration",
+          "description": "A full reference for every key in product.config.json.",
+          "href": "/docs/config"
+        },
+        {
+          "icon": "CreditCard",
+          "title": "Billing & Payments",
+          "description": "Set up Lemon Squeezy, webhook handling, and plan gating.",
+          "href": "/docs/billing"
+        },
+        {
+          "icon": "Shield",
+          "title": "Auth & Security",
+          "description": "How authentication, sessions, and protected routes work.",
+          "href": "/docs/auth"
+        },
+        {
+          "icon": "Palette",
+          "title": "Themes & Tokens",
+          "description": "Change your landing or product theme from one config value.",
+          "href": "/docs/themes"
+        },
+        {
+          "icon": "BookOpen",
+          "title": "API Reference",
+          "description": "All available API routes and how to extend them.",
+          "href": "/docs/api"
+        }
       ]
     },
-
     "founderPricing": {
+      "component": "FounderPricingBlock",
       "badge": "Founder pricing",
       "saleBadge": "Black Friday — 60% off",
       "heading": "Lock in founder pricing before it's gone",
@@ -861,42 +1330,100 @@
       "spotsTaken": 33,
       "deadline": "2026-12-01T00:00:00Z",
       "features": [
-        { "label": "Full source code — no subscription" },
-        { "label": "All future updates included" },
-        { "label": "Auth, billing, credits, support pre-wired" },
-        { "label": "UI kit with 40+ components" },
-        { "label": "3 landing themes + dark mode" },
-        { "label": "Discord community access" },
-        { "label": "License for unlimited projects" }
+        {
+          "label": "Full source code — no subscription"
+        },
+        {
+          "label": "All future updates included"
+        },
+        {
+          "label": "Auth, billing, credits, support pre-wired"
+        },
+        {
+          "label": "UI kit with 40+ components"
+        },
+        {
+          "label": "3 landing themes + dark mode"
+        },
+        {
+          "label": "Discord community access"
+        },
+        {
+          "label": "License for unlimited projects"
+        }
       ],
       "ctaText": "Claim founder price — $97",
       "ctaHref": "/auth/signup",
       "guarantee": "30-day money-back guarantee — no questions asked"
     },
-
     "enterprise": {
+      "component": "EnterpriseBlock",
       "badge": "Enterprise",
       "heading": "Built for teams that ship at scale",
       "subheading": "Custom contracts, SLA guarantees, SSO, and dedicated support for teams of 20+.",
       "features": [
-        { "icon": "Building2",    "title": "Custom licensing",          "description": "Unlimited seats, white-labelling, and commercial redistribution rights." },
-        { "icon": "Shield",       "title": "SLA & uptime guarantee",     "description": "99.9% uptime SLA with dedicated incident response and status page." },
-        { "icon": "Lock",         "title": "SSO / SAML",                "description": "Single sign-on with your identity provider — Okta, Azure AD, Google Workspace." },
-        { "icon": "HeadphonesIcon","title": "Priority support",          "description": "A dedicated Slack channel and a named engineering contact for your team." },
-        { "icon": "GitBranch",    "title": "Private fork & codebase",    "description": "Your team gets a private fork with a direct line to maintainers." },
-        { "icon": "BarChart2",    "title": "Usage analytics",            "description": "Advanced analytics dashboard for usage, revenue, and churn metrics." }
+        {
+          "icon": "Building2",
+          "title": "Custom licensing",
+          "description": "Unlimited seats, white-labelling, and commercial redistribution rights."
+        },
+        {
+          "icon": "Shield",
+          "title": "SLA & uptime guarantee",
+          "description": "99.9% uptime SLA with dedicated incident response and status page."
+        },
+        {
+          "icon": "Lock",
+          "title": "SSO / SAML",
+          "description": "Single sign-on with your identity provider — Okta, Azure AD, Google Workspace."
+        },
+        {
+          "icon": "HeadphonesIcon",
+          "title": "Priority support",
+          "description": "A dedicated Slack channel and a named engineering contact for your team."
+        },
+        {
+          "icon": "GitBranch",
+          "title": "Private fork & codebase",
+          "description": "Your team gets a private fork with a direct line to maintainers."
+        },
+        {
+          "icon": "BarChart2",
+          "title": "Usage analytics",
+          "description": "Advanced analytics dashboard for usage, revenue, and churn metrics."
+        }
       ]
     },
-
     "bonusOffer": {
+      "component": "BonusOfferBlock",
       "badge": "Sign-up bonus — this week only",
       "heading": "Everything included when you join today",
       "subheading": "Stack of bonuses automatically added to your account at checkout.",
       "bonuses": [
-        { "icon": "Rocket",      "title": "Quick-start video walkthrough",   "description": "60-min screen-share: clone to live product in one session.",            "value": "$97 value" },
-        { "icon": "PenSquare",   "title": "Landing copy template pack",      "description": "Fill-in-the-blank copy for every landing section in product.config.json.", "value": "$49 value" },
-        { "icon": "Layout",      "title": "Extra landing theme — 'Agency'",  "description": "A bolder, high-contrast theme built for agencies and product studios.",  "value": "$29 value" },
-        { "icon": "Users",       "title": "Private Discord + office hours",  "description": "Weekly live Q&A with the founder and community of builders.",           "value": "$199 value" }
+        {
+          "icon": "Rocket",
+          "title": "Quick-start video walkthrough",
+          "description": "60-min screen-share: clone to live product in one session.",
+          "value": "$97 value"
+        },
+        {
+          "icon": "PenSquare",
+          "title": "Landing copy template pack",
+          "description": "Fill-in-the-blank copy for every landing section in product.config.json.",
+          "value": "$49 value"
+        },
+        {
+          "icon": "Layout",
+          "title": "Extra landing theme — 'Agency'",
+          "description": "A bolder, high-contrast theme built for agencies and product studios.",
+          "value": "$29 value"
+        },
+        {
+          "icon": "Users",
+          "title": "Private Discord + office hours",
+          "description": "Weekly live Q&A with the founder and community of builders.",
+          "value": "$199 value"
+        }
       ],
       "totalValue": "$374",
       "offerPrice": "just $97",
@@ -904,8 +1431,8 @@
       "ctaHref": "/auth/signup",
       "urgencyNote": "Bonus #2 (copy template) expires Friday at midnight"
     },
-
     "bookDemo": {
+      "component": "BookDemoBlock",
       "badge": "Live demo",
       "heading": "See the full product — live, with your questions answered",
       "subheading": "30 minutes with the founder. No deck. Just a real demo of the product you're considering.",
@@ -919,8 +1446,8 @@
       "successMessage": "We've received your request and will send a calendar invite within a few hours. Check your inbox (and spam folder) for the confirmation email.",
       "ctaText": "Book my free 30-min demo"
     },
-
     "beforeAfter": {
+      "component": "BeforeAfterBlock",
       "badge": "Before vs After",
       "heading": "See the difference for yourself",
       "subheading": "Drag the handle to compare building the old way versus using this starter.",
@@ -945,8 +1472,8 @@
         ]
       }
     },
-
     "countdown": {
+      "component": "CountdownBlock",
       "badge": "⏳ Limited time offer",
       "heading": "Founder pricing closes in",
       "subheading": "After the launch window closes, pricing goes up. Lock in the founder rate now.",
@@ -954,8 +1481,8 @@
       "ctaText": "Claim founder pricing — $97",
       "ctaHref": "/auth/signup"
     },
-
     "roadmap": {
+      "component": "RoadmapBlock",
       "badge": "Product roadmap",
       "heading": "What we're building next",
       "subheading": "A transparent look at where the product is today — and where it's going.",
@@ -966,7 +1493,13 @@
           "description": "Core infrastructure — auth, billing, database, support, and the config system.",
           "status": "done",
           "icon": "CheckCircle",
-          "items": ["Auth (email + OAuth)", "Lemon Squeezy billing", "Credit system", "Support tickets", "product.config.json system"]
+          "items": [
+            "Auth (email + OAuth)",
+            "Lemon Squeezy billing",
+            "Credit system",
+            "Support tickets",
+            "product.config.json system"
+          ]
         },
         {
           "phase": 2,
@@ -974,7 +1507,13 @@
           "description": "Full data-driven landing page with 30+ sections, 3 themes, and a complete UI kit.",
           "status": "in-progress",
           "icon": "Zap",
-          "items": ["30+ landing blocks", "3 landing themes", "UI kit (40+ atoms)", "Dark mode", "Responsive mobile"]
+          "items": [
+            "30+ landing blocks",
+            "3 landing themes",
+            "UI kit (40+ atoms)",
+            "Dark mode",
+            "Responsive mobile"
+          ]
         },
         {
           "phase": 3,
@@ -982,7 +1521,13 @@
           "description": "AI generation features, email automation, and third-party integrations.",
           "status": "upcoming",
           "icon": "Sparkles",
-          "items": ["OpenAI / Gemini integration", "Email automation (Resend)", "Analytics (PostHog)", "CMS integration", "Webhook framework"]
+          "items": [
+            "OpenAI / Gemini integration",
+            "Email automation (Resend)",
+            "Analytics (PostHog)",
+            "CMS integration",
+            "Webhook framework"
+          ]
         },
         {
           "phase": 4,
@@ -990,12 +1535,18 @@
           "description": "Multi-tenancy, team plans, affiliate system, and enterprise features.",
           "status": "upcoming",
           "icon": "Building2",
-          "items": ["Multi-tenant workspace", "Team / org plans", "Affiliate dashboard", "Advanced analytics", "SSO / SAML"]
+          "items": [
+            "Multi-tenant workspace",
+            "Team / org plans",
+            "Affiliate dashboard",
+            "Advanced analytics",
+            "SSO / SAML"
+          ]
         }
       ]
     },
-
     "pickYourPath": {
+      "component": "PickYourPathBlock",
       "badge": "Choose your starting point",
       "heading": "How do you plan to use this?",
       "subheading": "Pick the path that fits you — we'll point you straight to what matters most.",
@@ -1004,7 +1555,11 @@
           "icon": "Rocket",
           "title": "Ship my MVP fast",
           "description": "You have an idea and want a live product with paying users as quickly as possible.",
-          "bullets": ["Auth + billing done for you", "Configure once, ship fast", "Free to start — no CC required"],
+          "bullets": [
+            "Auth + billing done for you",
+            "Configure once, ship fast",
+            "Free to start — no CC required"
+          ],
           "ctaText": "Start building my MVP →",
           "ctaHref": "/auth/signup"
         },
@@ -1012,7 +1567,11 @@
           "icon": "Building2",
           "title": "Build for my clients",
           "description": "You run an agency or do freelance work and want a white-label base for client projects.",
-          "bullets": ["White-label ready", "Reusable across every project", "Clear architecture for handoff"],
+          "bullets": [
+            "White-label ready",
+            "Reusable across every project",
+            "Clear architecture for handoff"
+          ],
           "ctaText": "Get the agency license →",
           "ctaHref": "/auth/signup"
         },
@@ -1020,14 +1579,18 @@
           "icon": "Palette",
           "title": "Learn by building",
           "description": "You want to study a real, production-quality Next.js codebase to level up your skills.",
-          "bullets": ["Real-world patterns", "Thoroughly documented", "Great starting point for side projects"],
+          "bullets": [
+            "Real-world patterns",
+            "Thoroughly documented",
+            "Great starting point for side projects"
+          ],
           "ctaText": "Explore the code →",
           "ctaHref": "/docs"
         }
       ]
     },
-
     "next24Hours": {
+      "component": "Next24HoursBlock",
       "badge": "What happens next",
       "heading": "Your first 24 hours after signing up",
       "subheading": "You won't spend them setting up auth or billing. You'll spend them building.",
@@ -1066,8 +1629,8 @@
       "ctaText": "Start now — it's free",
       "ctaHref": "/auth/signup"
     },
-
     "whyWeBuilt": {
+      "component": "WhyWeBuildBlock",
       "badge": "The origin story",
       "heading": "Why we built this",
       "story": "I've spent years building SaaS products — and every single time, I wasted the first 2–3 weeks on the exact same things: auth setup, billing integration, database schema, and boilerplate UI.\n\nThe idea wasn't the hard part. The infrastructure was.\n\nSo I built this starter to solve that problem — for myself first, and then for every other founder who was tired of reinventing the wheel. One config file. Production-quality code. Ship in days, not weeks.",
@@ -1079,8 +1642,8 @@
       "ctaText": "Read the full story",
       "ctaHref": "/blog/why-we-built-this"
     },
-
     "tryWithoutSignup": {
+      "component": "TryWithoutSignupBlock",
       "badge": "No commitment",
       "heading": "Try it before you sign up",
       "subheading": "No credit card. No account. Just paste your idea and see what ships.",
@@ -1088,10 +1651,14 @@
       "ctaHref": "/try",
       "secondaryCtaText": "See how it works",
       "secondaryCtaHref": "/#demo",
-      "trust": ["No sign-up required", "No credit card", "Your data stays private"]
+      "trust": [
+        "No sign-up required",
+        "No credit card",
+        "Your data stays private"
+      ]
     },
-
     "commonMistakes": {
+      "component": "CommonMistakesBlock",
       "badge": "Avoid these",
       "heading": "Mistakes most builders make",
       "subheading": "We've seen — and made — all of these. Here's how to skip the pain.",
@@ -1120,8 +1687,8 @@
       "ctaText": "Skip the mistakes — get started",
       "ctaHref": "/auth/signup"
     },
-
     "firstUser": {
+      "component": "FirstUserBlock",
       "badge": "First success story",
       "heading": "From idea to paying users in 72 hours",
       "quote": "I had the idea on a Monday. By Wednesday night, Summr was live with a landing page, auth, billing, and my first paying user. The starter handled everything except the AI logic — which is literally the only part I needed to build.",
@@ -1132,8 +1699,8 @@
       "metricLabel": "idea to paying users",
       "caseStudyHref": "/case-studies/summr"
     },
-
     "socialCards": {
+      "component": "SocialCardsBlock",
       "badge": "Share your launch",
       "heading": "Your launch, ready to share",
       "subheading": "See how your product looks when shared on different platforms — and copy the format.",
@@ -1162,8 +1729,8 @@
         }
       ]
     },
-
     "leaderboard": {
+      "component": "LeaderboardBlock",
       "badge": "Community leaderboard",
       "heading": "Top builders this month",
       "subheading": "The most active community members — shipping, contributing, and sharing.",
@@ -1171,16 +1738,53 @@
       "ctaText": "Join the community →",
       "ctaHref": "/community",
       "entries": [
-        { "rank": 1, "name": "Marcus Webb",   "handle": "@marcuswebb",   "points": 4820, "badge": "Top Contributor", "badgeColor": "#4285F4" },
-        { "rank": 2, "name": "Priya Sharma",  "handle": "@priyadev",     "points": 3910, "badge": "Ship Streak",     "badgeColor": "#34A853" },
-        { "rank": 3, "name": "Jordan Blake",  "handle": "@jblake_dev",   "points": 3440, "badge": "Case Study",      "badgeColor": "#FBBC04" },
-        { "rank": 4, "name": "Sophie Chen",   "handle": "@sophiecode",   "points": 2780 },
-        { "rank": 5, "name": "Nadia Kowalski","handle": "@nadiabuilds",  "points": 2210 },
-        { "rank": 6, "name": "Alex Turner",   "handle": "@alexbuilds",   "points": 1990, "highlight": true }
+        {
+          "rank": 1,
+          "name": "Marcus Webb",
+          "handle": "@marcuswebb",
+          "points": 4820,
+          "badge": "Top Contributor",
+          "badgeColor": "#4285F4"
+        },
+        {
+          "rank": 2,
+          "name": "Priya Sharma",
+          "handle": "@priyadev",
+          "points": 3910,
+          "badge": "Ship Streak",
+          "badgeColor": "#34A853"
+        },
+        {
+          "rank": 3,
+          "name": "Jordan Blake",
+          "handle": "@jblake_dev",
+          "points": 3440,
+          "badge": "Case Study",
+          "badgeColor": "#FBBC04"
+        },
+        {
+          "rank": 4,
+          "name": "Sophie Chen",
+          "handle": "@sophiecode",
+          "points": 2780
+        },
+        {
+          "rank": 5,
+          "name": "Nadia Kowalski",
+          "handle": "@nadiabuilds",
+          "points": 2210
+        },
+        {
+          "rank": 6,
+          "name": "Alex Turner",
+          "handle": "@alexbuilds",
+          "points": 1990,
+          "highlight": true
+        }
       ]
     },
-
     "pricingBundle": {
+      "component": "PricingBundleBlock",
       "badge": "Best value bundle",
       "heading": "Everything you need — one price",
       "subheading": "Get the starter, the UI kit, the templates, and community access as one bundle. Save over 60%.",
@@ -1193,14 +1797,34 @@
       "ctaText": "Get the full bundle — $97",
       "ctaHref": "/auth/signup",
       "items": [
-        { "icon": "Code",      "title": "Full SaaS Starter (source code)", "description": "Auth, billing, credits, support, and dashboard pre-wired.", "value": "149" },
-        { "icon": "Palette",   "title": "UI Kit (40+ components)",          "description": "Atoms, molecules, and landing blocks with token system.",   "value": "79"  },
-        { "icon": "FileText",  "title": "Landing copy template pack",       "description": "Fill-in-the-blank copy for every landing section.",          "value": "49"  },
-        { "icon": "Video",     "title": "Quick-start video walkthrough",    "description": "60-min screen-share: clone to live in one session.",          "value": "97"  }
+        {
+          "icon": "Code",
+          "title": "Full SaaS Starter (source code)",
+          "description": "Auth, billing, credits, support, and dashboard pre-wired.",
+          "value": "149"
+        },
+        {
+          "icon": "Palette",
+          "title": "UI Kit (40+ components)",
+          "description": "Atoms, molecules, and landing blocks with token system.",
+          "value": "79"
+        },
+        {
+          "icon": "FileText",
+          "title": "Landing copy template pack",
+          "description": "Fill-in-the-blank copy for every landing section.",
+          "value": "49"
+        },
+        {
+          "icon": "Video",
+          "title": "Quick-start video walkthrough",
+          "description": "60-min screen-share: clone to live in one session.",
+          "value": "97"
+        }
       ]
     },
-
     "comingSoon": {
+      "component": "ComingSoonBlock",
       "badge": "Coming Soon",
       "heading": "AI planner is almost ready",
       "subheading": "We're adding an AI-powered product planner. Be the first to get access when it launches.",
@@ -1210,8 +1834,8 @@
       "successMessage": "You're on the list! We'll notify you the moment it goes live.",
       "previewHint": "Your AI product planner — features, roadmap, and copy — all from one prompt."
     },
-
     "whatIsThis": {
+      "component": "WhatIsThisBlock",
       "badge": "Quick explainer",
       "heading": "What is this, exactly?",
       "subheading": "Straight answers to the first questions every builder asks.",
@@ -1220,58 +1844,136 @@
           "question": "Is this a template or a real product?",
           "icon": "Package",
           "answer": [
-            { "text": "It's a " },
-            { "text": "production-ready SaaS starter", "color": "primary", "bold": true },
-            { "text": " — not a Figma file, not a half-finished template. It has " },
-            { "text": "working auth", "color": "success", "bold": true },
-            { "text": ", " },
-            { "text": "real billing", "color": "success", "bold": true },
-            { "text": ", a credit system, support tickets, and a complete UI kit. You clone it, configure a JSON file, and ship." }
+            {
+              "text": "It's a "
+            },
+            {
+              "text": "production-ready SaaS starter",
+              "color": "primary",
+              "bold": true
+            },
+            {
+              "text": " — not a Figma file, not a half-finished template. It has "
+            },
+            {
+              "text": "working auth",
+              "color": "success",
+              "bold": true
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "real billing",
+              "color": "success",
+              "bold": true
+            },
+            {
+              "text": ", a credit system, support tickets, and a complete UI kit. You clone it, configure a JSON file, and ship."
+            }
           ],
-          "tags": ["Next.js", "Supabase", "Lemon Squeezy", "TypeScript"]
+          "tags": [
+            "Next.js",
+            "Supabase",
+            "Lemon Squeezy",
+            "TypeScript"
+          ]
         },
         {
           "question": "Do I need to know React or TypeScript?",
           "icon": "Code",
           "answer": [
-            { "text": "You need " },
-            { "text": "basic React familiarity", "bold": true },
-            { "text": " — but the config system means most customisation happens in " },
-            { "text": "product.config.json", "color": "accent", "bold": true },
-            { "text": ", not in code. For copy, theming, nav, pricing, and FAQ — " },
-            { "text": "zero code changes needed", "color": "success", "bold": true },
-            { "text": "." }
+            {
+              "text": "You need "
+            },
+            {
+              "text": "basic React familiarity",
+              "bold": true
+            },
+            {
+              "text": " — but the config system means most customisation happens in "
+            },
+            {
+              "text": "product.config.json",
+              "color": "accent",
+              "bold": true
+            },
+            {
+              "text": ", not in code. For copy, theming, nav, pricing, and FAQ — "
+            },
+            {
+              "text": "zero code changes needed",
+              "color": "success",
+              "bold": true
+            },
+            {
+              "text": "."
+            }
           ],
-          "tags": ["Beginner-friendly", "Config-driven", "No rewrite needed"]
+          "tags": [
+            "Beginner-friendly",
+            "Config-driven",
+            "No rewrite needed"
+          ]
         },
         {
           "question": "Is it a subscription or do I own the code?",
           "icon": "Key",
           "answer": [
-            { "text": "You " },
-            { "text": "own the source code outright", "color": "primary", "bold": true },
-            { "text": ". Pay once. No monthly fees to us. No lock-in. The only recurring costs are your own infrastructure — Supabase, Vercel, Lemon Squeezy — which all have generous " },
-            { "text": "free tiers", "color": "success", "bold": true },
-            { "text": " to get started." }
+            {
+              "text": "You "
+            },
+            {
+              "text": "own the source code outright",
+              "color": "primary",
+              "bold": true
+            },
+            {
+              "text": ". Pay once. No monthly fees to us. No lock-in. The only recurring costs are your own infrastructure — Supabase, Vercel, Lemon Squeezy — which all have generous "
+            },
+            {
+              "text": "free tiers",
+              "color": "success",
+              "bold": true
+            },
+            {
+              "text": " to get started."
+            }
           ],
-          "tags": ["One-time purchase", "Lifetime access", "No lock-in"]
+          "tags": [
+            "One-time purchase",
+            "Lifetime access",
+            "No lock-in"
+          ]
         }
       ]
     },
-
     "install": {
+      "component": "InstallBlock",
       "badge": "Get started in seconds",
       "heading": "Install and run in under 2 minutes",
       "subheading": "Clone the repo, install dependencies, and you're live with a working app.",
       "note": "Requires Node.js 18+ and npm, yarn, or pnpm.",
       "commands": [
-        { "label": "npm",  "manager": "npm",  "command": "npm install && npm run dev" },
-        { "label": "yarn", "manager": "yarn", "command": "yarn && yarn dev" },
-        { "label": "pnpm", "manager": "pnpm", "command": "pnpm install && pnpm dev" }
+        {
+          "label": "npm",
+          "manager": "npm",
+          "command": "npm install && npm run dev"
+        },
+        {
+          "label": "yarn",
+          "manager": "yarn",
+          "command": "yarn && yarn dev"
+        },
+        {
+          "label": "pnpm",
+          "manager": "pnpm",
+          "command": "pnpm install && pnpm dev"
+        }
       ]
     },
-
     "imageBanner": {
+      "component": "ImageBannerBlock",
       "badge": "Start building today",
       "heading": "Your SaaS. Shipped this week.",
       "subheading": "Stop setting up infrastructure. Start building the product only you can build.",
@@ -1282,12 +1984,12 @@
       "overlayOpacity": 55,
       "minHeight": 480
     },
-
     "reels": {
+      "component": "ReelsBlock",
       "badge": "Watch builders ship",
       "heading": "Real projects. Real speed.",
       "subheading": "Short walkthroughs from founders who shipped with this starter.",
-      "items": [
+      "reels": [
         {
           "title": "Clone to live product in 10 minutes",
           "duration": "10:24",
@@ -1325,48 +2027,428 @@
           "href": "/docs/themes"
         }
       ]
-    }
+    },
+    "navbar": {
+      "component": "NavbarBlock",
+      "links": [
+        {
+          "label": "Features",
+          "href": "/#features"
+        },
+        {
+          "label": "Pricing",
+          "href": "/pricing"
+        },
+        {
+          "label": "Solutions",
+          "href": "#",
+          "dropdown": [
+            {
+              "label": "AI Automation Agencies",
+              "href": "/#use-cases",
+              "description": "Deliver client products 10× faster",
+              "icon": "Building2"
+            },
+            {
+              "label": "SaaS Founders",
+              "href": "/#use-cases",
+              "description": "Ship your MVP in days, not months",
+              "icon": "Rocket"
+            },
+            {
+              "label": "Indie Creators",
+              "href": "/#use-cases",
+              "description": "A real product, not just a landing page",
+              "icon": "Palette"
+            }
+          ]
+        },
+        {
+          "label": "Resources",
+          "href": "#",
+          "dropdown": [
+            {
+              "label": "Documentation",
+              "href": "/docs",
+              "description": "Guides, API reference, and config docs",
+              "icon": "BookOpen"
+            },
+            {
+              "label": "Blog",
+              "href": "/blog",
+              "description": "Articles and tutorials",
+              "icon": "PenSquare"
+            },
+            {
+              "label": "Case Studies",
+              "href": "/case-studies",
+              "description": "How teams ship with this starter",
+              "icon": "BarChart2"
+            },
+            {
+              "label": "Community",
+              "href": "/community",
+              "description": "Join the builder community",
+              "icon": "Users"
+            },
+            {
+              "label": "Changelog",
+              "href": "/changelog",
+              "description": "What's new",
+              "icon": "GitMerge"
+            }
+          ]
+        },
+        {
+          "label": "Careers",
+          "href": "/careers"
+        }
+      ],
+      "ctaText": "Get started free",
+      "ctaHref": "/auth/signup",
+      "secondaryCtaText": "Sign in",
+      "secondaryCtaHref": "/auth/signin",
+      "showThemeSwitcher": true
+    },
+    "hero": {
+      "component": "HeroBlock",
+      "badge": "Free to start — no credit card required",
+      "headline": "Build and ship your SaaS in days, not months",
+      "subheadline": "Everything you need — auth, billing, AI credits, support — pre-wired and ready to customize.",
+      "ctaText": "Get Started Free",
+      "ctaHref": "/auth/signup",
+      "secondaryCtaText": "See what's included",
+      "secondaryCtaHref": "/#features"
+    },
+    "features": {
+      "component": "FeaturesBlock",
+      "heading": "Everything you need, nothing you don't",
+      "subheading": "Pre-built with the patterns that every SaaS product needs, so you can move fast from day one.",
+      "features": [
+        {
+          "icon": "Zap",
+          "title": "Instant Setup",
+          "description": "Auth, database, and billing pre-configured. Clone, configure product.config.json, and you're live."
+        },
+        {
+          "icon": "Shield",
+          "title": "Auth & Security",
+          "description": "Email + OAuth sign-in, protected routes, secure sessions — all handled out of the box."
+        },
+        {
+          "icon": "CreditCard",
+          "title": "Billing Built In",
+          "description": "Lemon Squeezy integration with free and pro plans. Upgrade flows and webhook handling included."
+        },
+        {
+          "icon": "BarChart",
+          "title": "Credit System",
+          "description": "Track and limit usage per user with a flexible credit system. Free tier, paid tier, no drama."
+        },
+        {
+          "icon": "MessageSquare",
+          "title": "Support Tickets",
+          "description": "In-app support ticket system so your users can reach you without leaving your product."
+        },
+        {
+          "icon": "Settings2",
+          "title": "Data-Driven Config",
+          "description": "One JSON file controls your brand, copy, nav, pricing, and theme. Zero code changes needed."
+        }
+      ]
+    },
+    "pricing": {
+      "component": "PricingBlock",
+      "heading": "Simple, transparent pricing",
+      "subheading": "Start free. Upgrade when you need more.",
+      "plans": [
+        {
+          "name": "Free",
+          "price": 0,
+          "interval": "month",
+          "features": [
+            "3 actions per month",
+            "Core product features",
+            "Community support",
+            "Email sign-in"
+          ],
+          "ctaText": "Get started free",
+          "ctaHref": "/auth/signup"
+        },
+        {
+          "name": "Pro",
+          "price": 9,
+          "interval": "month",
+          "features": [
+            "Unlimited actions",
+            "Priority email support",
+            "All advanced features",
+            "Export results",
+            "Early access to new features"
+          ],
+          "ctaText": "Upgrade to Pro",
+          "ctaHref": "/auth/signup",
+          "featured": true
+        }
+      ]
+    },
+    "testimonials": {
+      "component": "TestimonialsBlock",
+      "heading": "Loved by builders",
+      "testimonials": []
+    },
+    "faq": {
+      "component": "FAQBlock",
+      "heading": "Frequently asked questions",
+      "items": [
+        {
+          "question": "How do I get started?",
+          "answer": "Sign up for a free account — no credit card required. You'll get immediate access to all core features and 3 free actions per month."
+        },
+        {
+          "question": "What counts as an action?",
+          "answer": "An action is one use of the core product feature. Free users get 3 per month; Pro users get unlimited."
+        },
+        {
+          "question": "Can I upgrade or downgrade my plan?",
+          "answer": "Yes. You can upgrade to Pro at any time from your account settings, and cancel whenever you want — no lock-in."
+        },
+        {
+          "question": "Is my data secure?",
+          "answer": "Yes. All data is stored in a Supabase Postgres database with encrypted connections. We never sell your data."
+        }
+      ]
+    },
+    "cta": {
+      "component": "CTABlock",
+      "heading": "Ready to ship your product?",
+      "subheading": "Join builders who are launching faster with a solid foundation.",
+      "ctaText": "Get started free",
+      "ctaHref": "/auth/signup"
+    },
+    "footer": {
+      "component": "FooterBlock",
+      "tagline": "Ship faster. Build smarter.",
+      "address": "Your Company Inc.\n123 Builder Street, Suite 100\nSan Francisco, CA 94105\nUnited States",
+      "columns": [
+        {
+          "heading": "Product",
+          "links": [
+            {
+              "label": "Features",
+              "href": "/#features"
+            },
+            {
+              "label": "Pricing",
+              "href": "/pricing"
+            },
+            {
+              "label": "Changelog",
+              "href": "/changelog"
+            },
+            {
+              "label": "Roadmap",
+              "href": "/#roadmap"
+            },
+            {
+              "label": "Dashboard",
+              "href": "/dashboard"
+            }
+          ]
+        },
+        {
+          "heading": "Resources",
+          "links": [
+            {
+              "label": "Docs",
+              "href": "/docs"
+            },
+            {
+              "label": "Blog",
+              "href": "/blog"
+            },
+            {
+              "label": "Case Studies",
+              "href": "/case-studies"
+            },
+            {
+              "label": "Community",
+              "href": "/community"
+            },
+            {
+              "label": "Templates",
+              "href": "/templates"
+            }
+          ]
+        },
+        {
+          "heading": "Company",
+          "links": [
+            {
+              "label": "About",
+              "href": "/#about"
+            },
+            {
+              "label": "Careers",
+              "href": "/careers"
+            },
+            {
+              "label": "Affiliates",
+              "href": "/affiliates"
+            },
+            {
+              "label": "Contact",
+              "href": "/contact"
+            },
+            {
+              "label": "Legal",
+              "href": "/legal/privacy"
+            }
+          ]
+        }
+      ],
+      "legalLinks": [
+        {
+          "label": "Privacy",
+          "href": "/legal/privacy"
+        },
+        {
+          "label": "Terms",
+          "href": "/legal/terms"
+        }
+      ]
+    },
+    "sections": [
+      "hero",
+      "whatIsThis",
+      "companyLogos",
+      "featuredOn",
+      "beforeAfter",
+      "problemSolution",
+      "howItWorks",
+      "features",
+      "whatsIncluded",
+      "appPagesShowcase",
+      "install",
+      "demo",
+      "codeViewer",
+      "tryWithoutSignup",
+      "whyBetter",
+      "comparison",
+      "useCases",
+      "pickYourPath",
+      "customerStories",
+      "firstUser",
+      "wallOfLove",
+      "socialCards",
+      "reels",
+      "leaderboard",
+      "awards",
+      "metrics",
+      "video",
+      "pricing",
+      "countdown",
+      "pricingBundle",
+      "faq",
+      "commonMistakes",
+      "resources",
+      "community",
+      "roadmap",
+      "whyWeBuilt",
+      "next24Hours",
+      "comingSoon",
+      "scheduleMeeting",
+      "aboutCreator",
+      "careers",
+      "blog",
+      "affiliates",
+      "docs",
+      "waitlist",
+      "testimonials",
+      "cta",
+      "founderPricing",
+      "bonusOffer",
+      "bookDemo",
+      "enterprise",
+      "imageBanner"
+    ]
   },
-
   "product": {
     "nav": {
       "sections": [
         {
           "items": [
-            { "label": "Dashboard", "href": "/dashboard",          "icon": "LayoutDashboard" },
-            { "label": "Product",   "href": "/dashboard/product",  "icon": "Zap" },
-            { "label": "Support",   "href": "/dashboard/support",  "icon": "MessageSquare" },
-            { "label": "Settings",  "href": "/dashboard/settings", "icon": "Settings" }
+            {
+              "label": "Dashboard",
+              "href": "/dashboard",
+              "icon": "LayoutDashboard"
+            },
+            {
+              "label": "Product",
+              "href": "/dashboard/product",
+              "icon": "Zap"
+            },
+            {
+              "label": "Support",
+              "href": "/dashboard/support",
+              "icon": "MessageSquare"
+            },
+            {
+              "label": "Settings",
+              "href": "/dashboard/settings",
+              "icon": "Settings"
+            }
           ]
         }
       ]
     },
-
     "dashboard": {
       "heading": "Dashboard",
       "subheading": "Welcome back",
       "stats": [
-        { "label": "Plan",               "valueKey": "plan" },
-        { "label": "Actions this month", "valueKey": "actionsUsed" },
-        { "label": "Account",            "valueKey": "email" }
+        {
+          "label": "Plan",
+          "valueKey": "plan"
+        },
+        {
+          "label": "Actions this month",
+          "valueKey": "actionsUsed"
+        },
+        {
+          "label": "Account",
+          "valueKey": "email"
+        }
       ],
       "emptyState": {
         "icon": "Zap",
         "heading": "You're all set — let's build",
         "description": "Head to the Product tab to run your first action. You have 3 free actions this month.",
-        "action": { "label": "Go to Product", "href": "/dashboard/product" }
+        "action": {
+          "label": "Go to Product",
+          "href": "/dashboard/product"
+        }
       }
     },
-
     "settings": {
       "heading": "Settings",
       "sections": [
-        { "label": "Profile",   "href": "/dashboard/settings",          "icon": "User" },
-        { "label": "Billing",   "href": "/dashboard/settings/billing",  "icon": "CreditCard" },
-        { "label": "Security",  "href": "/dashboard/settings/security", "icon": "Shield" }
+        {
+          "label": "Profile",
+          "href": "/dashboard/settings",
+          "icon": "User"
+        },
+        {
+          "label": "Billing",
+          "href": "/dashboard/settings/billing",
+          "icon": "CreditCard"
+        },
+        {
+          "label": "Security",
+          "href": "/dashboard/settings/security",
+          "icon": "Shield"
+        }
       ]
     },
-
     "billing": {
       "heading": "Billing",
       "subheading": "Manage your subscription and usage.",
@@ -1386,7 +2468,6 @@
         }
       }
     },
-
     "support": {
       "heading": "Support",
       "subheading": "Need help? Open a ticket and we'll get back to you within 24 hours.",
@@ -1394,18 +2475,31 @@
         "icon": "MessageSquare",
         "heading": "No open tickets",
         "description": "Everything looks good! If you run into an issue, open a ticket below.",
-        "action": { "label": "Open a ticket", "href": "/dashboard/support/new" }
+        "action": {
+          "label": "Open a ticket",
+          "href": "/dashboard/support/new"
+        }
       }
     },
-
     "onboarding": {
       "heading": "Welcome — let's get you set up in 3 steps.",
       "steps": [
-        { "id": "profile",  "title": "Set up your profile",  "description": "Add your name so we know who you are." },
-        { "id": "product",  "title": "Try the product",      "description": "Run your first action and see what it can do." },
-        { "id": "billing",  "title": "Choose a plan",        "description": "Upgrade to Pro when you're ready for more." }
+        {
+          "id": "profile",
+          "title": "Set up your profile",
+          "description": "Add your name so we know who you are."
+        },
+        {
+          "id": "product",
+          "title": "Try the product",
+          "description": "Run your first action and see what it can do."
+        },
+        {
+          "id": "billing",
+          "title": "Choose a plan",
+          "description": "Upgrade to Pro when you're ready for more."
+        }
       ]
     }
   }
 }
-

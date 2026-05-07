@@ -30,8 +30,13 @@ export const icons = rawConfig.icons;
 /** Everything the marketing/landing site reads */
 export const landing = rawConfig.landing;
 
-/** Extended landing sections (demo, wallOfLove, comparison, metrics, video, featuredOn, aboutCreator, waitlist, blog, affiliates, docs) */
-export const landingSections = rawConfig.landing_sections;
+/** All landing sections + navbar/footer/hero/sections order — single source for the landing page */
+export const landingSections = {
+  ...rawConfig.landing_sections,
+  // Inject brand.name into navbar and footer at runtime (JSON can't self-reference)
+  navbar: { ...rawConfig.landing_sections.navbar, logoText: rawConfig.brand.name },
+  footer: { ...rawConfig.landing_sections.footer, logoText: rawConfig.brand.name },
+};
 
 /** Everything the product dashboard reads */
 export const product = rawConfig.product;
