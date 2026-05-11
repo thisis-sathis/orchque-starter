@@ -66,6 +66,9 @@
     "analytics": "BarChart2"
   },
   "landing": {
+    "settings": {
+      "showComponentNameTag": true
+    },
     "nav": {
       "links": [
         {
@@ -353,6 +356,9 @@
     }
   },
   "landing_sections": {
+    "settings": {
+      "showComponentNameTag": true
+    },
     "appPagesShowcase": {
       "component": "AppPagesShowcaseBlock",
       "badge": "Every page included",
@@ -670,7 +676,7 @@
       "badge": "Resources",
       "heading": "Everything you need to ship",
       "subheading": "Guides, case studies, templates, and tutorials — all in one place.",
-      "items": [
+      "resources": [
         {
           "type": "guide",
           "icon": "Rocket",
@@ -1448,27 +1454,58 @@
     },
     "beforeAfter": {
       "component": "BeforeAfterBlock",
-      "badge": "Before vs After",
-      "heading": "See the difference for yourself",
-      "subheading": "Drag the handle to compare building the old way versus using this starter.",
+      "badge": "Visual Transformation",
+      "heading": "See the power of great design",
+      "subheading": "Drag the slider to compare before and after transformations. Real examples of what's possible.",
+      "comparisons": [
+        {
+          "id": "dashboard",
+          "beforeImage": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=800&h=500&fit=crop&auto=format&q=80&sat=-100&bri=-30",
+          "afterImage": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=800&h=500&fit=crop&auto=format&q=80&sat=10&bri=10",
+          "beforeLabel": "Dull Landing",
+          "afterLabel": "Vibrant Landing",
+          "alt": "Landing page transformation from dull to vibrant",
+          "showShutter": true
+        },
+        {
+          "id": "landing",
+          "beforeImage": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=800&h=500&fit=crop&auto=format&q=80&sat=-80&con=-30",
+          "afterImage": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=800&h=500&fit=crop&auto=format&q=80&sat=20&con=20",
+          "beforeLabel": "Basic Dashboard",
+          "afterLabel": "Modern UI",
+          "alt": "Dashboard UI modernization",
+          "showShutter": true
+        }
+      ],
+      "variant": "grid",
+      "showShutter": true
+    },
+    "beforeAfterSideBySide": {
+      "component": "BeforeAfterBlock",
+      "badge": "Side by Side",
+      "heading": "Before vs After — No Slider Needed",
+      "subheading": "See what changes when you upgrade to our platform.",
+      "noSlider": true,
       "before": {
-        "label": "Without this starter",
+        "label": "Before",
         "items": [
-          "Weeks spent on auth and billing setup",
-          "Inconsistent UI across every page",
-          "No config system — copy is hardcoded",
-          "Start from zero on every project",
-          "No documentation, no structure"
+          "Manual processes everywhere",
+          "Scattered tools and data",
+          "Hours spent on repetitive tasks",
+          "No visibility into performance",
+          "Slow time to market",
+          "High maintenance costs"
         ]
       },
       "after": {
-        "label": "With this starter",
+        "label": "After",
         "items": [
-          "Auth, billing, and credits on day one",
-          "Cohesive UI kit driven by design tokens",
-          "One JSON file controls all copy and theme",
-          "Clone and configure — ship in days",
-          "Docs, architecture, and best practices included"
+          "Fully automated workflows",
+          "Everything in one platform",
+          "Tasks completed in minutes",
+          "Real-time analytics dashboard",
+          "Ship features 10x faster",
+          "Reduced operational overhead"
         ]
       }
     },
@@ -2324,6 +2361,7 @@
       "companyLogos",
       "featuredOn",
       "beforeAfter",
+      "beforeAfterSideBySide",
       "problemSolution",
       "howItWorks",
       "features",

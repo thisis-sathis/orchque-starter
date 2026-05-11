@@ -1,0 +1,97 @@
+{
+  "name": "BeforeAfter",
+  "description": "An interactive before/after image comparison component with a draggable shutter slider. Can display side-by-side without shutter or with interactive shutter overlay.",
+  "category": "molecules",
+  "usage": "import { BeforeAfter } from '@/ui/blocks/molecules/BeforeAfter';",
+  "props": [
+    {
+      "name": "beforeImage",
+      "type": "string",
+      "required": true,
+      "description": "URL of the before image"
+    },
+    {
+      "name": "afterImage",
+      "type": "string",
+      "required": true,
+      "description": "URL of the after image"
+    },
+    {
+      "name": "beforeLabel",
+      "type": "string",
+      "required": false,
+      "default": "Before",
+      "description": "Label displayed on the before image"
+    },
+    {
+      "name": "afterLabel",
+      "type": "string",
+      "required": false,
+      "default": "After",
+      "description": "Label displayed on the after image"
+    },
+    {
+      "name": "alt",
+      "type": "string",
+      "required": false,
+      "default": "Before and after comparison",
+      "description": "Alt text for accessibility"
+    },
+    {
+      "name": "width",
+      "type": "number",
+      "required": false,
+      "default": 600,
+      "description": "Width of the comparison container in pixels"
+    },
+    {
+      "name": "height",
+      "type": "number",
+      "required": false,
+      "default": 400,
+      "description": "Height of the comparison container in pixels"
+    },
+    {
+      "name": "showShutter",
+      "type": "boolean",
+      "required": false,
+      "default": true,
+      "description": "Show interactive shutter slider (true) or side-by-side view (false)"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "required": false,
+      "default": "",
+      "description": "Additional CSS classes for the container"
+    }
+  ],
+  "features": [
+    "Interactive shutter slider with mouse and touch support",
+    "Draggable handle with visual indicators",
+    "Side-by-side fallback mode without shutter",
+    "Responsive design",
+    "Accessible labels for before and after",
+    "Smooth transitions and hover effects",
+    "Customizable dimensions"
+  ],
+  "accessibility": [
+    "Alt text for both images",
+    "Labels for context",
+    "Keyboard and touch support via mouse events"
+  ],
+  "examples": [
+    {
+      "title": "With Shutter",
+      "code": "<BeforeAfter beforeImage={url1} afterImage={url2} beforeLabel='Before' afterLabel='After' />"
+    },
+    {
+      "title": "Side by Side",
+      "code": "<BeforeAfter beforeImage={url1} afterImage={url2} showShutter={false} />"
+    },
+    {
+      "title": "Custom Dimensions",
+      "code": "<BeforeAfter beforeImage={url1} afterImage={url2} width={800} height={500} />"
+    }
+  ]
+}

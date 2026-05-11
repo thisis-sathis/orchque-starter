@@ -44,7 +44,12 @@ export const product = rawConfig.product;
 // ─── Convenience shortcuts ───────────────────────────────────────────────────
 
 /** App URL — from env in production, localhost in dev */
-export const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000";
+const nextPublicAppUrl =
+  typeof process !== "undefined" && process.env
+    ? process.env.NEXT_PUBLIC_APP_URL
+    : undefined;
+
+export const appUrl = nextPublicAppUrl ?? "http://localhost:3000";
 
 /** Primary color hex (with #) — for inline styles */
 export const primaryColor = rawConfig.theme.tokens.colors.primary;

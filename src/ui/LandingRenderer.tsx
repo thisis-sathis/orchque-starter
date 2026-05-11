@@ -338,6 +338,7 @@ export interface LandingConfig {
   navbar:        Record<string, unknown>;
   footer:        Record<string, unknown>;
   announcement?: Record<string, unknown>;
+  settings?:     { showComponentNameTag?: boolean };
   /** Ordered list of section keys (e.g. ["hero", "features", "pricing"]) */
   sections:      string[];
   [key: string]: unknown;
@@ -349,6 +350,11 @@ export function LandingRenderer({ config }: { config: LandingConfig }) {
   const Announcement = registry["AnnouncementBarBlock"];
   const Navbar       = registry["NavbarBlock"];
   const Footer       = registry["FooterBlock"];
+
+  // Check if component name tags should be shown
+  const showComponentNameTag =
+    process.env.LANDINGPAGE_SHOW_COMPONENT_NAME_TAG === "true" ||
+    config.settings?.showComponentNameTag === true;
 
   return (
     <>
@@ -370,7 +376,17 @@ export function LandingRenderer({ config }: { config: LandingConfig }) {
             return null;
           }
 
-          return <Component key={`${component}-${i}`} {...props} />;
+          return (
+            <div key={`${component}-${i}`} className="relative">
+              {/* Component Name Tag */}
+              {showComponentNameTag && (
+                <div className="absolute top-4 right-4 z-50 bg-black/80 text-white px-2 py-1 rounded text-xs font-mono pointer-events-none">
+                  {component}
+                </div>
+              )}
+              <Component {...props} />
+            </div>
+          );
         })}
       </main>
 

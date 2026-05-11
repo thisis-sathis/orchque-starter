@@ -1,0 +1,211 @@
+/**
+ * BeforeAfter Component SCSS Overrides
+ * Customize the before/after shutter comparison component
+ */
+
+// Container styles
+.before-after-container {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-surface);
+  border-radius: var(--radius-md);
+  cursor: col-resize;
+
+  // Before image overlay
+  .before-image {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // After image (background)
+  .after-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // Shutter handle
+  .shutter-handle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    cursor: col-resize;
+    transition: width 0.2s ease;
+
+    &:hover {
+      width: 8px;
+    }
+
+    // Handle icon/button
+    .handle-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #ffffff;
+      border-radius: 50%;
+      padding: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      pointer-events: none;
+
+      svg {
+        width: 16px;
+        height: 16px;
+        color: #1f2937;
+        display: block;
+      }
+    }
+  }
+
+  // Labels
+  .label {
+    position: absolute;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    pointer-events: none;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+
+    &.label-before {
+      top: 16px;
+      left: 16px;
+    }
+
+    &.label-after {
+      top: 16px;
+      right: 16px;
+    }
+  }
+}
+
+// Side-by-side mode
+.before-after-sidebyside {
+  display: flex;
+  gap: 16px;
+
+  .before-section,
+  .after-section {
+    flex: 1;
+
+    .image-wrapper {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius-md);
+      background-color: var(--color-surface);
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+
+    .label {
+      margin-top: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      text-align: center;
+      color: var(--color-muted);
+    }
+  }
+}
+
+// Dark theme
+@media (prefers-color-scheme: dark) {
+  .before-after-container {
+    background-color: var(--color-surface);
+
+    .shutter-handle {
+      background-color: #e5e7eb;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+
+      .handle-icon {
+        background-color: #f3f4f6;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+
+        svg {
+          color: #374151;
+        }
+      }
+    }
+  }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .before-after-container {
+    .label {
+      padding: 6px 10px;
+      font-size: 12px;
+
+      &.label-before {
+        top: 12px;
+        left: 12px;
+      }
+
+      &.label-after {
+        top: 12px;
+        right: 12px;
+      }
+    }
+
+    .shutter-handle {
+      .handle-icon {
+        padding: 6px;
+
+        svg {
+          width: 14px;
+          height: 14px;
+        }
+      }
+    }
+  }
+
+  .before-after-sidebyside {
+    gap: 12px;
+    flex-direction: column;
+
+    @media (min-width: 640px) {
+      flex-direction: row;
+    }
+  }
+}
+
+// Animation for smooth slider
+@keyframes shutter-slide {
+  from {
+    transform: translateX(-4px);
+  }
+  to {
+    transform: translateX(4px);
+  }
+}
+
+// Accessibility improvements
+@media (prefers-reduced-motion: reduce) {
+  .before-after-container {
+    .shutter-handle {
+      transition: none;
+    }
+  }
+}

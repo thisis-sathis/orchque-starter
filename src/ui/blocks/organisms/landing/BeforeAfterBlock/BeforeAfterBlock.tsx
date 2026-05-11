@@ -1,8 +1,9 @@
 "use client";
-// BeforeAfterBlock.tsx — Interactive drag slider showing before vs after state.
-// Centre button slides left/right to reveal the two sides.
+// BeforeAfterBlock.tsx — Interactive comparison showing before vs after state.
+// Supports both text comparisons (slider) and image comparisons (shutter).
 import React, { useRef, useState, useCallback } from "react";
 import { cn } from "@/ui/lib/utils";
+import { BeforeAfter } from "../../../molecules/BeforeAfter";
 
 export interface BeforeAfterSide {
   label: string;
@@ -11,12 +12,28 @@ export interface BeforeAfterSide {
   imageSrc?: string;
 }
 
+export interface BeforeAfterComparison {
+  id: string;
+  beforeImage: string;
+  afterImage: string;
+  beforeLabel?: string;
+  afterLabel?: string;
+  alt?: string;
+  width?: number;
+  height?: number;
+  showShutter?: boolean;
+}
+
 export interface BeforeAfterBlockProps {
   badge?: string;
   heading?: string;
   subheading?: string;
-  before: BeforeAfterSide;
-  after: BeforeAfterSide;
+  before?: BeforeAfterSide;
+  after?: BeforeAfterSide;
+  comparisons?: BeforeAfterComparison[];
+  variant?: "grid" | "stack" | "carousel";
+  showShutter?: boolean;
+  noSlider?: boolean; // New prop for static side-by-side
   className?: string;
 }
 
@@ -26,8 +43,138 @@ export function BeforeAfterBlock({
   subheading,
   before,
   after,
+  comparisons,
+  variant = "grid",
+  showShutter = true,
+  noSlider = false,
   className,
 }: BeforeAfterBlockProps) {
+  // Image comparison mode
+  if (comparisons && comparisons.length > 0) {
+    return (
+      <section className={cn("w-full px-[var(--landing-section-px)] py-[var(--landing-section-py)]", className)}>
+        <div className="mx-auto max-w-7xl flex flex-col gap-[var(--space-10x)]">
+          {/* Header */}
+          {(badge || heading || subheading) && (
+            <div className="text-center flex flex-col gap-[var(--space-2x)]">
+              {badge && (
+                <span className="inline-block mx-auto px-[var(--space-3x)] py-[var(--space-1x)] rounded-full bg-[var(--color-primary)]/10 text-[var(--color-primary)] text-[var(--text-xs)] font-[var(--font-semibold)] uppercase tracking-[var(--tracking-wide)]">
+                  {badge}
+                </span>
+              )}
+              {heading && (
+                <h2 className="text-[var(--text-3xl)] font-[var(--font-bold)] text-[var(--color-text)] leading-[var(--leading-tight)]">
+                  {heading}
+                </h2>
+              )}
+              {subheading && (
+                <p className="text-[var(--text-md)] text-[var(--color-text-muted)] max-w-2xl mx-auto">{subheading}</p>
+              )}
+            </div>
+          )}
+
+          {/* Image Comparisons */}
+          <div className={cn({
+            "grid grid-cols-1 md:grid-cols-2 gap-8": variant === "grid",
+            "space-y-12": variant === "stack",
+            "space-y-8": variant === "carousel",
+          })}>
+            {comparisons.map((comparison) => (
+              <div key={comparison.id} className="flex flex-col items-center w-full">
+                <BeforeAfter
+                  beforeImage={comparison.beforeImage}
+                  afterImage={comparison.afterImage}
+                  beforeLabel={comparison.beforeLabel}
+                  afterLabel={comparison.afterLabel}
+                  alt={comparison.alt}
+                  width={comparison.width || 600}
+                  height={comparison.height || 400}
+                  showShutter={comparison.showShutter ?? true}
+                  className="w-full max-w-2xl"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  // Text comparison mode (legacy)
+  if (!before || !after) {
+    return null;
+  }
+
+  // Static side-by-side mode (no slider)
+  if (noSlider) {
+    const SideContentStatic = ({ side, isAfter }: { side: BeforeAfterSide; isAfter?: boolean }) => (
+      <div className="flex flex-col gap-[var(--space-4x)]">
+        <div className={cn(
+          "text-[var(--text-xs)] font-[var(--font-semibold)] uppercase tracking-[var(--tracking-wide)] mb-[var(--space-2x)]",
+          isAfter ? "text-[var(--color-success)]" : "text-[var(--color-error)]"
+        )}>
+          {side.label}
+        </div>
+        {side.imageSrc ? (
+          <img src={side.imageSrc} alt={side.label} className="w-full rounded-[var(--radius-lg)] object-cover" />
+        ) : (
+          <ul className="flex flex-col gap-[var(--space-3x)]">
+            {(side.items ?? []).map((item, i) => (
+              <li key={i} className="flex items-start gap-[var(--space-2x)] text-[var(--text-sm)]">
+                <span className={cn(
+                  "mt-0.5 text-[var(--text-lg)] leading-none flex-shrink-0",
+                  isAfter ? "text-[var(--color-success)]" : "text-[var(--color-error)]"
+                )}>
+                  {isAfter ? "✓" : "✕"}
+                </span>
+                <span className="text-[var(--color-text)]">{item}</span>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+    );
+
+    return (
+      <section className={cn("w-full px-[var(--landing-section-px)] py-[var(--landing-section-py)]", className)}>
+        <div className="mx-auto max-w-6xl flex flex-col gap-[var(--space-10x)]">
+          {/* Header */}
+          {(badge || heading || subheading) && (
+            <div className="text-center flex flex-col gap-[var(--space-2x)]">
+              {badge && (
+                <span className="inline-block mx-auto px-[var(--space-3x)] py-[var(--space-1x)] rounded-full bg-[var(--color-primary)]/10 text-[var(--color-primary)] text-[var(--text-xs)] font-[var(--font-semibold)] uppercase tracking-[var(--tracking-wide)]">
+                  {badge}
+                </span>
+              )}
+              {heading && (
+                <h2 className="text-[var(--text-3xl)] font-[var(--font-bold)] text-[var(--color-text)] leading-[var(--leading-tight)]">
+                  {heading}
+                </h2>
+              )}
+              {subheading && (
+                <p className="text-[var(--text-md)] text-[var(--color-text-muted)] max-w-xl mx-auto">{subheading}</p>
+              )}
+            </div>
+          )}
+
+          {/* Static Two-Tile Container */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Before Tile */}
+            <div className="rounded-[var(--radius-xl)] border-2 border-[var(--color-border)] bg-[var(--color-surface-raised)] p-[var(--space-8x)] shadow-sm hover:shadow-md transition-shadow">
+              <SideContentStatic side={before} isAfter={false} />
+            </div>
+            
+            {/* After Tile */}
+            <div className="rounded-[var(--radius-xl)] border-2 border-[var(--color-primary)]/30 bg-[var(--color-surface)] p-[var(--space-8x)] shadow-sm hover:shadow-md transition-shadow">
+              <SideContentStatic side={after} isAfter={true} />
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  // Slider comparison mode
   const [split, setSplit] = useState(50); // percentage
   const containerRef = useRef<HTMLDivElement>(null);
   const dragging = useRef(false);
@@ -134,3 +281,5 @@ export function BeforeAfterBlock({
     </section>
   );
 }
+
+export default BeforeAfterBlock;

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Geist_Mono, DM_Sans } from "next/font/google";
 import { Toaster } from "sonner";
-import Script from "next/script";
 import "./globals.css";
 import { PRODUCT, theme } from "@/lib/config";
 
@@ -40,15 +39,15 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${plusJakartaSans.variable} ${dmSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
-        {/* No-flash theme + dark-class restore — runs before first paint */}
-        <Script
-          id="theme-restore"
-          strategy="beforeInteractive"
+      <head>
+        {/* No-flash theme restore — runs before first paint */}
+        <script
           dangerouslySetInnerHTML={{
             __html: `(function(){try{var t=localStorage.getItem('saas-theme');if(t){var r=document.documentElement;r.setAttribute('data-theme',t);var c=localStorage.getItem('saas-custom-themes');var dark=['midnight','noir','pure-black','cyberpunk','forest','aurora','dusk'];var isDark=dark.includes(t);if(!isDark&&c){try{var ct=JSON.parse(c);var found=ct.find(function(x){return x.id===t;});if(found&&found.dark)isDark=true;}catch(e){}}if(isDark)r.classList.add('dark');else r.classList.remove('dark');}}catch(e){}})();`,
           }}
         />
+      </head>
+      <body className="min-h-full flex flex-col">
         {children}
         <Toaster richColors position="top-right" />
       </body>

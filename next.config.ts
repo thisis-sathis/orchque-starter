@@ -10,6 +10,16 @@ setGlobalDispatcher(new Agent({ connect: { family: 4 } }));
 
 const nextConfig: NextConfig = {
   serverExternalPackages: ["undici"],
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+        port: "",
+        pathname: "/**",
+      },
+    ],
+  },
 };
 
 export default nextConfig;
