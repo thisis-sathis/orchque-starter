@@ -3,6 +3,7 @@ import { Plus_Jakarta_Sans, Geist_Mono, DM_Sans } from "next/font/google";
 import { Toaster } from "sonner";
 import "./globals.css";
 import { PRODUCT, theme } from "@/lib/config";
+import { SuppressHydrationWarnings } from "@/lib/suppress-hydration-warnings";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   variable: "--font-sans",
@@ -47,7 +48,8 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col" suppressHydrationWarning>
+        <SuppressHydrationWarnings />
         {children}
         <Toaster richColors position="top-right" />
       </body>

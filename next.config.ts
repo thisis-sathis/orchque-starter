@@ -10,6 +10,7 @@ setGlobalDispatcher(new Agent({ connect: { family: 4 } }));
 
 const nextConfig: NextConfig = {
   serverExternalPackages: ["undici"],
+  reactStrictMode: true,
   images: {
     remotePatterns: [
       {

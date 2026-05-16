@@ -1,9 +1,12 @@
 @import "tailwindcss";
-@import "tw-animate-css";
-@import "shadcn/tailwind.css";
+
+/* Package imports */
+@import "tw-animate-css/dist/tw-animate.css";
+@import "shadcn/dist/tailwind.css";
 
 /* Orchque UI token system — design tokens for all ui/ components */
-@import "../ui/styles.css";
+@import "../ui/tokens/index.css";
+@import "../ui/blocks/organisms/auth/auth-shared.css";
 
 /* Landing themes — active theme applied via data-theme on <html> */
 @import "../ui/themes/landing/simple.css";
